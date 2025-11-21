@@ -1,0 +1,292 @@
+/* Updated: 2025-11-19T14:17:56.982Z */
+/* Updated: 2025-11-19T14:17:19.124Z */
+/* Updated: 2025-11-19T10:51:48.236Z */
+/* Updated: 2025-11-19T10:47:16.826Z */
+/* Updated: 2025-11-19T10:13:44.488Z */
+/* Updated: 2025-11-19T09:48:09.801Z */
+/* Updated: 2025-11-19T09:46:37.098Z */
+/* Updated: 2025-11-19T09:45:24.761Z */
+/* Updated: 2025-11-19T09:44:05.556Z */
+/* Updated: 2025-11-18T13:22:04.134Z */
+/* Updated: 2025-11-16T10:16:10.454Z */
+/* Updated: 2025-11-15T12:53:19.569Z */
+/* Updated: 2025-11-15T12:53:15.047Z */
+/* Updated: 2025-11-14T16:39:05.599Z */
+/* Updated: 2025-11-14T16:36:29.247Z */
+/* Updated: 2025-11-14T13:32:20.182Z */
+/* Updated: 2025-11-14T10:34:37.707Z */
+/* Updated: 2025-11-13T18:09:29.630Z */
+/* Updated: 2025-11-13T18:05:45.074Z */
+/* Updated: 2025-11-13T17:59:36.271Z */
+/* Updated: 2025-11-13T17:02:16.636Z */
+/* Updated: 2025-11-13T17:00:24.338Z */
+/* Updated: 2025-11-13T16:59:26.427Z */
+/* Updated: 2025-11-13T16:58:09.424Z */
+/* Updated: 2025-11-13T16:07:13.081Z */
+/* Updated: 2025-11-13T14:49:04.567Z */
+/* Updated: 2025-11-13T13:17:48.393Z */
+@import url('https://fonts.googleapis.com/css2?family=Druk+Text+Wide:wght@400;700;900&family=Freight+Text+Pro:wght@400;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Shadcn/UI colors - Light Theme */
+  --color-background: #EDE8DE;
+  --color-foreground: #2B2B2B;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #2B2B2B;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #2B2B2B;
+
+  --color-primary: #F4B8D8; /* Accent Pink for primary actions */
+  --color-primary-foreground: #2B2B2B;
+
+  --color-secondary: #2B2B2B; /* Dark section background for secondary actions */
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #C8FF6D; /* Accent Green */
+  --color-accent-foreground: #2B2B2B;
+
+  --color-destructive: #E94B3C; /* Border Red for destructive actions */
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #0a0a0a;
+
+  --color-chart-1: #e67e22;
+  --color-chart-2: #2d8659;
+  --color-chart-3: #1e3a5f;
+  --color-chart-4: #f1c40f;
+  --color-chart-5: #e74c3c;
+
+  --color-sidebar: #f7f7f7;
+  --color-sidebar-foreground: #404040;
+  --color-sidebar-primary: #1a1a1a;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-accent: #f0f0f0;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #d4d4d8;
+  --color-sidebar-ring: #3b82f6;
+
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  /* Custom Design Tokens */
+  --color-primary-background: #EDE8DE;
+  --color-primary-text: #2B2B2B;
+  --color-accent-green: #C8FF6D;
+  --color-accent-pink: #F4B8D8;
+  --color-dark-section-bg: #2B2B2B;
+  --color-white: #FFFFFF;
+  --color-border-green: #5BA836;
+  --color-border-red: #E94B3C;
+  --color-navy-blue: #2C3E50;
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-gray-text: #999999; /* For stats labels */
+
+  --font-display: "Druk Text Wide", sans-serif;
+  --font-body: "Freight Text Pro", serif;
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+  The default border color has changed to currentColor in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border);
+  }
+}
+
+@layer base {
+  :root {
+    --background: var(--color-primary-background);
+    --foreground: var(--color-primary-text);
+    --card: var(--color-card);
+    --card-foreground: var(--color-card-foreground);
+    --popover: var(--color-popover);
+    --popover-foreground: var(--color-popover-foreground);
+    --primary: var(--color-primary);
+    --primary-foreground: var(--color-primary-foreground);
+    --secondary: var(--color-secondary);
+    --secondary-foreground: var(--color-secondary-foreground);
+    --muted: var(--color-muted);
+    --muted-foreground: var(--color-muted-foreground);
+    --accent: var(--color-accent);
+    --accent-foreground: var(--color-accent-foreground);
+    --destructive: var(--color-destructive);
+    --destructive-foreground: var(--color-destructive-foreground);
+    --border: var(--color-border);
+    --input: var(--color-input);
+    --ring: var(--color-ring);
+    --chart-1: var(--color-chart-1);
+    --chart-2: var(--color-chart-2);
+    --chart-3: var(--color-chart-3);
+    --chart-4: var(--color-chart-4);
+    --chart-5: var(--color-chart-5);
+    --radius: var(--radius-lg);
+    --sidebar-background: var(--color-sidebar);
+    --sidebar-foreground: var(--color-sidebar-foreground);
+    --sidebar-primary: var(--color-sidebar-primary);
+    --sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+    --sidebar-accent: var(--color-sidebar-accent);
+    --sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+    --sidebar-border: var(--color-sidebar-border);
+    --sidebar-ring: var(--color-sidebar-ring);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-primary-text);
+    background-color: var(--color-primary-background);
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-primary-text);
+    text-transform: uppercase;
+    line-height: 0.9; /* Adjust as per design system for condensed fonts */
+  }
+
+  h1 {
+    font-size: 7.5rem; /* ~120px */
+    letter-spacing: -0.125rem; /* -2px */
+  }
+
+  h2 {
+    font-size: 4.5rem; /* ~72px */
+    letter-spacing: -0.0625rem; /* -1px */
+    line-height: 0.95;
+  }
+
+  h3 {
+    font-size: 3rem; /* ~48px */
+    letter-spacing: -0.03125rem; /* -0.5px */
+    line-height: 1.0;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.7;
+  }
+
+  .text-body-large {
+    font-family: var(--font-body);
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.6;
+  }
+
+  .text-button {
+    font-family: var(--font-display);
+    font-size: 0.875rem; /* 14px */
+    font-weight: 700; /* Bold */
+    line-height: 1.0;
+    letter-spacing: 0.03125rem; /* 0.5px */
+    text-transform: uppercase;
+  }
+
+  .text-nav-link {
+    font-family: var(--font-sans);
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500; /* Medium */
+    line-height: 1.4;
+    letter-spacing: 0.03125rem; /* 0.5px */
+  }
+
+  .text-small {
+    font-family: var(--font-sans);
+    font-size: 0.75rem; /* 12px */
+    line-height: 1.5;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem; /* 32px */
+    padding-right: 2rem; /* 32px */
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 4rem; /* 64px */
+      padding-right: 4rem; /* 64px */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 5rem; /* 80px */
+      padding-right: 5rem; /* 80px */
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+    }
+  }
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
+
+.tag {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 0 0 50px;
+  padding: 10px;
+
+ }
