@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 
 const MenuItemComponent = ({
@@ -20,69 +21,71 @@ const MenuItemComponent = ({
       <h4 className="font-display font-bold text-lg uppercase text-primary-text mb-1">{name}</h4>
       <p className="font-body text-sm text-primary-text/70 leading-relaxed">{description}</p>
     </div>
-    <div className="flex-shrink-0 font-display font-black text-lg text-primary-text">{price}</div>
+    <div className="shrink-0 font-display font-black text-lg text-primary-text">{price}</div>
   </li>
 );
 
 const VoordelenComparison = () => {
+  const t = useTranslations('voordelenComparison');
+  
   const starterMenu = [
     {
-      name: "Soupe du Jour",
-      description: "Chef's daily soup with fresh herbs and warm bread",
+      name: t('menuItems.soupeDuJour.name'),
+      description: t('menuItems.soupeDuJour.description'),
       price: "65 MAD",
     },
     {
-      name: "Salade Niçoise",
-      description: "Fresh tuna, green beans, olives, tomatoes, and anchovies",
+      name: t('menuItems.saladeNicoise.name'),
+      description: t('menuItems.saladeNicoise.description'),
       price: "85 MAD",
     },
     {
-      name: "Bruschetta Trio",
-      description: "Tomato basil, mushroom truffle, and goat cheese",
+      name: t('menuItems.bruschettaTrio.name'),
+      description: t('menuItems.bruschettaTrio.description'),
       price: "75 MAD",
     },
     {
-      name: "Crevettes à l'Ail",
-      description: "Garlic prawns sautéed in white wine and butter",
+      name: t('menuItems.crevettesAil.name'),
+      description: t('menuItems.crevettesAil.description'),
       price: "95 MAD",
     },
     {
-      name: "Carpaccio de Bœuf",
-      description: "Thinly sliced beef with arugula, parmesan and truffle oil",
+      name: t('menuItems.carpaccioBoeuf.name'),
+      description: t('menuItems.carpaccioBoeuf.description'),
       price: "110 MAD",
     },
   ];
 
   const mainCoursesMenu = [
     {
-      name: "Grilled Sea Bass",
-      description: "Fresh Mediterranean sea bass with lemon butter sauce",
+      name: t('menuItems.grilledSeaBass.name'),
+      description: t('menuItems.grilledSeaBass.description'),
       price: "185 MAD",
     },
     {
-      name: "Tagine Royal",
-      description: "Traditional Moroccan lamb tagine with apricots and almonds",
+      name: t('menuItems.tagineRoyal.name'),
+      description: t('menuItems.tagineRoyal.description'),
       price: "165 MAD",
     },
     {
-      name: "Steak Frites",
-      description: "Prime beef tenderloin with peppercorn sauce and fries",
+      name: t('menuItems.steakFrites.name'),
+      description: t('menuItems.steakFrites.description'),
       price: "220 MAD",
     },
     {
-      name: "Paella Marinara",
-      description: "Seafood paella with mussels, prawns, and calamari",
+      name: t('menuItems.paellaMarinara.name'),
+      description: t('menuItems.paellaMarinara.description'),
       price: "195 MAD",
     },
     {
-      name: "Risotto aux Champignons",
-      description: "Creamy mushroom risotto with truffle and parmesan",
+      name: t('menuItems.risottoChampignons.name'),
+      description: t('menuItems.risottoChampignons.description'),
       price: "145 MAD",
     },
   ];
 
   // Animation variants
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 50, scale: 0.95 },
     visible: (custom: number) => ({
       opacity: 1,
@@ -91,12 +94,12 @@ const VoordelenComparison = () => {
       transition: {
         delay: custom * 0.2,
         duration: 0.6,
-        ease: [0.25, 0.46, 0.45, 0.94],
+        ease: "easeOut",
       },
     }),
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, x: -20 },
     visible: (custom: number) => ({
       opacity: 1,
@@ -119,12 +122,12 @@ const VoordelenComparison = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <h2 className="text-center font-display text-4xl sm:text-5xl lg:text-[72px] font-black uppercase text-white leading-[0.95] mb-4">
-            <span className="text-accent">Notre Menu</span>
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#87CEEB] to-[#4A90E2]">{t('title')}</span>
             <br />
-            Restaurant Mister Fish
+            {t('restaurant')}
           </h2>
           <p className="text-center font-body text-lg text-white/80 max-w-2xl mx-auto">
-            Découvrez nos plats authentiques préparés avec passion
+            {t('description')}
           </p>
         </motion.div>
 
@@ -137,7 +140,7 @@ const VoordelenComparison = () => {
             viewport={{ once: true, margin: "-100px" }}
             variants={cardVariants}
             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
-            className="bg-background text-primary-text p-8 sm:p-10 lg:p-12 rounded-[32px] border-[3px] border-dashed border-accent shadow-[0_8px_24px_rgba(0,0,0,0.15)] flex flex-col"
+            className="bg-primary-background text-primary-text p-8 sm:p-10 lg:p-12 rounded-[32px] border-[3px] border-dashed border-primary-text/10 shadow-[0_8px_24px_rgba(0,0,0,0.15)] flex flex-col"
           >
             <div className="mb-8 flex justify-center items-center relative">
               <Image
@@ -149,9 +152,9 @@ const VoordelenComparison = () => {
               />
             </div>
             <h3 className="font-display font-black text-3xl uppercase tracking-wider text-center text-primary-text mb-8 pb-4 border-b-2 border-accent">
-              Les Entrées
+              {t('entrees')}
             </h3>
-            <ul className="space-y-6 flex-grow">
+            <ul className="space-y-6 grow">
               {starterMenu.map((item, index) => (
                 <motion.div key={item.name} custom={index} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={itemVariants}>
                   <MenuItemComponent name={item.name} description={item.description} price={item.price} />
@@ -180,9 +183,9 @@ const VoordelenComparison = () => {
               />
             </div>
             <h3 className="font-display font-black text-3xl uppercase tracking-wider text-center text-primary-text mb-8 pb-4 border-b-2 border-primary">
-              Les Plats
+              {t('plats')}
             </h3>
-            <ul className="space-y-6 flex-grow">
+            <ul className="space-y-6 grow">
               {mainCoursesMenu.map((item, index) => (
                 <motion.div key={item.name} custom={index} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={itemVariants}>
                   <MenuItemComponent name={item.name} description={item.description} price={item.price} />
@@ -203,9 +206,9 @@ const VoordelenComparison = () => {
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               asChild
-              className="bg-accent hover:bg-accent/90 text-primary-text font-display font-bold uppercase rounded-full text-base px-12 py-6 h-auto shadow-xl"
+              className="bg-linear-to-r from-[#87CEEB] to-[#4A90E2] hover:bg-accent/90 text-primary-text font-display font-bold uppercase rounded-full text-base px-12 py-6 h-auto shadow-xl"
             >
-              <Link href="/menu">Voir Notre Menu Complet</Link>
+              <Link href="/menu">{t('seeFullMenu')}</Link>
             </Button>
           </motion.div>
         </motion.div>

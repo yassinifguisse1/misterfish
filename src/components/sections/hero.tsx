@@ -21,12 +21,12 @@ const HeroSection = () => {
 
   return (
     <section className="relative w-full bg-[EDE8DE] overflow-hidden pt-28 md:pt-30 lg:pt-34">
-      <div className="mx-auto sm:px-6   w-full  flex flex-col gap-4 px-4 md:px-6 lg:px-8">
+      <div className="mx-auto sm:px-6   w-full  flex flex-col gap-4 px-4 md:px-6 lg:px-8 ">
 
         {/* Top row: 3-column grid with huge headlines and pill */}
-        <div className="flex item-start justify-around flex-col md:flex-row gap-2 md:gap-0 border-2 border-red-500">
+        <div className="flex items-center justify-around  gap-2 md:gap-0 ">
 
-          <div className="flex justify-start border-2 border-blue-500 lg:justify-start lg:flex-1">
+          <div className="flex  justify-start flex-1">
             <h1 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)]">
               Mister
             </h1>
@@ -66,7 +66,7 @@ const HeroSection = () => {
         </div>
 
         {/* Bottom: Wide photo card with generous margins */}
-        <div className="card relative w-full max-w-[1400px]k mx-auto clippath">
+        <div className="card relative w-full max-w-[1400px]k mx-auto">
           {/* Right: "Fish" with sky blue gradient */}
           <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-[32px] md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
             <h1 className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
@@ -85,7 +85,7 @@ const HeroSection = () => {
           <div className="relative w-full aspect-video md:aspect-21/9 rounded-[32px] md:rounded-[40px] lg:rounded-[48px]  overflow-hidden">
          
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain"
+              src="/images/misterfishresto.jpg"
               alt="Mister Fish food truck storefront"
               fill
               className="object-cover"

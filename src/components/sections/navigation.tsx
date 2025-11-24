@@ -1,19 +1,21 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import Image from "next/image";
-import { Instagram, Linkedin, Menu, X } from "lucide-react";
+import { Instagram, Linkedin, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/ui/language-switcher";
 
 // Removed unused navigation links - only keeping links to pages that actually exist
 
-const MobileNav = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+const MobileNav = ({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => void; t: any }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="lg:hidden fixed inset-0 bg-[#F5F1E8] z-[100] px-6 py-8 overflow-y-auto">
+    <div className="lg:hidden fixed inset-0 bg-[#F5F1E8] z-100 px-6 py-8 overflow-y-auto">
       <div className="flex justify-between items-center mb-10">
         <Link href="/" onClick={onClose} className="flex items-center">
           <Image
@@ -31,14 +33,24 @@ const MobileNav = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
       </div>
 
       <nav className="flex flex-col">
-        <Link href="/" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">Accueil</Link>
-        <Link href="/menu" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">Menu</Link>
-        <Link href="/plats" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">Plats</Link>
-        <Link href="/about" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">À Propos</Link>
-        <Link href="/contact" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">Contact</Link>
+        <Link href="/" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.home')}</Link>
+        <Link href="/menu" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.menu')}</Link>
+        <div className="border-b border-black/10">
+          <div className="font-sans text-lg font-medium uppercase py-4 text-primary-text">{t('nav.establishments')}</div>
+          <div className="pl-4 pb-2 space-y-2">
+            <Link href="/etablissement/1" onClick={onClose} className="font-sans text-base font-normal normal-case text-primary-text/80 hover:text-[#4A90E2] transition-colors block">
+              {t('establishments.centreVille')}
+            </Link>
+            <Link href="/etablissement/2" onClick={onClose} className="font-sans text-base font-normal normal-case text-primary-text/80 hover:text-[#4A90E2] transition-colors block">
+              {t('establishments.boulevardCorniche')}
+            </Link>
+          </div>
+        </div>
+        <Link href="/about" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.about')}</Link>
+        <Link href="/contact" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.contact')}</Link>
         <div className="pt-8">
-          <Button asChild variant="secondary" className="w-full !bg-[#2E3F72] hover:!bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-sm h-14">
-            <Link href="/contact">Réserver une table</Link>
+          <Button asChild variant="secondary" className="w-full bg-[#2E3F72]! hover:bg-[#3A7BC8]! text-white font-display font-bold uppercase rounded-full text-sm h-14">
+            <Link href="/contact">{t('nav.reserve')}</Link>
           </Button>
         </div>
       </nav>
@@ -47,8 +59,10 @@ const MobileNav = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }
 };
 
 export default function Navigation() {
+  const t = useTranslations();
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [etablissementsOpen, setEtablissementsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +77,7 @@ export default function Navigation() {
       "fixed top-0 left-0 right-0 z-50 bg-[#F5F1E8] transition-shadow duration-300",
       isScrolled ? "shadow-lg" : "shadow-none"
     )}>
-      <div className="hidden lg:block border-b border-black/10">
+      <div className="hidden lg:block border-b border-black/10" onMouseLeave={() => setEtablissementsOpen(false)}>
         <div className="container mx-auto max-w-[1440px] px-8">
           <div className="flex justify-between items-center py-2 text-primary-text/80 text-xs font-sans">
             <div className="flex items-center gap-4">
@@ -78,13 +92,42 @@ export default function Navigation() {
           </div>
         </div>
       </div>
-      <nav className="container mx-auto max-w-[1440px] px-8">
+      <nav className="container mx-auto max-w-[1440px] px-8" onMouseLeave={() => setEtablissementsOpen(false)}>
         <div className="relative flex justify-between items-center h-24">
           <div className="flex-1 flex justify-start items-center">
-            <div className="hidden lg:flex items-center gap-8">
-              <Link href="/menu" className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors">Menu</Link>
-              <Link href="/plats" className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors">Plats</Link>
-              <Link href="/about" className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors">À Propos</Link>
+            <div className="hidden lg:flex items-center gap-8 " >
+              <Link href="/menu" className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors">{t('nav.menu')}</Link>
+              <div 
+                className="relative "
+                onMouseEnter={() => setEtablissementsOpen(true)}
+              >
+                <button className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors flex items-center gap-1">
+                  {t('nav.establishments')}
+                  <ChevronDown className={cn("w-4 h-4 transition-transform duration-200", etablissementsOpen && "rotate-180")} />
+                </button>
+                {etablissementsOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-primary-text/10 py-2 z-50">
+                    <Link 
+                      href="/etablissement/1" 
+                      className="block px-4 py-2 text-sm text-primary-text hover:bg-[#4A90E2]/10 hover:text-[#4A90E2] transition-colors"
+                    >
+                      <div className="font-display font-bold uppercase">{t('establishments.centreVille')}</div>
+                      <div className="text-xs text-primary-text/60 mt-0.5">Notre établissement principal</div>
+                    </Link>
+                    <Link 
+                      href="/etablissement/2" 
+                      className="block px-4 py-2 text-sm text-primary-text hover:bg-[#4A90E2]/10 hover:text-[#4A90E2] transition-colors"
+                    >
+                      <div className="font-display font-bold uppercase flex items-center gap-2">
+                        {t('establishments.boulevardCorniche')}
+                        <span className="text-[10px] bg-[#4A90E2] text-white px-2 py-0.5 rounded-full">{t('establishments.new')}</span>
+                      </div>
+                      <div className="text-xs text-primary-text/60 mt-0.5">Notre nouvel établissement</div>
+                    </Link>
+                  </div>
+                )}
+              </div>
+              <Link href="/about" className="text-nav-link uppercase hover:text-[#4A90E2] transition-colors">{t('nav.about')}</Link>
             </div>
             <div className="lg:hidden">
               <Link href="/" className="flex items-center">
@@ -114,10 +157,11 @@ export default function Navigation() {
           </div>
 
           <div className="flex-1 flex justify-end items-center">
-            <div className="hidden lg:flex items-center gap-8">
-              <Link href="/contact" className="text-nav-link uppercase">Contact</Link>
-              <Button asChild variant="secondary" className="!bg-[#2E3F72] hover:!bg-[#3A7BC8] text-white text-button rounded-full px-8 py-5 h-auto">
-                <Link href="/contact">Réserver une table</Link>
+            <div className="hidden lg:flex items-center gap-4">
+              <LanguageSwitcher />
+              <Link href="/contact" className="text-nav-link uppercase">{t('nav.contact')}</Link>
+              <Button asChild variant="secondary" className="bg-linear-to-r from-[#87CEEB] to-[#4A90E2] text-white text-button rounded-full px-8 py-5 h-auto">
+                <Link href="/contact">{t('nav.reserve')}</Link>
               </Button>
             </div>
             <div className="lg:hidden">
@@ -129,7 +173,7 @@ export default function Navigation() {
         </div>
       </nav>
 
-      <MobileNav isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
+      <MobileNav isOpen={menuOpen} onClose={() => setMenuOpen(false)} t={t} />
     </header>
   );
 }

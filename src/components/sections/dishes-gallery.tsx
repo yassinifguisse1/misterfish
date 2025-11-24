@@ -84,7 +84,7 @@ const DishesGallery = () => {
         {/* Hero Header */}
         <div className="text-center mb-12 md:mb-16">
           <h1 className="font-display text-[48px] md:text-[90px] lg:text-[120px] uppercase leading-[0.9] tracking-[-2px] mb-6">
-            Nos <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4A90E2] to-[#87CEEB]">Plats</span>
+            Nos <span className="text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]">Plats</span>
           </h1>
           <p className="text-body-large max-w-3xl mx-auto text-primary-text/80">
             Découvrez notre sélection de plats préparés avec des ingrédients frais et de qualité, 
@@ -117,7 +117,7 @@ const DishesGallery = () => {
               className="bg-white rounded-[24px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02] group"
             >
               {/* Dish Image */}
-              <div className="relative h-[280px] overflow-hidden bg-gradient-to-br from-[#87CEEB]/20 to-[#4A90E2]/20">
+              <div className="relative h-[280px] overflow-hidden bg-linear-to-br from-[#87CEEB]/20 to-[#4A90E2]/20">
                 <Image
                   src={dish.image}
                   alt={dish.name}

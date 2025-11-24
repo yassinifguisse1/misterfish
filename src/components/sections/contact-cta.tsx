@@ -1,7 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import { Instagram } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function ContactCta() {
+  const t = useTranslations('contactCta');
   return (
     <section className="bg-background text-primary-text overflow-hidden">
       <div className="container mx-auto px-4 sm:px-8 py-20 sm:py-24 lg:py-32">
@@ -21,7 +25,7 @@ export default function ContactCta() {
 
           {/* Questions Heading */}
           <h2 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)]">
-            Questions?
+            {t('questions')}
           </h2>
 
           {/* Contact Buttons */}
@@ -41,9 +45,7 @@ export default function ContactCta() {
           </div>
           
           {/* CTA Text */}
-          <h3 className="font-display font-black text-6xl sm:text-7xl leading-[0.85] uppercase tracking-tighter mt-6">
-            Sonnez<br/>à la<br/>porte
-          </h3>
+          <h3 className="font-display font-black text-6xl sm:text-7xl leading-[0.85] uppercase tracking-tighter mt-6" dangerouslySetInnerHTML={{ __html: t('ringDoorMobile') }} />
 
           {/* Instagram */}
           <a 
@@ -64,14 +66,14 @@ export default function ContactCta() {
           <div className="flex items-center justify-between gap-8 xl:gap-12">
             
             {/* Left: Questions Heading */}
-            <h2 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(4rem,8vw,120px)] whitespace-nowrap flex-shrink-0">
-              Questions?
+            <h2 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(4rem,8vw,120px)] whitespace-nowrap shrink-0">
+              {t('questions')}
             </h2>
 
             {/* Center: Email Button */}
             <a
               href="mailto:info@defoodtruckclub.nl"
-              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 bg-accent text-accent-foreground flex-shrink-0"
+              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 bg-accent text-accent-foreground shrink-0"
             >
               info@defoodtruckclub.nl
             </a>
@@ -82,7 +84,7 @@ export default function ContactCta() {
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Instagram" 
-              className="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36 bg-primary rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 hover:rotate-6 transition-all duration-300 flex-shrink-0"
+              className="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36 bg-primary rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 hover:rotate-6 transition-all duration-300 shrink-0"
             >
               <Instagram className="w-14 h-14 xl:w-16 xl:h-16 text-primary-text" strokeWidth={2.5} />
             </a>
@@ -94,14 +96,14 @@ export default function ContactCta() {
             {/* Left: Phone Button */}
             <a
               href="tel:+31628074628"
-              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/10 flex-shrink-0"
+              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/10 shrink-0"
             >
               +212 60000000
             </a>
 
             {/* Right: Sonnez à la porte Text */}
-            <h3 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(4rem,8vw,120px)] whitespace-nowrap flex-shrink-0">
-              Sonnez à la porte
+            <h3 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(4rem,8vw,120px)] whitespace-nowrap shrink-0">
+              {t('ringDoor')}
             </h3>
           </div>
 

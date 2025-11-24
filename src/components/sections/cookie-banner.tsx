@@ -72,7 +72,7 @@ const CookieBanner = () => {
 
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-[100] w-full p-4 animate-in fade-in-0 slide-in-from-bottom-5 duration-500 md:bottom-8 md:left-auto md:right-8 md:w-auto md:max-w-[551px] md:p-0"
+      className="fixed bottom-0 left-0 right-0 z-100 w-full p-4 animate-in fade-in-0 slide-in-from-bottom-5 duration-500 md:bottom-8 md:left-auto md:right-8 md:w-auto md:max-w-[551px] md:p-0"
       role="dialog"
       aria-live="polite"
       aria-labelledby="cookie-heading"
@@ -81,7 +81,7 @@ const CookieBanner = () => {
       <div className="relative flex w-full flex-col items-center gap-y-4 rounded-[28.5px] bg-white p-6 shadow-[0_8px_24px_rgba(0,0,0,0.1)] md:flex-row md:items-center md:gap-x-8 md:p-[28.5px]">
         <p
           id="cookie-description"
-          className="font-body text-center text-[15.34px] leading-tight text-primary-text md:flex-grow md:text-left"
+          className="font-body text-center text-[15.34px] leading-tight text-primary-text md:grow md:text-left"
         >
           <span id="cookie-heading" className="sr-only">
             Consentement aux cookies

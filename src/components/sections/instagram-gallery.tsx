@@ -71,7 +71,7 @@ const InstagramGallery = () => {
               href="https://www.instagram.com/defoodtruckclub/"
               target="_blank"
               rel="noopener noreferrer"
-              className="block overflow-hidden rounded-[24px] group flex-shrink-0"
+              className="block overflow-hidden rounded-[24px] group shrink-0"
               style={{ width: '300px', height: '300px' }}
             >
               <Image

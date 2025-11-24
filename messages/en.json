@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "contact": "Contact",
+    "establishments": "Establishments",
+    "reserve": "Reserve a table"
+  },
+  "hero": {
+    "title": "Mister Fish",
+    "subtitle": "Authentic seafood restaurant"
+  },
+  "menu": {
+    "title": "Our Menu",
+    "authentic": "Authentic Menu",
+    "all": "All Menu",
+    "view": {
+      "list": "List",
+      "grid": "Grid"
+    },
+    "categories": {
+      "entrees": "Starters",
+      "poissons": "Fresh Fish",
+      "fritures": "Fried Dishes",
+      "tajines": "Moroccan Tagines",
+      "plats-combines": "Combined Dishes",
+      "desserts": "Desserts"
+    },
+    "special": "Special",
+    "ingredients": "Ingredients",
+    "reserve": "Reserve a table",
+    "ready": "Ready to",
+    "reserveTitle": "Reserve?"
+  },
+  "about": {
+    "title": "Our Story",
+    "our": "Our",
+    "history": "History",
+    "founder": "Hamza, Our Founder",
+    "team": "Our Team",
+    "values": "Our Values"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to answer all your questions"
+  },
+  "establishments": {
+    "centreVille": "City Center",
+    "boulevardCorniche": "Boulevard Corniche",
+    "new": "New",
+    "main": "Our main establishment",
+    "newDesc": "Our new establishment"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for seems to have swum to other waters. It does not exist or has been moved.",
+    "home": "Back to Home",
+    "menu": "View Menu",
+    "popular": "Popular Pages"
+  },
+  "language": {
+    "switch": "Switch language",
+    "french": "French",
+    "english": "English"
+  },
+  "nieuweStandaard": {
+    "title": "The new standard!",
+    "paragraph1": "After six years of providing food trucks to the country's largest public events, we decided to use this solid experience to create THE ultimate catering concept, The Food Truck Club. With The Food Truck Club, we bring together eight high-quality food truck concepts under one roof.",
+    "paragraph2": "Our clients always benefit from a single point of contact, whether you want to rent a single food truck or a complete food court of 12 food trucks. This way, we maintain direct communication and organizing your event becomes much simpler. Because you're dealing directly with the source, renting food trucks from us is often more advantageous."
+  },
+  "foodtruckCarousel": {
+    "title": "Our",
+    "delicious": "Delicious",
+    "dishes": "Dishes",
+    "previous": "Previous dish",
+    "next": "Next dish",
+    "goToSlide": "Go to slide",
+    "seeMore": "See more"
+  },
+  "voordelenComparison": {
+    "title": "Our Menu",
+    "restaurant": "Mister Fish Restaurant",
+    "description": "Discover our authentic dishes prepared with passion",
+    "entrees": "Starters",
+    "plats": "Main Courses",
+    "seeFullMenu": "View Our Full Menu",
+    "menuItems": {
+      "soupeDuJour": {
+        "name": "Soup of the Day",
+        "description": "Chef's daily soup with fresh herbs and warm bread"
+      },
+      "saladeNicoise": {
+        "name": "Salade Niçoise",
+        "description": "Fresh tuna, green beans, olives, tomatoes, and anchovies"
+      },
+      "bruschettaTrio": {
+        "name": "Bruschetta Trio",
+        "description": "Tomato basil, mushroom truffle, and goat cheese"
+      },
+      "crevettesAil": {
+        "name": "Garlic Prawns",
+        "description": "Garlic prawns sautéed in white wine and butter"
+      },
+      "carpaccioBoeuf": {
+        "name": "Beef Carpaccio",
+        "description": "Thinly sliced beef with arugula, parmesan and truffle oil"
+      },
+      "grilledSeaBass": {
+        "name": "Grilled Sea Bass",
+        "description": "Fresh Mediterranean sea bass with lemon butter sauce"
+      },
+      "tagineRoyal": {
+        "name": "Royal Tagine",
+        "description": "Traditional Moroccan lamb tagine with apricots and almonds"
+      },
+      "steakFrites": {
+        "name": "Steak Frites",
+        "description": "Prime beef tenderloin with peppercorn sauce and fries"
+      },
+      "paellaMarinara": {
+        "name": "Seafood Paella",
+        "description": "Seafood paella with mussels, prawns, and calamari"
+      },
+      "risottoChampignons": {
+        "name": "Mushroom Risotto",
+        "description": "Creamy mushroom risotto with truffle and parmesan"
+      }
+    }
+  },
+  "recentePartijen": {
+    "title": "Our Establishments",
+    "new": "New",
+    "establishments": {
+      "centreVille": {
+        "title": "Mister Fish - City Center",
+        "description": "Our main establishment in the heart of Casablanca. Discover the authentic atmosphere and taste our fresh seafood specialties."
+      },
+      "nouveau": {
+        "title": "Mister Fish - New",
+        "description": "Our brand new establishment! Freshly opened in Casablanca with a modern atmosphere and the same exceptional quality."
+      }
+    }
+  },
+  "contactCta": {
+    "questions": "Questions?",
+    "ringDoor": "Ring the door",
+    "ringDoorMobile": "Ring<br/>the<br/>door"
+  },
+  "footer": {
+    "description": "Authentic seafood restaurant in Agadir, offering the best seafood products in a warm and modern atmosphere.",
+    "navigation": "Navigation",
+    "establishments": "Our Establishments",
+    "contact": "Contact",
+    "address": "123 Avenue de la Mer",
+    "city": "Agadir, Morocco",
+    "phone": "+212 6 00 00 00 00",
+    "email": "contact@misterfish.ma",
+    "hours": "Mon-Sun: 12:00 PM - 11:00 PM",
+    "copyright": "© 2025 Mister Fish. Site developed by",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookieText": "We use <a href=\"/privacy-policy\" class=\"underline hover:no-underline\">Google Analytics</a> to analyze our traffic.",
+    "cookieAccept": "Accept",
+    "cookieRefuse": "Refuse"
+  }
+}
+

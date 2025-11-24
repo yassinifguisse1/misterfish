@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À Propos",
+    "contact": "Contact",
+    "establishments": "Établissements",
+    "reserve": "Réserver une table"
+  },
+  "hero": {
+    "title": "Mister Fish",
+    "subtitle": "Restaurant de fruits de mer authentique"
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "authentic": "Menu Authentique",
+    "all": "Tout le Menu",
+    "view": {
+      "list": "Liste",
+      "grid": "Grille"
+    },
+    "categories": {
+      "entrees": "Les Entrées",
+      "poissons": "Poissons Frais",
+      "fritures": "Fritures",
+      "tajines": "Tajines Marocains",
+      "plats-combines": "Plats Combinés",
+      "desserts": "Desserts"
+    },
+    "special": "Spécial",
+    "ingredients": "Ingrédients",
+    "reserve": "Réserver une table",
+    "ready": "Prêt à",
+    "reserveTitle": "Réserver?"
+  },
+  "about": {
+    "title": "Notre Histoire",
+    "our": "Notre",
+    "history": "Histoire",
+    "founder": "Hamza, Notre Fondateur",
+    "team": "Notre Équipe",
+    "values": "Nos Valeurs"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes là pour répondre à toutes vos questions"
+  },
+  "establishments": {
+    "centreVille": "Centre Ville",
+    "boulevardCorniche": "Boulevard Corniche",
+    "new": "Nouveau",
+    "main": "Notre établissement principal",
+    "newDesc": "Notre nouvel établissement"
+  },
+  "notFound": {
+    "title": "Page Non Trouvée",
+    "message": "Désolé, la page que vous recherchez semble avoir nagé vers d'autres eaux. Elle n'existe pas ou a été déplacée.",
+    "home": "Retour à l'Accueil",
+    "menu": "Voir le Menu",
+    "popular": "Pages Populaires"
+  },
+  "language": {
+    "switch": "Changer de langue",
+    "french": "Français",
+    "english": "Anglais"
+  },
+  "nieuweStandaard": {
+    "title": "La nouvelle référence!",
+    "paragraph1": "Après six ans à avoir fourni des foodtrucks aux plus grands événements publics du pays, nous avons décidé d'utiliser cette solide expérience pour créer LE concept de catering ultime, Le Club des Foodtrucks. Avec Le Club des Foodtrucks, nous regroupons huit concepts de foodtruck de haute qualité sous un même toit.",
+    "paragraph2": "Nos clients bénéficient ainsi toujours d'un contact unique, que vous souhaitiez louer un seul foodtruck ou une cour alimentaire complète de 12 foodtrucks. Ainsi, nous maintenons une communication directe et l'organisation de votre événement devient beaucoup plus simple. Parce que vous vous adressez directement à la source, la location de foodtrucks chez nous est souvent plus avantageuse."
+  },
+  "foodtruckCarousel": {
+    "title": "Nos",
+    "delicious": "Délicieux",
+    "dishes": "Plats",
+    "previous": "Plat précédent",
+    "next": "Plat suivant",
+    "goToSlide": "Aller à la diapositive",
+    "seeMore": "Voir plus"
+  },
+  "voordelenComparison": {
+    "title": "Notre Menu",
+    "restaurant": "Restaurant Mister Fish",
+    "description": "Découvrez nos plats authentiques préparés avec passion",
+    "entrees": "Les Entrées",
+    "plats": "Les Plats",
+    "seeFullMenu": "Voir Notre Menu Complet",
+    "menuItems": {
+      "soupeDuJour": {
+        "name": "Soupe du Jour",
+        "description": "Soupe du jour du chef avec herbes fraîches et pain chaud"
+      },
+      "saladeNicoise": {
+        "name": "Salade Niçoise",
+        "description": "Thon frais, haricots verts, olives, tomates et anchois"
+      },
+      "bruschettaTrio": {
+        "name": "Bruschetta Trio",
+        "description": "Tomate basilic, champignon truffe et chèvre"
+      },
+      "crevettesAil": {
+        "name": "Crevettes à l'Ail",
+        "description": "Crevettes à l'ail sautées au vin blanc et beurre"
+      },
+      "carpaccioBoeuf": {
+        "name": "Carpaccio de Bœuf",
+        "description": "Bœuf finement tranché avec roquette, parmesan et huile de truffe"
+      },
+      "grilledSeaBass": {
+        "name": "Bar Grillé",
+        "description": "Bar méditerranéen frais avec sauce au beurre citron"
+      },
+      "tagineRoyal": {
+        "name": "Tagine Royal",
+        "description": "Tagine d'agneau marocain traditionnel aux abricots et amandes"
+      },
+      "steakFrites": {
+        "name": "Steak Frites",
+        "description": "Filet de bœuf avec sauce au poivre et frites"
+      },
+      "paellaMarinara": {
+        "name": "Paella Marinara",
+        "description": "Paella aux fruits de mer avec moules, crevettes et calamars"
+      },
+      "risottoChampignons": {
+        "name": "Risotto aux Champignons",
+        "description": "Risotto crémeux aux champignons avec truffe et parmesan"
+      }
+    }
+  },
+  "recentePartijen": {
+    "title": "Nos Établissements",
+    "new": "Nouveau",
+    "establishments": {
+      "centreVille": {
+        "title": "Mister Fish - Centre Ville",
+        "description": "Notre établissement principal au cœur de Casablanca. Découvrez l'ambiance authentique et goûtez nos spécialités de fruits de mer frais."
+      },
+      "nouveau": {
+        "title": "Mister Fish - Nouveau",
+        "description": "Notre tout nouvel établissement ! Fraîchement ouvert à Casablanca avec une ambiance moderne et la même qualité exceptionnelle."
+      }
+    }
+  },
+  "contactCta": {
+    "questions": "Questions?",
+    "ringDoor": "Sonnez à la porte",
+    "ringDoorMobile": "Sonnez<br/>à la<br/>porte"
+  },
+  "footer": {
+    "description": "Restaurant de fruits de mer authentique à Agadir, offrant les meilleurs produits de la mer dans une ambiance chaleureuse et moderne.",
+    "navigation": "Navigation",
+    "establishments": "Nos Établissements",
+    "contact": "Contact",
+    "address": "123 Avenue de la Mer",
+    "city": "Agadir, Maroc",
+    "phone": "+212 6 00 00 00 00",
+    "email": "contact@misterfish.ma",
+    "hours": "Lun-Dim: 12h00 - 23h00",
+    "copyright": "© 2025 Mister Fish. Site développé par",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookieText": "Nous utilisons <a href=\"/privacy-policy\" class=\"underline hover:no-underline\">Google Analytics</a> pour analyser notre trafic.",
+    "cookieAccept": "Accepter",
+    "cookieRefuse": "Refuser"
+  }
+}
+

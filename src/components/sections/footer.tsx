@@ -1,54 +1,28 @@
 'use client';
 
 import React, { useState } from 'react';
-
-const dienstenLinks1 = [
-    { name: 'Louer un foodtruck', href: '/diensten/foodtruck-huren' },
-    { name: 'Foodtruck pour fête', href: '/diensten/foodtruck-huren-feest' },
-    { name: 'Catering BBQ', href: '/diensten/bbq-catering' },
-    { name: 'Catering mariage', href: '/diensten/catering-bruiloft' },
-    { name: 'Foodtruck italien', href: '/diensten/italiaanse-foodtruck' },
-    { name: 'Catering événements', href: '#' },
-    { name: 'Catering fête', href: '#' },
-    { name: 'Traiteur festival', href: '#' },
-];
-
-const dienstenLinks2 = [
-    { name: 'Catering entreprise', href: '/diensten/catering-bedrijfsfeest' },
-    { name: 'Catering sur place', href: '/diensten/catering-op-locatie' },
-    { name: 'Foodtruck mariage', href: '/diensten/foodtruck-bruiloft' },
-    { name: 'Catering italien', href: '/diensten/italiaanse-catering' },
-    { name: 'Catering foodtruck', href: '#' },
-    { name: 'Festivals foodtruck', href: '#' },
-    { name: 'Foodtruck sur place', href: '/diensten/bbq-op-locatie' },
-];
-
-const foodtruckLinks1 = [
-    { name: 'Foodtruck Pizza', href: '/foodtrucks/pizza-foodtruck' },
-    { name: 'Foodtruck Pâtes', href: '/foodtrucks/pasta-foodtruck' },
-    { name: 'Foodtruck Asiatique', href: '/foodtrucks/aziatische-foodtruck' },
-    { name: 'Foodtruck Panini', href: '/foodtrucks/panini-foodtruck' },
-    { name: 'Foodtruck Frites', href: '/foodtrucks/friet-foodtruck' },
-];
-
-const foodtruckLinks2 = [
-    { name: 'Foodtruck BBQ', href: '/foodtrucks/bbq-foodtruck' },
-    { name: 'Foodtruck Sain', href: '/foodtrucks/gezonde-foodtruck' },
-    { name: 'Foodtruck Glaces', href: '/foodtrucks/ijs-foodtruck' },
-    { name: 'Catering Boissons', href: '/foodtrucks/foodtruck-bar' },
-    { name: 'Tous les Foodtrucks', href: '/foodtrucks' },
-];
-
-const overOnsLinks = [
-    { name: 'À propos', href: '#' },
-    { name: 'Équipe', href: '#' },
-    { name: 'Cas', href: '#' },
-    { name: 'Questions fréquentes', href: '#' },
-    { name: 'Contact', href: '#' },
-];
+import { Link } from '@/lib/navigation';
+import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react';
 
 const Footer = () => {
+    const t = useTranslations('footer');
+    const tNav = useTranslations('nav');
+    const tEstablishments = useTranslations('establishments');
     const [cookieConsentVisible, setCookieConsentVisible] = useState(true);
+    
+    const navigationLinks = [
+        { name: tNav('home'), href: '/' },
+        { name: tNav('menu'), href: '/menu' },
+        { name: tNav('about'), href: '/about' },
+        { name: tNav('contact'), href: '/contact' },
+    ];
+
+    const etablissementLinks = [
+        { name: tEstablishments('centreVille'), href: '/etablissement/1' },
+        { name: tEstablishments('boulevardCorniche'), href: '/etablissement/2' },
+    ];
 
     const handleCookieDecision = () => {
         setCookieConsentVisible(false);
@@ -58,89 +32,143 @@ const Footer = () => {
         <>
             <footer className="relative bg-background text-primary-text pt-20 pb-12 lg:pt-32 lg:pb-16">
                 <div className="container px-8 lg:px-20 mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-x-8 xl:gap-x-20">
-                        {/* Column 1: Nos Services */}
-                        <div>
-                            <h4 className="text-button inline-block border-b border-primary-text/30 pb-2 mb-6">Nos Services</h4>
-                            <div className="grid grid-cols-2 gap-x-6">
-                                <div className="flex flex-col space-y-2">
-                                    {dienstenLinks1.map((link) => (
-                                        <a key={link.name} href={link.href} className="text-nav-link hover:underline">
-                                            {link.name}
-                                        </a>
-                                    ))}
-                                </div>
-                               <div className="flex flex-col space-y-2">
-                                    {dienstenLinks2.map((link) => (
-                                        <a key={link.name} href={link.href} className="text-nav-link hover:underline">
-                                            {link.name}
-                                        </a>
-                                    ))}
-                                </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-x-8 xl:gap-x-12">
+                        {/* Column 1: Logo & Description */}
+                        <div className="lg:col-span-1">
+                            <Link href="/" className="inline-block mb-6">
+                                <Image
+                                    src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/logo-mister-fish-1763049645503.webp?width=8000&height=8000&resize=contain"
+                                    alt="Mister Fish Logo"
+                                    width={180}
+                                    height={180}
+                                    className="h-20 w-auto"
+                                />
+                            </Link>
+                            <p className="text-nav-link leading-relaxed mb-6">
+                                {t('description')}
+                            </p>
+                            <div className="flex items-center gap-4">
+                                <a
+                                    href="https://www.instagram.com/misterfish" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Instagram"
+                                    className="w-10 h-10 rounded-full bg-[#4A90E2]/10 hover:bg-[#4A90E2] flex items-center justify-center transition-colors group"
+                                >
+                                    <Instagram className="w-5 h-5 text-[#4A90E2] group-hover:text-white transition-colors" strokeWidth={2} />
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/misterfish" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="Facebook"
+                                    className="w-10 h-10 rounded-full bg-[#4A90E2]/10 hover:bg-[#4A90E2] flex items-center justify-center transition-colors group"
+                                >
+                                    <Facebook className="w-5 h-5 text-[#4A90E2] group-hover:text-white transition-colors" strokeWidth={2} />
+                                </a>
                             </div>
                         </div>
 
-                        {/* Column 2: Nos Foodtrucks */}
+                        {/* Column 2: Navigation */}
                         <div>
-                            <h4 className="text-button inline-block border-b border-primary-text/30 pb-2 mb-6">Nos Foodtrucks</h4>
-                            <div className="grid grid-cols-2 gap-x-6">
-                                <div className="flex flex-col space-y-2">
-                                    {foodtruckLinks1.map((link) => (
-                                        <a key={link.name} href={link.href} className="text-nav-link hover:underline">
+                            <h4 className="font-display text-button uppercase inline-block border-b-2 border-[#4A90E2] pb-2 mb-6">{t('navigation')}</h4>
+                            <div className="flex flex-col space-y-3">
+                                {navigationLinks.map((link) => (
+                                    <Link 
+                                        key={link.name} 
+                                        href={link.href} 
+                                        className="text-nav-link hover:text-[#4A90E2] transition-colors"
+                                    >
                                             {link.name}
-                                        </a>
-                                    ))}
-                                </div>
-                               <div className="flex flex-col space-y-2">
-                                    {foodtruckLinks2.map((link) => (
-                                        <a key={link.name} href={link.href} className="text-nav-link hover:underline">
-                                            {link.name}
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Column 3: À Propos */}
-                        <div>
-                             <h4 className="text-button inline-block border-b border-primary-text/30 pb-2 mb-6">À Propos</h4>
-                             <div className="flex flex-col space-y-2">
-                                {overOnsLinks.map((link) => (
-                                    <a key={link.name} href={link.href} className="text-nav-link hover:underline">
-                                        {link.name}
-                                    </a>
+                                    </Link>
                                 ))}
+                            </div>
+                        </div>
+
+                        {/* Column 3: Établissements */}
+                        <div>
+                            <h4 className="font-display text-button uppercase inline-block border-b-2 border-[#4A90E2] pb-2 mb-6">{t('establishments')}</h4>
+                            <div className="flex flex-col space-y-3">
+                                {etablissementLinks.map((link) => (
+                                    <Link 
+                                        key={link.name} 
+                                        href={link.href} 
+                                        className="text-nav-link hover:text-[#4A90E2] transition-colors"
+                                    >
+                                        {link.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Column 4: Contact */}
+                        <div>
+                            <h4 className="font-display text-button uppercase inline-block border-b-2 border-[#4A90E2] pb-2 mb-6">{t('contact')}</h4>
+                            <div className="flex flex-col space-y-4">
+                                <div className="flex items-start gap-3">
+                                    <MapPin className="w-5 h-5 text-[#4A90E2] mt-0.5 shrink-0" strokeWidth={2} />
+                                    <div className="text-nav-link">
+                                        <p>{t('address')}</p>
+                                        <p>{t('city')}</p>
+                                    </div>
+                                </div>
+                                <a 
+                                    href="tel:+212600000000" 
+                                    className="flex items-center gap-3 text-nav-link hover:text-[#4A90E2] transition-colors"
+                                >
+                                    <Phone className="w-5 h-5 text-[#4A90E2] shrink-0" strokeWidth={2} />
+                                    <span>{t('phone')}</span>
+                                </a>
+                                <a 
+                                    href="mailto:contact@misterfish.ma" 
+                                    className="flex items-center gap-3 text-nav-link hover:text-[#4A90E2] transition-colors"
+                                >
+                                    <Mail className="w-5 h-5 text-[#4A90E2] shrink-0" strokeWidth={2} />
+                                    <span>{t('email')}</span>
+                                </a>
+                                <div className="flex items-start gap-3">
+                                    <Clock className="w-5 h-5 text-[#4A90E2] mt-0.5 shrink-0" strokeWidth={2} />
+                                    <div className="text-nav-link">
+                                        <p>{t('hours')}</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="mt-16 lg:mt-24 pt-8 border-t border-primary-text/20 flex flex-col md:flex-row justify-between items-center text-small uppercase font-sans tracking-wider">
-                        <p>CODE PAR DENNIS</p>
-                        <p className="mt-2 md:mt-0">2025 © LE CLUB DES FOODTRUCKS B.V.</p>
+                    <div className="mt-16 lg:mt-24 pt-8 border-t border-primary-text/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm uppercase font-sans tracking-wider text-primary-text/60">
+                        <p>{t('copyright')} <Link href="https://www.itagroupe.com" target="_blank" rel="noopener noreferrer" className="text-[#4A90E2]">ITA GROUPE</Link></p>
+                        <div className="flex items-center gap-6 text-xs">
+                            <Link href="/privacy-policy" className="hover:text-[#4A90E2] transition-colors">
+                                {t('privacy')}
+                            </Link>
+                            <span>•</span>
+                            <Link href="/terms" className="hover:text-[#4A90E2] transition-colors">
+                                {t('terms')}
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </footer>
 
             {cookieConsentVisible && (
-                 <div className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-[100] w-[calc(100%-2rem)] max-w-lg lg:w-[551px] lg:max-w-none">
+                 <div className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-100 w-[calc(100%-2rem)] max-w-lg lg:w-[551px] lg:max-w-none">
                     <div className="bg-white rounded-[28.5px] shadow-lg p-5 lg:p-7 w-full">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
-                            <p className="text-primary-text text-center lg:text-left text-[15px] leading-snug">
-                                Nous utilisons <a href="/privacy-policy" className="underline hover:no-underline">Google Analytics</a> pour analyser notre trafic.
-                            </p>
-                            <div className="flex items-center gap-2 flex-shrink-0">
+                            <p className="text-primary-text text-center lg:text-left text-[15px] leading-snug" dangerouslySetInnerHTML={{ __html: t('cookieText') }} />
+                            <div className="flex items-center gap-2 shrink-0">
                                 <button
                                     onClick={handleCookieDecision}
                                     className="text-button px-5 py-3 rounded-full bg-background text-primary-text hover:bg-stone-300 transition-colors"
                                 >
-                                    Refuser
+                                    {t('cookieRefuse')}
                                 </button>
                                 <button
                                     onClick={handleCookieDecision}
                                     className="text-button px-5 py-3 rounded-full bg-secondary text-secondary-foreground hover:bg-opacity-90 transition-colors"
                                 >
-                                    Accepter
+                                    {t('cookieAccept')}
                                 </button>
                             </div>
                         </div>
