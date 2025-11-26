@@ -156,7 +156,13 @@ const Footer = () => {
                  <div className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-100 w-[calc(100%-2rem)] max-w-lg lg:w-[551px] lg:max-w-none">
                     <div className="bg-white rounded-[28.5px] shadow-lg p-5 lg:p-7 w-full">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
-                            <p className="text-primary-text text-center lg:text-left text-[15px] leading-snug" dangerouslySetInnerHTML={{ __html: t('cookieText') }} />
+                            <p className="text-primary-text text-center lg:text-left text-[15px] leading-snug">
+                                {t('cookieTextBefore')}{' '}
+                                <Link href="/privacy-policy" className="underline hover:no-underline">
+                                    {t('cookieTextLink')}
+                                </Link>
+                                {' '}{t('cookieTextAfter')}
+                            </p>
                             <div className="flex items-center gap-2 shrink-0">
                                 <button
                                     onClick={handleCookieDecision}

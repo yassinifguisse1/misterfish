@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from "react";
 import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
-import CookieBanner from "@/components/sections/cookie-banner";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -268,7 +267,7 @@ export default function Etablissement2Page() {
                 <figcaption className="revealer text-center mb-2 font-sans font-semibold">
                   <div className="revealer-inner">{item.title}</div>
                 </figcaption>
-                <div className="revealer">
+                <div className="revealer rounded-2xl">
                   <Image
                     src={item.image}
                     alt={item.title}
@@ -389,7 +388,6 @@ export default function Etablissement2Page() {
       </main>
       
       <Footer />
-      <CookieBanner />
     </div>
   );
 }

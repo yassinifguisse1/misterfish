@@ -1,7 +1,6 @@
 import React from "react";
 import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
-import CookieBanner from "@/components/sections/cookie-banner";
 import Image from "next/image";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -179,7 +178,6 @@ export default function EtablissementPage({
       </main>
       
       <Footer />
-      <CookieBanner />
     </div>
   );
 }

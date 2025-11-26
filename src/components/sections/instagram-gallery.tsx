@@ -5,23 +5,23 @@ import { useEffect, useRef } from 'react';
 
 const instagramImages = [
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a9fa5219-1e72-4ed2-89bf-618bcaac8f33-defoodtruckclub-nl/assets/images/1p9a6862-1920x-q72-15.jpg",
+    src: "/images/2025-10-30.jpg",
     alt: "Group of people enjoying food from a food truck.",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a9fa5219-1e72-4ed2-89bf-618bcaac8f33-defoodtruckclub-nl/assets/images/e9f2c231-9b83-4d6f-a47e-d51c2ad5c4e6-1920x-q72-17.jpg",
+    src: "/images/2025-11-11-3.jpg",
     alt: "Staff in striped shirts serving inside a food truck.",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a9fa5219-1e72-4ed2-89bf-618bcaac8f33-defoodtruckclub-nl/assets/images/1p9a7126-1920x-q72-18.jpg",
+    src: "/images/2025-11-11.jpg",
     alt: "Close-up of french fries being prepared.",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a9fa5219-1e72-4ed2-89bf-618bcaac8f33-defoodtruckclub-nl/assets/images/foodtruckfestivals-1920x-q72-16.jpg",
+    src: "/images/2025-11-11-6.jpg",
     alt: "Outdoor food truck event scene with people.",
   },
   {
-    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/a9fa5219-1e72-4ed2-89bf-618bcaac8f33-defoodtruckclub-nl/assets/images/febrian-zakaria-rzloipduzpa-unsplash-1920x-q72-20.jpg",
+    src: "/images/2025-11-11-4.jpg",
     alt: "Chef preparing food on a griddle.",
   },
 ];
@@ -68,7 +68,7 @@ const InstagramGallery = () => {
           {duplicatedImages.map((image, index) => (
             <a
               key={index}
-              href="https://www.instagram.com/defoodtruckclub/"
+              href="https://www.instagram.com/misterfish/"
               target="_blank"
               rel="noopener noreferrer"
               className="block overflow-hidden rounded-[24px] group shrink-0"

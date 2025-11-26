@@ -8,7 +8,6 @@ import RecentePartijen from "@/components/sections/recente-partijen";
 import Statistics from "@/components/sections/statistics";
 import ContactCta from "@/components/sections/contact-cta";
 import Footer from "@/components/sections/footer";
-import CookieBanner from "@/components/sections/cookie-banner";
 
 export default function Home() {
   return (
@@ -41,7 +40,6 @@ export default function Home() {
       
       <Footer />
       
-      <CookieBanner />
     </div>
   );
 }

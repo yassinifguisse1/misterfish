@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
-import CookieBanner from "@/components/sections/cookie-banner";
 import RecentePartijen from "@/components/sections/recente-partijen";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { motion, AnimatePresence } from "framer-motion";
@@ -289,7 +288,6 @@ export default function AboutPage() {
       </main>
       
       <Footer />
-      <CookieBanner />
     </div>
   );
 }

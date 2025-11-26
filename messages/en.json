@@ -160,7 +160,9 @@
     "copyright": "© 2025 Mister Fish. Site developed by",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "cookieText": "We use <a href=\"/privacy-policy\" class=\"underline hover:no-underline\">Google Analytics</a> to analyze our traffic.",
+    "cookieTextBefore": "We use",
+    "cookieTextLink": "Google Analytics",
+    "cookieTextAfter": "to analyze our traffic.",
     "cookieAccept": "Accept",
     "cookieRefuse": "Refuse"
   }
