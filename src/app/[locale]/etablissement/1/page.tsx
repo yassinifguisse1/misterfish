@@ -16,7 +16,7 @@ const establishment = {
   id: "1",
   name: "Mister Fish - Centre Ville",
   description: "Notre établissement principal au cœur de la ville",
-  address: "123 Avenue de la Mer, Casablanca",
+  address: "123 Avenue de la Mer, Agadir",
   phone: "+212 6 00 00 00 01",
   email: "centreville@misterfish.ma",
   hours: "Lun-Dim: 12h00 - 23h00",
@@ -225,7 +225,7 @@ export default function Etablissement1Page() {
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre établissement principal Mister Fish - Centre Ville, situé au cœur de Casablanca sur l'Avenue de la Mer. 
+            Bienvenue dans notre établissement principal Mister Fish - Centre Ville, situé au cœur de Agadir sur l'Avenue de la Mer. 
             Depuis notre ouverture, nous avons su créer une atmosphère authentique et chaleureuse où tradition et qualité se rencontrent. 
             Découvrez nos spécialités de poissons frais, nos tajines marocains et nos plats combinés dans un cadre convivial qui 
             reflète l'âme de notre cuisine.

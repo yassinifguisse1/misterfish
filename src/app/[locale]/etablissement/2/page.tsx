@@ -16,7 +16,7 @@ const establishment = {
   id: "2",
   name: "Mister Fish - Nouveau",
   description: "Notre nouvel établissement avec une ambiance moderne",
-  address: "456 Boulevard Corniche, Casablanca",
+  address: "456 Boulevard Corniche, Agadir",
   phone: "+212 6 00 00 00 02",
   email: "nouveau@misterfish.ma",
   hours: "Lun-Dim: 12h00 - 23h00",
@@ -229,7 +229,7 @@ export default function Etablissement2Page() {
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre nouvel établissement Mister Fish - Nouveau, situé sur le prestigieux Boulevard Corniche de Casablanca. 
+            Bienvenue dans notre nouvel établissement Mister Fish - Nouveau, situé sur le prestigieux Boulevard Corniche de Agadir. 
             Ce lieu moderne allie l'authenticité de nos recettes traditionnelles à une ambiance contemporaine et chaleureuse. 
             Découvrez nos spécialités de poissons frais, nos tajines marocains et nos plats combinés dans un cadre élégant où 
             chaque détail a été pensé pour votre confort et votre plaisir gastronomique.

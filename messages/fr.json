@@ -134,11 +134,11 @@
     "establishments": {
       "centreVille": {
         "title": "Mister Fish - Centre Ville",
-        "description": "Notre établissement principal au cœur de Casablanca. Découvrez l'ambiance authentique et goûtez nos spécialités de fruits de mer frais."
+        "description": "Notre établissement principal au cœur de Agadir. Découvrez l'ambiance authentique et goûtez nos spécialités de fruits de mer frais."
       },
       "nouveau": {
         "title": "Mister Fish - Nouveau",
-        "description": "Notre tout nouvel établissement ! Fraîchement ouvert à Casablanca avec une ambiance moderne et la même qualité exceptionnelle."
+        "description": "Notre tout nouvel établissement ! Fraîchement ouvert à Agadir avec une ambiance moderne et la même qualité exceptionnelle."
       }
     }
   },

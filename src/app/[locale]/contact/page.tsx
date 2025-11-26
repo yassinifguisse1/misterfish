@@ -35,7 +35,7 @@ export default function ContactPage() {
                 {
                   icon: <MapPin className="w-8 h-8" strokeWidth={2} />,
                   title: "Adresse",
-                  content: "123 Avenue de la Mer\nCasablanca, Maroc"
+                  content: "123 Avenue de la Mer\nAgadir, Maroc"
                 },
                 {
                   icon: <Phone className="w-8 h-8" strokeWidth={2} />,

@@ -66,14 +66,9 @@ const InstagramGallery = () => {
           style={{ width: 'fit-content' }}
         >
           {duplicatedImages.map((image, index) => (
-            <a
-              key={index}
-              href="https://www.instagram.com/misterfish/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block overflow-hidden rounded-[24px] group shrink-0"
-              style={{ width: '300px', height: '300px' }}
-            >
+            <div key={index} className="block overflow-hidden rounded-[24px] group shrink-0" style={{ width: '300px', height: '300px' }}>
+
+           
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -81,7 +76,7 @@ const InstagramGallery = () => {
                 height={300}
                 className="w-full h-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
               />
-            </a>
+            </div>
           ))}
         </div>
       </div>
