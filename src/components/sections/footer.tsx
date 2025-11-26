@@ -49,7 +49,7 @@ const Footer = () => {
                             </p>
                             <div className="flex items-center gap-4">
                                 <a
-                                    href="https://www.instagram.com/misterfish" 
+                                    href="https://www.instagram.com/misterfishmaroc/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     aria-label="Instagram"
@@ -58,7 +58,7 @@ const Footer = () => {
                                     <Instagram className="w-5 h-5 text-[#4A90E2] group-hover:text-white transition-colors" strokeWidth={2} />
                                 </a>
                                 <a
-                                    href="https://www.facebook.com/misterfish" 
+                                    href="https://www.facebook.com/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     aria-label="Facebook"

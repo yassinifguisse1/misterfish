@@ -49,7 +49,7 @@ export default function ContactCta() {
 
           {/* Instagram */}
           <a 
-            href="https://www.instagram.com/" 
+            href="https://www.instagram.com/misterfishmaroc" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Instagram" 
@@ -80,7 +80,7 @@ export default function ContactCta() {
 
             {/* Right: Instagram Icon */}
             <a 
-              href="https://www.instagram.com/" 
+              href="https://www.instagram.com/misterfishmaroc" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Instagram" 
