@@ -10,27 +10,27 @@ import useEmblaCarousel from 'embla-carousel-react';
 const foodTrucks = [
   {
     name: 'Pizza Amici',
-    image: '/images/dish.webp',
+    image: '/images/55555.webp',
   },
   {
     name: "Mrs. Sippy",
-    image: '/images/dish.webp',
+    image: '/images/bowl_isolated.webp',
   },
   {
     name: 'Pasta Foodtruck',
-    image: '/images/dish.webp',
+    image: '/images/222222.webp',
   },
   {
     name: 'The Green Bar',
-    image: '/images/dish.webp',
+    image: '/images/1111.webp',
   },
   {
     name: 'Gelato Amici',
-    image: '/images/dish.webp',
+    image: '/images/3333.png',
   },
   {
     name: "Drank Catering",
-    image: '/images/dish.webp',
+    image: '/images/444.webp',
   },
 ];
 
@@ -86,7 +86,7 @@ const FoodtruckCarousel = () => {
                                             alt={truck.name}
                                             width={400}
                                             height={400}
-                                            className="w-full h-auto"
+                                            className="w-full h-auto "
                                         />
                                     </div>
                                 </div>

@@ -16,8 +16,8 @@
     "authentic": "Menu Authentique",
     "all": "Tout le Menu",
     "view": {
-      "list": "Liste",
-      "grid": "Grille"
+      "list": "Menu",
+      "grid": "plats"
     },
     "categories": {
       "entrees": "Les Entrées",
