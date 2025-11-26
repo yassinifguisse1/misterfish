@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from '@/lib/navigation';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -10,7 +10,6 @@ const Footer = () => {
     const t = useTranslations('footer');
     const tNav = useTranslations('nav');
     const tEstablishments = useTranslations('establishments');
-    const [cookieConsentVisible, setCookieConsentVisible] = useState(true);
     
     const navigationLinks = [
         { name: tNav('home'), href: '/' },
@@ -24,13 +23,8 @@ const Footer = () => {
         { name: tEstablishments('boulevardCorniche'), href: '/etablissement/2' },
     ];
 
-    const handleCookieDecision = () => {
-        setCookieConsentVisible(false);
-    };
-
     return (
-        <>
-            <footer className="relative bg-background text-primary-text pt-20 pb-12 lg:pt-32 lg:pb-16">
+        <footer className="relative bg-background text-primary-text pt-20 pb-12 lg:pt-32 lg:pb-16">
                 <div className="container px-8 lg:px-20 mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-x-8 xl:gap-x-12">
                         {/* Column 1: Logo & Description */}
@@ -151,37 +145,6 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-
-            {cookieConsentVisible && (
-                 <div className="fixed bottom-4 right-4 lg:bottom-8 lg:right-8 z-100 w-[calc(100%-2rem)] max-w-lg lg:w-[551px] lg:max-w-none">
-                    <div className="bg-white rounded-[28.5px] shadow-lg p-5 lg:p-7 w-full">
-                        <div className="flex flex-col lg:flex-row items-center justify-between gap-4 lg:gap-6">
-                            <p className="text-primary-text text-center lg:text-left text-[15px] leading-snug">
-                                {t('cookieTextBefore')}{' '}
-                                <Link href="/privacy-policy" className="underline hover:no-underline">
-                                    {t('cookieTextLink')}
-                                </Link>
-                                {' '}{t('cookieTextAfter')}
-                            </p>
-                            <div className="flex items-center gap-2 shrink-0">
-                                <button
-                                    onClick={handleCookieDecision}
-                                    className="text-button px-5 py-3 rounded-full bg-background text-primary-text hover:bg-stone-300 transition-colors"
-                                >
-                                    {t('cookieRefuse')}
-                                </button>
-                                <button
-                                    onClick={handleCookieDecision}
-                                    className="text-button px-5 py-3 rounded-full bg-secondary text-secondary-foreground hover:bg-opacity-90 transition-colors"
-                                >
-                                    {t('cookieAccept')}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-        </>
     );
 };
 
