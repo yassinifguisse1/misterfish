@@ -14,7 +14,7 @@ const foodTrucks = [
   },
   {
     name: "Mrs. Sippy",
-    image: '/images/dish.webp',
+    image: '/images/dishimage.png.webp',
   },
   {
     name: 'Pasta Foodtruck',

@@ -31,16 +31,16 @@ export default function ContactCta() {
           {/* Contact Buttons */}
           <div className="flex flex-col gap-5 w-full max-w-sm">
             <a 
-              href="mailto:info@defoodtruckclub.nl" 
+              href="mailto:misterfish@gmail.com" 
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg bg-accent text-accent-foreground"
             >
-              info@defoodtruckclub.nl
+              misterfish@gmail.com
             </a>
             <a 
-              href="tel:+31628074628" 
+              href="tel:+212600000000" 
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/5"
             >
-              +212 6000000
+              +212 6 00 00 00 00
             </a>
           </div>
           
@@ -49,7 +49,7 @@ export default function ContactCta() {
 
           {/* Instagram */}
           <a 
-            href="https://www.instagram.com/defoodtruckclub/" 
+            href="https://www.instagram.com/misterfish/" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Instagram" 
@@ -72,21 +72,21 @@ export default function ContactCta() {
 
             {/* Center: Email Button */}
             <a
-              href="mailto:info@defoodtruckclub.nl"
-              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 bg-accent text-accent-foreground shrink-0"
+              href="mailto:misterfish@gmail.com"
+              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 bg-linear-to-br from-[#4A90E2] to-[#87CEEB] text-accent-foreground shrink-0"
             >
-              info@defoodtruckclub.nl
+              misterfish@gmail.com
             </a>
 
             {/* Right: Instagram Icon */}
             <a 
-              href="https://www.instagram.com/defoodtruckclub/" 
+              href="https://www.instagram.com/misterfish/" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label="Instagram" 
-              className="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36 bg-primary rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 hover:rotate-6 transition-all duration-300 shrink-0"
+              className="flex items-center justify-center w-32 h-32 xl:w-36 xl:h-36 bg-linear-to-br from-[#4A90E2] to-[#87CEEB] rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 hover:rotate-6 transition-all duration-300 shrink-0"
             >
-              <Instagram className="w-14 h-14 xl:w-16 xl:h-16 text-primary-text" strokeWidth={2.5} />
+              <Instagram className="w-14 h-14 xl:w-16 xl:h-16 text-accent-foreground" strokeWidth={2.5} />
             </a>
           </div>
 
@@ -95,7 +95,7 @@ export default function ContactCta() {
             
             {/* Left: Phone Button */}
             <a
-              href="tel:+31628074628"
+              href="tel:+212600000000"
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/10 shrink-0"
             >
               +212 60000000
