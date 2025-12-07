@@ -21,7 +21,7 @@ export default function MenuPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const [viewMode, setViewMode] = useState<"column" | "grid">("column");
+  const [viewMode, setViewMode] = useState<"column" | "grid">("grid");
 
   const filteredItems =
     selectedCategory === "all"
@@ -175,6 +175,15 @@ export default function MenuPage() {
     },
   };
 
+  const downloadPDF = (url: string, filename: string) => {
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="min-h-screen bg-primary-background overflow-x-hidden">
       <Navigation />
@@ -271,6 +280,12 @@ export default function MenuPage() {
                 <Grid3x3 className="w-3 h-3 md:w-4 md:h-4" />
                 <span className="hidden sm:inline">Plats</span>
               </button>
+              <button
+                onClick={() => downloadPDF("/menu.pdf", "menu.pdf")}
+                className="flex items-center gap-1 md:gap-2 px-2 py-1 md:px-4 md:py-2 rounded-full font-display text-xs md:text-sm uppercase font-bold transition-all duration-300 bg-[#4A90E2] text-white shadow-lg hover:bg-[#3A7BC8]"
+              >
+                <span className="hidden sm:inline">Télécharger le Menu</span>
+              </button>
             </div>
           </div>
           <div className="overflow-x-auto scrollbar-hide -mx-4 sm:-mx-6 lg:mx-0 px-4 sm:px-6 lg:px-0">
@@ -280,42 +295,42 @@ export default function MenuPage() {
               variants={containerVariants}
               className="flex gap-2 md:gap-3 md:flex-wrap md:justify-center min-w-max md:min-w-0"
             >
-            <motion.button
-              variants={categoryVariants}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => setSelectedCategory("all")}
-              className={`px-3 py-1.5 md:px-6 md:py-3 rounded-full font-display text-xs md:text-sm lg:text-base uppercase font-bold transition-all duration-300 whitespace-nowrap shrink-0 ${
-                selectedCategory === "all"
-                  ? "bg-[#4A90E2] text-white shadow-lg"
-                  : "bg-white text-primary-text hover:bg-[#4A90E2]/20 border border-primary-text/10"
-              }`}
-            >
-              Tout le Menu
-            </motion.button>
-            {menuCategories.map((category) => (
               <motion.button
-                key={category.id}
                 variants={categoryVariants}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => setSelectedCategory(category.id)}
-                className={`px-3 py-1.5 md:px-6 md:py-3 rounded-full font-display text-xs md:text-sm uppercase font-bold transition-all duration-300 whitespace-nowrap shrink-0 ${
-                  selectedCategory === category.id
+                onClick={() => setSelectedCategory("all")}
+                className={`px-3 py-1.5 md:px-6 md:py-3 rounded-full font-display text-xs md:text-sm lg:text-base uppercase font-bold transition-all duration-300 whitespace-nowrap shrink-0 ${
+                  selectedCategory === "all"
                     ? "bg-[#4A90E2] text-white shadow-lg"
                     : "bg-white text-primary-text hover:bg-[#4A90E2]/20 border border-primary-text/10"
                 }`}
               >
-                {category.name}
+                Tout le Menu
               </motion.button>
-            ))}
+              {menuCategories.map((category) => (
+                <motion.button
+                  key={category.id}
+                  variants={categoryVariants}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => setSelectedCategory(category.id)}
+                  className={`px-3 py-1.5 md:px-6 md:py-3 rounded-full font-display text-xs md:text-sm uppercase font-bold transition-all duration-300 whitespace-nowrap shrink-0 ${
+                    selectedCategory === category.id
+                      ? "bg-[#4A90E2] text-white shadow-lg"
+                      : "bg-white text-primary-text hover:bg-[#4A90E2]/20 border border-primary-text/10"
+                  }`}
+                >
+                  {category.name}
+                </motion.button>
+              ))}
             </motion.div>
           </div>
         </div>
       </section>
       {/* Menu Items - Column or Grid View */}
       <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl,">
           {viewMode === "column" ? (
             // Column View (List) - 2 Columns
             <motion.div
@@ -335,7 +350,7 @@ export default function MenuPage() {
                 >
                   <div
                     className={`
-                      relative py-6 px-8 rounded-2xl transition-all duration-300 flex items-center gap-6 h-full
+                      relative py-3 px-8 rounded-2xl transition-all duration-300 flex items-center gap-6 h-full
                       ${
                         index % 2 === 0
                           ? "bg-linear-to-r from-[#87CEEB]/20 via-[#4A90E2]/10 to-transparent hover:from-[#87CEEB]/30 hover:via-[#4A90E2]/20 hover:shadow-lg"
@@ -345,7 +360,7 @@ export default function MenuPage() {
                   >
                     {/* Dish Image */}
                     {item.image && (
-                      <div className="relative w-24 h-24 shrink-0 rounded-xl overflow-hidden bg-white shadow-md">
+                      <div className="relative w-14 h-14 shrink-0 rounded-xl overflow-hidden bg-whitec shadow-md">
                         <Image
                           src={item.image}
                           alt={item.name}
@@ -370,11 +385,11 @@ export default function MenuPage() {
                     <div className="flex items-start justify-between gap-6 flex-1 min-w-0">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-baseline gap-3 mb-2">
-                          <h3 className="font-display text-xl lg:text-2xl font-black uppercase text-primary-text leading-tight">
+                          <h3 className="font-display text-xl  font-black uppercase text-primary-text leading-tight">
                             {item.name}
                           </h3>
                           <div className="flex-1 border-b-2 border-dotted border-primary-text/20 mb-1.5 group-hover:border-primary-text/40 transition-colors" />
-                          <span className="font-display text-2xl lg:text-3xl font-black text-[#4A90E2] whitespace-nowrap">
+                          <span className="font-display text-2xl lg:text-2xl font-black text-[#4A90E2] whitespace-nowrap">
                             {item.price}
                           </span>
                         </div>
@@ -397,39 +412,36 @@ export default function MenuPage() {
               initial="hidden"
               animate="visible"
               variants={containerVariants}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10"
+              className="grid auto-rows-fr grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-6"
             >
               {filteredItems.map((item) => (
                 <motion.div
                   key={item.id}
                   variants={itemVariants}
                   whileHover={{ y: -8, transition: { duration: 0.2 } }}
-                  className="relative group cursor-pointer"
+                  className="relative group cursor-pointer h-full"
                   onClick={() => handleItemClick(item)}
                 >
-                  <div className="bg-white rounded-[24px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
+                  <div className="flex h-full flex-col bg-white rounded-3xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                     {/* Dish Image */}
                     {item.image && (
-                      <div className="relative h-[280px] overflow-hidden bg-linear-to-br from-[#87CEEB]/20 to-[#4A90E2]/20">
+                      <div className="relative h-[140px] md:h-[150px] overflow-hidden bg-linear-to-br from-[#87CEEB]/20 to-[#4A90E2]/20">
                         <Image
                           src={item.image}
                           alt={item.name}
                           fill
                           className="object-cover group-hover:scale-110 transition-transform duration-700"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
-                        {/* Category Badge */}
-                        <div className="absolute top-4 left-4 bg-[#4A90E2] text-white px-4 py-1.5 rounded-full font-display uppercase text-xs font-bold tracking-wide shadow-lg">
-                          {menuCategories.find(
-                            (cat) => cat.id === item.category
-                          )?.name || item.category}
+                        {/* Price Badge */}
+                        <div className="absolute top-1 left-1 bg-[#4A90E2] text-white px-2 py-1.5 rounded-full font-display uppercase text-[11px] md:text-[12px] font-bold tracking-wide shadow-lg leading-none">
+                          {item.price}
                         </div>
                         {item.isSpecial && (
                           <motion.div
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}
                             transition={{ delay: 0.2, type: "spring" }}
-                            className="absolute top-4 right-4 bg-[#2E3F72] text-white px-3 py-1.5 rounded-full text-xs font-display font-bold uppercase shadow-lg"
+                            className="absolute top-2 right-2 bg-[#2E3F72] text-white px-2 py-1.5 rounded-full text-[11px] md:text-xs font-display font-bold uppercase shadow-lg"
                           >
                             Spécial
                           </motion.div>
@@ -438,16 +450,12 @@ export default function MenuPage() {
                     )}
 
                     {/* Dish Info */}
-                    <div className="p-6 md:p-8">
-                      <div className="flex justify-between items-start mb-3">
-                        <h3 className="font-display text-[20px] md:text-[24px] uppercase leading-tight tracking-[-0.5px] text-primary-text">
-                          {item.name}
-                        </h3>
-                        <span className="font-display text-[20px] md:text-[24px] text-[#4A90E2] font-bold ml-4 whitespace-nowrap">
-                          {item.price}
-                        </span>
-                      </div>
-                      <p className="text-primary-text/70 leading-relaxed text-[15px] md:text-[16px] font-body">
+                    <div className="flex flex-1 flex-col p-3">
+                      <h3 className="font-display text-start text-[13px] md:text-[15px] lg:text-[16px] font-bold uppercase leading-snug tracking-[-0.03em] text-primary-text line-clamp-2 min-h-[2.6rem]">
+                        {item.name}
+                      </h3>
+
+                      <p className="mt-2 text-primary-text/70 leading-relaxed text-[12px] md:text-[13px] font-body line-clamp-2 min-h-[2.4rem]">
                         {item.description}
                       </p>
                     </div>
@@ -558,4 +566,3 @@ export default function MenuPage() {
     </div>
   );
 }
-
