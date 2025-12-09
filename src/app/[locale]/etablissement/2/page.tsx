@@ -28,19 +28,19 @@ const establishment = {
 const galleryItems = [
   {
     title: "Poissons Frais",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-2.webp",
   },
   {
     title: "Tajines Marocains",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-3.webp",
   },
   {
     title: "Fritures Croustillantes",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-4.webp",
   },
   {
     title: "Plats Combinés",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-5.webp",
   },
   {
     title: "Desserts Maison",
@@ -216,7 +216,7 @@ export default function Etablissement2Page() {
           </div>
          
          <Image
-           src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain"
+           src="/images/misterfishresto.jpg"
            alt="Mister Fish food truck storefront"
            fill
            className="object-cover"

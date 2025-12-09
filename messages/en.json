@@ -87,24 +87,24 @@
     "seeFullMenu": "View Our Full Menu",
     "menuItems": {
       "soupeDuJour": {
-        "name": "Soup of the Day",
-        "description": "Chef's daily soup with fresh herbs and warm bread"
+        "name": "Salade Pêcheur",
+        "description": "Fruits De Mer, Salade Verte, Tomate Cerise, Crevette"
       },
       "saladeNicoise": {
-        "name": "Salade Niçoise",
-        "description": "Fresh tuna, green beans, olives, tomatoes, and anchovies"
+        "name": "Salade Mister Fish",
+        "description": "Salade Verte, Riz, Thon, Maïs, Fromage, Russe, Ananas, Fruits De Mer, œuf, Escalope, Tomate Cerise"
       },
       "bruschettaTrio": {
-        "name": "Bruschetta Trio",
-        "description": "Tomato basil, mushroom truffle, and goat cheese"
+        "name": "Salade Du Chef",
+        "description": "Salade Verte, Fruits De Mer, Betterave, Thon, Maïs, Fromage, œuf, Tomate Cerise, Ebly, Escalope, Avocat, Ananas"
       },
       "crevettesAil": {
-        "name": "Garlic Prawns",
-        "description": "Garlic prawns sautéed in white wine and butter"
+        "name": "Salade Cocktail Aux Crevettes",
+        "description": "Ananas Frais, Mangue, Crevettes"
       },
       "carpaccioBoeuf": {
-        "name": "Beef Carpaccio",
-        "description": "Thinly sliced beef with arugula, parmesan and truffle oil"
+        "name": "Salade Avocat Aux Crevettes",
+        "description": "Salade Verte, Carotte Râpée, Crevette, Avocat"
       },
       "grilledSeaBass": {
         "name": "Grilled Sea Bass",

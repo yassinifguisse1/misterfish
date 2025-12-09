@@ -122,7 +122,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team Section */}
-        <section className="py-20 lg:py-32 bg-background">
+        {/* <section className="py-20 lg:py-32 bg-background">
           <div className="container mx-auto  px-8">
             <h2 className="font-display font-black uppercase text-center text-[clamp(2.5rem,5vw,4rem)] leading-[0.95] mb-16 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
               Notre Équipe
@@ -151,7 +151,7 @@ export default function AboutPage() {
               autoplay={true}
             />
           </div>
-        </section>
+        </section> */}
 
         {/* Restaurant Exploration Section */}
         <section className="py-20 lg:py-32 bg-linear-to-br from-[#4A90E2]/10 to-[#87CEEB]/10">

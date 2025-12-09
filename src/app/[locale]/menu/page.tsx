@@ -13,7 +13,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { LayoutList, Grid3x3 } from "lucide-react";
+import { LayoutList, Grid3x3, Download } from "lucide-react";
 
 import Footer from "@/components/sections/footer";
 
@@ -236,7 +236,7 @@ export default function MenuPage() {
 
             <div className="relative w-full aspect-video md:aspect-21/9 rounded-[32px] md:rounded-[40px] lg:rounded-[48px] overflow-hidden">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain"
+                src="/images/PXL_20251129_115755283.webp"
                 alt="Mister Fish food truck storefront"
                 fill
                 className="object-cover"
@@ -280,10 +280,12 @@ export default function MenuPage() {
                 <Grid3x3 className="w-3 h-3 md:w-4 md:h-4" />
                 <span className="hidden sm:inline">Plats</span>
               </button>
+
               <button
                 onClick={() => downloadPDF("/menu.pdf", "menu.pdf")}
                 className="flex items-center gap-1 md:gap-2 px-2 py-1 md:px-4 md:py-2 rounded-full font-display text-xs md:text-sm uppercase font-bold transition-all duration-300 bg-[#4A90E2] text-white shadow-lg hover:bg-[#3A7BC8]"
               >
+                <Download className="w-4 h-4" />
                 <span className="hidden sm:inline">Télécharger le Menu</span>
               </button>
             </div>
@@ -498,24 +500,7 @@ export default function MenuPage() {
                 </div>
               </DialogHeader>
 
-              <div className="mt-6">
-                <h3 className="font-display text-xl font-bold uppercase text-primary-text mb-4">
-                  Ingrédients
-                </h3>
-                <div className="grid grid-cols-2 gap-3">
-                  {getIngredients(selectedItem).map((ingredient, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-center gap-2 p-3 rounded-lg bg-[#87CEEB]/10 border border-[#4A90E2]/20"
-                    >
-                      <span className="text-[#4A90E2]">•</span>
-                      <span className="font-body text-primary-text">
-                        {ingredient}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              
 
               {selectedItem.image && (
                 <div className="mt-6 relative w-full h-auto aspect-video rounded-xl overflow-hidden">

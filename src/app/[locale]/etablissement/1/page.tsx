@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,27 +29,27 @@ const establishment = {
 const galleryItems = [
   {
     title: "Poissons Frais",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-01.webp",
   },
   {
     title: "Tajines Marocains",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-02.webp",
   },
   {
     title: "Fritures Croustillantes",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-03.webp",
   },
   {
     title: "Plats Combinés",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-04.webp",
   },
   {
     title: "Desserts Maison",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-05.webp",
   },
   {
     title: "Spécialités du Chef",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image: "/images/misterfish-06.webp",
   },
 ];
 
@@ -56,6 +57,8 @@ export default function Etablissement1Page() {
   const pageRef = useRef<HTMLDivElement>(null);
   const maskStrokeRef = useRef<SVGPathElement>(null);
   const strokeRef = useRef<SVGPathElement>(null);
+    const t = useTranslations();
+  
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -368,7 +371,7 @@ export default function Etablissement1Page() {
                 asChild
                 className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-8 py-6 h-auto shadow-xl"
               >
-                <Link href="/contact">Réserver une table</Link>
+                <Link href="/contact">{t('nav.contact')}</Link>
               </Button>
               <Button
                 asChild

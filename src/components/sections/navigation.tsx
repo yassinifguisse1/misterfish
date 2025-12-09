@@ -47,10 +47,10 @@ const MobileNav = ({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => voi
           </div>
         </div>
         <Link href="/about" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.about')}</Link>
-        <Link href="/contact" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.contact')}</Link>
+        {/* <Link href="/contact" onClick={onClose} className="font-sans text-lg font-medium uppercase py-4 border-b border-black/10 w-full text-left">{t('nav.contact')}</Link> */}
         <div className="pt-8">
           <Button asChild variant="secondary" className="w-full bg-[#2E3F72]! hover:bg-[#3A7BC8]! text-white font-display font-bold uppercase rounded-full text-sm h-14">
-            <Link href="/contact">{t('nav.reserve')}</Link>
+            <Link href="/contact">{t('nav.contact')}</Link>
           </Button>
         </div>
       </nav>
@@ -159,9 +159,9 @@ export default function Navigation() {
           <div className="flex-1 flex justify-end items-center">
             <div className="hidden lg:flex items-center gap-4">
               <LanguageSwitcher />
-              <Link href="/contact" className="text-nav-link uppercase">{t('nav.contact')}</Link>
+              {/* <Link href="/contact" className="text-nav-link uppercase">{t('nav.contact')}</Link> */}
               <Button asChild variant="secondary" className="bg-linear-to-r from-[#87CEEB] to-[#4A90E2] text-white text-button rounded-full px-8 py-5 h-auto">
-                <Link href="/contact">{t('nav.reserve')}</Link>
+                <Link href="/contact">{t('nav.contact')}</Link>
               </Button>
             </div>
             <div className="lg:hidden">
