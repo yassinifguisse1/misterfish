@@ -241,52 +241,35 @@ export default function Etablissement1Page() {
         </h2>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-[1.5fr_1fr_1.5fr] mx-4 gap-8 gap-y-0">
-          {galleryItems.map((item, index) => {
-            // Calculate grid position based on original pattern
-            let gridRow = 1;
-            let gridCol = 1;
-            
-            if (index === 0) { gridRow = 1; gridCol = 1; }
-            else if (index === 1) { gridRow = 1; gridCol = 2; }
-            else if (index === 2) { gridRow = 2; gridCol = 2; }
-            else if (index === 3) { gridRow = 2; gridCol = 3; }
-            else if (index === 4) { gridRow = 3; gridCol = 2; }
-            else if (index === 5) { gridRow = 3; gridCol = 1; }
-            
-            return (
-              <figure
-                key={index}
-                className="relative m-0 overflow-hidden"
-                style={{
-                  gridRow,
-                  gridColumn: gridCol,
-                }}
-              >
-                <figcaption className="revealer text-center mb-2 font-sans font-semibold">
-                  <div className="revealer-inner">{item.title}</div>
-                </figcaption>
-                <div className="revealer rounded-2xl">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={400}
-                    height={400}
-                    className="revealer-img w-full grayscale-10 sepia-10 "
-                  />
-                </div>
-              </figure>
-            );
-          })}
-          {/* Spacers */}
-          <p className="text-primary-text text-base leading-relaxed font-body flex items-center" style={{ gridRow: 1, gridColumn: 3 }}>
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1.5fr] mx-4 gap-8 gap-y-6">
+          {galleryItems.map((item, index) => (
+            <figure
+              key={index}
+              className="relative m-0 overflow-hidden rounded-2xl"
+            >
+              <figcaption className="revealer text-center mb-2 font-sans font-semibold">
+                <div className="revealer-inner">{item.title}</div>
+              </figcaption>
+
+              <div className="relative w-full aspect-4/3 overflow-hidden rounded-2xl revealer">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="revealer-img w-full h-full"
+                />
+              </div>
+            </figure>
+          ))}
+
+          {/* Descriptive blocks - they will flow under images on mobile and sit in the grid on md+ */}
+          <p className="text-primary-text text-base leading-relaxed font-body flex items-center md:col-start-3 md:row-start-1">
             Découvrez nos spécialités préparées avec des ingrédients frais et sélectionnés avec soin, 
             pour une expérience gustative authentique et savoureuse.
           </p>
-          <span className="spacer2" style={{ gridRow: 2, gridColumn: 1 }}></span>
-          <span className="spacer3" style={{ gridRow: 3, gridColumn: 3 }}></span>
-          <span className="spacer4" style={{ gridRow: 4, gridColumn: 1 }}></span>
-          <p className="text-primary-text text-base leading-relaxed font-body flex items-center" style={{ gridRow: 2, gridColumn: 1 }}>
+
+          <p className="text-primary-text text-base leading-relaxed font-body md:col-start-1 md:row-start-2">
             Notre établissement au centre-ville vous accueille dans une ambiance chaleureuse et authentique. 
             Que vous veniez déjeuner ou dîner, notre équipe est là pour vous faire découvrir les saveurs 
             de la cuisine marocaine et méditerranéenne avec passion et dévouement.
