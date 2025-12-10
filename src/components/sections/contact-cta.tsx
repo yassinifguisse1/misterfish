@@ -32,13 +32,13 @@ export default function ContactCta() {
           <div className="flex flex-col gap-5 w-full max-w-sm">
             <a 
               href="mailto:misterfish@gmail.com" 
-              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg bg-accent text-accent-foreground"
+              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg bg-linear-to-r from-[#87CEEB] to-[#4A90E2] text-accent-foreground"
             >
               misterfish@gmail.com
             </a>
             <a 
               href="tel:+212600000000" 
-              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/5"
+              className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg border-[3px] border-dashed border-[#4A90E2] text-primary-text hover:bg-border-green/5"
             >
               +212 6 00 00 00 00
             </a>
@@ -53,7 +53,7 @@ export default function ContactCta() {
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Instagram" 
-            className="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 bg-primary rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 transition-all duration-300 mt-4"
+            className="flex items-center justify-center w-24 h-24 sm:w-28 sm:h-28 bg-linear-to-r from-[#87CEEB] to-[#4A90E2] rounded-full border-[3px] border-dashed border-primary-text hover:scale-110 transition-all duration-300 mt-4"
           >
             <Instagram className="w-10 h-10 sm:w-12 sm:h-12 text-primary-text" strokeWidth={2.5} />
           </a>

@@ -35,58 +35,20 @@ const RecentePartijen = () => {
           </h2>
         </div>
 
-        {/* Mobile/Tablet: Horizontal scroll */}
-        <div className="lg:hidden flex gap-6 overflow-x-auto pb-8 px-4 sm:px-6 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+        {/* Stacked on mobile, row on md+ */}
+        <div className="flex flex-col md:flex-row gap-8 xl:gap-10 justify-center items-stretch w-full">
           {establishments.map((establishment, index) => (
             <Link
               key={establishment.id}
               href={establishment.link}
-              className="group shrink-0 w-[85vw] max-w-[420px] sm:w-[70vw] sm:max-w-[480px] bg-card rounded-[32px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out flex flex-col relative snap-center"
+              className="group w-full max-w-[520px] bg-card rounded-4xl overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out flex flex-col relative mx-auto"
             >
               {establishment.isNew && (
                 <span className="absolute top-5 right-5 z-10 bg-[#87CEEB] text-[#2E3F72] font-display text-[0.65rem] font-bold uppercase px-4 py-2 rounded-full shadow-lg">
                   {t('new')}
                 </span>
               )}
-              <div className="relative w-full h-64 sm:h-72 shrink-0">
-                <Image
-                  src={establishment.image}
-                  alt={establishment.title}
-                  fill
-                  style={{ objectFit: 'cover' }}
-                  className="transition-transform duration-400 ease-in-out group-hover:scale-105"
-                  sizes="(max-width: 640px) 85vw, 70vw"
-                />
-              </div>
-              <div className="p-8 sm:p-10 flex flex-col grow text-left">
-                <h3 className="font-display text-2xl sm:text-3xl uppercase mb-4 text-card-foreground" style={{ lineHeight: 1 }}>
-                  {establishment.title}
-                </h3>
-                <p className="font-body text-base sm:text-lg text-card-foreground/80 leading-relaxed">
-                  {establishment.description}
-                </p>
-                <div className="mt-auto pt-6 sm:pt-8">
-                  <ArrowRight className="w-6 h-6 sm:w-7 sm:h-7 text-card-foreground transition-transform duration-300 group-hover:translate-x-1" />
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-
-        {/* Desktop: Centered flex layout */}
-        <div className="hidden lg:flex gap-8 xl:gap-10 justify-center items-stretch px-8">
-          {establishments.map((establishment, index) => (
-            <Link
-              key={establishment.id}
-              href={establishment.link}
-              className="group shrink-0 w-full max-w-[520px] bg-card rounded-[32px] overflow-hidden shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.15)] hover:-translate-y-1.5 transition-all duration-300 ease-in-out flex flex-col relative"
-            >
-              {establishment.isNew && (
-                <span className="absolute top-5 right-5 z-10 bg-[#87CEEB] text-[#2E3F72] font-display text-[0.65rem] font-bold uppercase px-4 py-2 rounded-full shadow-lg">
-                  {t('new')}
-                </span>
-              )}
-              <div className="relative w-full h-80 shrink-0">
+              <div className="relative w-full h-60 md:h-80 shrink-0">
                 <Image
                   src={establishment.image}
                   alt={establishment.title}
@@ -96,7 +58,7 @@ const RecentePartijen = () => {
                   sizes="520px"
                 />
               </div>
-              <div className="p-12 flex flex-col grow text-left">
+              <div className="p-6 md:p-12 flex flex-col grow text-left">
                 <h3 className="font-display text-4xl uppercase mb-4 text-card-foreground" style={{ lineHeight: 1 }}>
                   {establishment.title}
                 </h3>

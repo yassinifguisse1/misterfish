@@ -126,7 +126,7 @@ const FoodtruckCarousel = () => {
                 <div className="text-center mt-12 md:mt-16">
                     <Link
                         href="/menu"
-                        className="inline-block border border-black rounded-full px-8 py-3 font-display uppercase font-bold text-sm tracking-widest hover:bg-whitex text-black hover:text-black transition-colors duration-300"
+                        className="bg-linear-to-r from-[#87CEEB] to-[#4A90E2] inline-block border border-black rounded-full px-8 py-3 font-display uppercase font-bold text-sm tracking-widest hover:bg-whitex text-black hover:text-black transition-colors duration-300"
                     >
                         {t('seeMore')}
                     </Link>

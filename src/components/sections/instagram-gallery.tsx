@@ -5,24 +5,36 @@ import { useEffect, useRef } from 'react';
 
 const instagramImages = [
   {
-    src: "/images/2025-10-30.jpg",
+    src: "/images/mister-fish-001.webp",
     alt: "Group of people enjoying food from a food truck.",
   },
   {
-    src: "/images/2025-11-11-3.jpg",
-    alt: "Staff in striped shirts serving inside a food truck.",
+    src: "/images/mister-fish-002-.webp",
+    alt: "Staff iiin striped shirts serving inside a food truck.",
   },
   {
-    src: "/images/2025-11-11.jpg",
+    src: "/images/mister-fish-003.webp",
     alt: "Close-up of french fries being prepared.",
   },
   {
-    src: "/images/2025-11-11-6.jpg",
+    src: "/images/mister-fish-004.webp",
     alt: "Outdoor food truck event scene with people.",
   },
   {
-    src: "/images/2025-11-11-4.jpg",
+    src: "/images/mister-fish-005.webp",
     alt: "Chef preparing food on a griddle.",
+  },
+  {
+    src: "/images/mister-fish-006.webp",
+    alt: "Staff iin striped shirts serving inside a food truck.",
+  },
+  {
+    src: "/images/mister-fish-007.webp",
+    alt: "Staff in striped shirts serving inside a food truck.",
+  },
+  {
+    src: "/images/mister-fish-008.webp",
+    alt: "Staff in striped shirts serving inside a food truck.",
   },
 ];
 
@@ -66,7 +78,7 @@ const InstagramGallery = () => {
           style={{ width: 'fit-content' }}
         >
           {duplicatedImages.map((image, index) => (
-            <div key={index} className="block overflow-hidden rounded-[24px] group shrink-0" style={{ width: '300px', height: '300px' }}>
+            <div key={index} className="block overflow-hidden rounded-3xl group shrink-0" style={{ width: '300px', height: '300px' }}>
 
            
               <Image

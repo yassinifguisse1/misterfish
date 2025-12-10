@@ -34,7 +34,7 @@ const HeroSection = () => {
 
           <div className="flex items-center justify-end md:justify-start gap-0 md:mx-4 lg:mx-6 ">
             <div className="relative flex items-center bg-linear-to-r from-[#87CEEB] to-[#4A90E2] rounded-[40px] pl-4 pr-2 py-2 sm:pl-6 sm:pr-2 sm:py-3 md:pl-8 md:pr-3 md:py-4 lg:pl-10 lg:pr-4 lg:py-5 ">
-              <div className="relative w-[110px] sm:w-[130px] md:w-[150px] lg:w-[170px] h-[24px] sm:h-[28px] md:h-[32px] lg:h-[36px] pr-2">
+              <div className="relative w-[110px] sm:w-[130px] md:w-[150px] lg:w-[170px] h-6 sm:h-[28px] md:h-[32px] lg:h-[36px] pr-2">
                 {languages.map((lang, index) => (
                   <span
                     key={index}
