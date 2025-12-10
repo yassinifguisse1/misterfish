@@ -13,7 +13,7 @@ const RecentePartijen = () => {
       id: '1',
       title: t('establishments.centreVille.title'),
       description: t('establishments.centreVille.description'),
-      image: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain',
+      image: '/images/clean_street_MISTER_FISH.webp',
       link: '/etablissement/1',
       isNew: false,
     },

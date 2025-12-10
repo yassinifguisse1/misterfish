@@ -15,15 +15,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const establishment = {
   id: "1",
-  name: "Mister Fish - Centre Ville",
+  name: "Mister Fish - HAUT FOUNTY",
   description: "Notre établissement principal au cœur de la ville",
-  address: "123 Avenue de la Mer, Agadir",
-  phone: "+212 6 00 00 00 01",
+  address: "Lot Haut Founty, Al Oulha, 3 25080 010 Agadir, Maroc",
+  phone: "+212 5 28 83 86 304",
   email: "centreville@misterfish.ma",
-  hours: "Lun-Dim: 12h00 - 23h00",
+  hours: " Lun Dim : 12h00 – 01h30",
   isNew: false,
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
+  image:
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
 };
 
 const galleryItems = [
@@ -57,8 +59,7 @@ export default function Etablissement1Page() {
   const pageRef = useRef<HTMLDivElement>(null);
   const maskStrokeRef = useRef<SVGPathElement>(null);
   const strokeRef = useRef<SVGPathElement>(null);
-    const t = useTranslations();
-  
+  const t = useTranslations();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -68,7 +69,7 @@ export default function Etablissement1Page() {
       const pathLength = maskStrokeRef.current.getTotalLength();
       maskStrokeRef.current.style.strokeDasharray = `${pathLength}`;
       maskStrokeRef.current.style.strokeDashoffset = `${pathLength}`;
-      
+
       gsap.to(maskStrokeRef.current, {
         strokeDashoffset: 0,
         scrollTrigger: {
@@ -154,9 +155,12 @@ export default function Etablissement1Page() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#EDE8DE] relative page-fade-in" ref={pageRef}>
+    <div
+      className="min-h-screen bg-[#EDE8DE] relative page-fade-in"
+      ref={pageRef}
+    >
       <Navigation />
-      
+
       {/* SVG Stroke Background */}
       <svg
         id="stroke-svg"
@@ -194,12 +198,19 @@ export default function Etablissement1Page() {
       <main className="relative pt-24 pb-36 px-4 md:px-6 lg:px-8">
         {/* Header with Revealer Title */}
         <header className="pt-10 px-4 mb-6">
-          <h1 className="text-[90px] font-medium leading-[0.8] mx-4 mb-6 tracking-[-0.05em]" style={{ fontFamily: 'Arimo, sans-serif' }}>
+          <h1
+            className="text-[90px] font-medium leading-[0.8] mx-4 mb-6 tracking-[-0.05em]"
+            style={{ fontFamily: "Arimo, sans-serif" }}
+          >
             <div className="revealer">
-              <div className="revealer-inner">{establishment.name.split(" - ")[0]}</div>
+              <div className="revealer-inner">
+                {establishment.name.split(" - ")[0]}
+              </div>
             </div>
             <div className="revealer page-title-secondary opacity-30 pb-4">
-              <div className="revealer-inner page-title-secondary">{establishment.name.split(" - ")[1]}</div>
+              <div className="revealer-inner page-title-secondary">
+                {establishment.name.split(" - ")[1]}
+              </div>
             </div>
           </h1>
         </header>
@@ -207,13 +218,15 @@ export default function Etablissement1Page() {
         {/* Banner Image */}
         <div className="relative w-full aspect-video md:aspect-21/9 rounded-[32px] md:rounded-[40px] lg:rounded-[48px] overflow-hidden">
           <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-[32px] md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
-            <p className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
+            <p
+              className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
             before:content-[''] before:absolute before:w-[60px] before:h-[60px] before:bg-transparent before:-bottom-18 before:-right-3 md:before:-right-10 lg:before:-right-3 before:rounded-tr-[32px] md:before:rounded-tr-[40px] lg:before:rounded-tr-[48px] before:shadow-[16px_-16px_0_0_#EDE8DE]
-            after:content-[''] after:absolute after:w-[60px] after:h-[60px] after:bg-transparent after:-top-3 after:-left-18 after:rounded-tr-[32px] md:after:rounded-tr-[40px] lg:after:rounded-tr-[48px] after:shadow-[16px_-16px_0_0_#EDE8DE]">
+            after:content-[''] after:absolute after:w-[60px] after:h-[60px] after:bg-transparent after:-top-3 after:-left-18 after:rounded-tr-[32px] md:after:rounded-tr-[40px] lg:after:rounded-tr-[48px] after:shadow-[16px_-16px_0_0_#EDE8DE]"
+            >
               Mister Fish
             </p>
           </div>
-         
+
           <Image
             src="/images/clean_street_MISTER_FISH.webp"
             alt="Mister Fish food truck storefront"
@@ -228,10 +241,17 @@ export default function Etablissement1Page() {
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre établissement principal Mister Fish - Centre Ville, situé au cœur de Agadir sur l'Avenue de la Mer. 
-            Depuis notre ouverture, nous avons su créer une atmosphère authentique et chaleureuse où tradition et qualité se rencontrent. 
-            Découvrez nos spécialités de poissons frais, nos tajines marocains et nos plats combinés dans un cadre convivial qui 
-            reflète l'âme de notre cuisine.
+            Bienvenue dans notre établissement principal Mister Fish – Haut
+            Founty, premier restaurant de la marque ouvert en 2021 à Agadir.
+            Situé dans le quartier résidentiel de Haut Founty, notre restaurant
+            vous accueille dans un cadre chaleureux où la passion du poisson
+            frais rencontre les saveurs authentiques de la cuisine marocaine.
+            Depuis notre ouverture, nous avons su créer une atmosphère
+            conviviale et familiale où la qualité, la fraîcheur et le service
+            sont au cœur de notre cuisine. Découvrez nos spécialités de poissons
+            et fruits de mer, nos tajines marocains revisités et nos plats
+            combinés généreux, pensés pour partager un vrai moment de plaisir
+            autour de la table.
           </p>
         </div>
 
@@ -256,7 +276,7 @@ export default function Etablissement1Page() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   className="revealer-img w-full h-full"
                 />
               </div>
@@ -265,24 +285,31 @@ export default function Etablissement1Page() {
 
           {/* Descriptive blocks - they will flow under images on mobile and sit in the grid on md+ */}
           <p className="text-primary-text text-base leading-relaxed font-body flex items-center md:col-start-3 md:row-start-1">
-            Découvrez nos spécialités préparées avec des ingrédients frais et sélectionnés avec soin, 
-            pour une expérience gustative authentique et savoureuse.
+            Découvrez nos spécialités préparées à partir de poissons frais,
+            soigneusement sélectionnés chaque jour. De nos plateaux de la mer à
+            nos grillades, chaque plat est préparé sur commande pour vous offrir
+            une expérience gustative authentique et savoureuse.
           </p>
 
           <p className="text-primary-text text-base leading-relaxed font-body md:col-start-1 md:row-start-2">
-            Notre établissement au centre-ville vous accueille dans une ambiance chaleureuse et authentique. 
-            Que vous veniez déjeuner ou dîner, notre équipe est là pour vous faire découvrir les saveurs 
-            de la cuisine marocaine et méditerranéenne avec passion et dévouement.
+            Notre établissement de Haut Founty vous accueille dans une ambiance
+            moderne et chaleureuse. Que vous veniez pour un déjeuner rapide, un
+            dîner en famille ou une soirée entre amis, notre équipe est à vos
+            petits soins pour vous faire découvrir les saveurs de la cuisine
+            marocaine et méditerranéenne, avec des portions généreuses et un
+            service attentionné.
           </p>
         </div>
 
         {/* Additional Branch Info */}
         <div className="mx-4 mt-16 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Notre équipe passionnée met tout en œuvre pour vous offrir une expérience culinaire exceptionnelle. 
-            Que vous veniez en famille, entre amis ou pour un dîner romantique, notre établissement vous accueille 
-            dans une atmosphère conviviale où la qualité et la fraîcheur de nos produits sont notre priorité. 
-            Réservez votre table dès maintenant et laissez-vous séduire par l'authenticité de nos saveurs marocaines.
+            Notre équipe passionnée met tout en œuvre pour vous offrir une
+            expérience culinaire exceptionnelle. Que vous choisissiez un plateau
+            de poissons, des fritures croustillantes ou les spécialités du chef,
+            la fraîcheur de nos produits reste notre priorité. Venez vivre un
+            moment convivial dans notre salle ou en terrasse et laissez vous
+            séduire par l’authenticité de Mister Fish Haut Founty.
           </p>
         </div>
 
@@ -314,7 +341,10 @@ export default function Etablissement1Page() {
                   content: establishment.hours,
                 },
               ].map((item, index) => (
-                <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]">
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]"
+                >
                   <div className="w-16 h-16 bg-linear-to-br from-[#4A90E2] to-[#87CEEB] rounded-full flex items-center justify-center text-white mb-4">
                     {item.icon}
                   </div>
@@ -322,7 +352,10 @@ export default function Etablissement1Page() {
                     {item.title}
                   </h3>
                   {item.link ? (
-                    <a href={item.link} className="text-primary-text leading-relaxed font-body hover:text-[#4A90E2] transition-colors">
+                    <a
+                      href={item.link}
+                      className="text-primary-text leading-relaxed font-body hover:text-[#4A90E2] transition-colors"
+                    >
                       {item.content}
                     </a>
                   ) : (
@@ -354,7 +387,7 @@ export default function Etablissement1Page() {
                 asChild
                 className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-8 py-6 h-auto shadow-xl"
               >
-                <Link href="/contact">{t('nav.contact')}</Link>
+                <Link href="/contact">{t("nav.contact")}</Link>
               </Button>
               <Button
                 asChild
@@ -367,7 +400,7 @@ export default function Etablissement1Page() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

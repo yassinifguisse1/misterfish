@@ -14,15 +14,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const establishment = {
   id: "2",
-  name: "Mister Fish - Nouveau",
+  name: "Mister Fish - DCHEIRA EL JIHADIA",
   description: "Notre nouvel établissement avec une ambiance moderne",
-  address: "456 Boulevard Corniche, Agadir",
-  phone: "+212 6 00 00 00 02",
-  email: "nouveau@misterfish.ma",
-  hours: "Lun-Dim: 12h00 - 23h00",
+  address: "Lot Haut Founty, Al Oulha, 3 25080 010 Agadir, Maroc",
+  phone: "+212 5 28 83 86 304",
+  email: "centreville@misterfish.ma",
+  hours: " Lun Dim : 12h00 – 01h30",
   isNew: true,
-  image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
-  mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
+  image:
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
 };
 
 const galleryItems = [
@@ -44,11 +46,13 @@ const galleryItems = [
   },
   {
     title: "Desserts Maison",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   },
   {
     title: "Spécialités du Chef",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+    image:
+      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   },
 ];
 
@@ -65,7 +69,7 @@ export default function Etablissement2Page() {
       const pathLength = maskStrokeRef.current.getTotalLength();
       maskStrokeRef.current.style.strokeDasharray = `${pathLength}`;
       maskStrokeRef.current.style.strokeDashoffset = `${pathLength}`;
-      
+
       gsap.to(maskStrokeRef.current, {
         strokeDashoffset: 0,
         scrollTrigger: {
@@ -151,9 +155,12 @@ export default function Etablissement2Page() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#EDE8DE] relative page-fade-in" ref={pageRef}>
+    <div
+      className="min-h-screen bg-[#EDE8DE] relative page-fade-in"
+      ref={pageRef}
+    >
       <Navigation />
-      
+
       {/* SVG Stroke Background */}
       <svg
         id="stroke-svg"
@@ -191,48 +198,63 @@ export default function Etablissement2Page() {
       <main className="relative pt-24 pb-36 px-4 md:px-6 lg:px-8">
         {/* Header with Revealer Title */}
         <header className="pt-10 px-4 mb-6">
-          <h1 className="text-[90px] font-medium leading-[0.8] mx-4 mb-6 tracking-[-0.05em]" style={{ fontFamily: 'Arimo, sans-serif' }}>
+          <h1
+            className="text-[90px] font-medium leading-[0.8] mx-4 mb-6 tracking-[-0.05em]"
+            style={{ fontFamily: "Arimo, sans-serif" }}
+          >
             <div className="revealer">
-              <div className="revealer-inner">{establishment.name.split(" - ")[0]}</div>
+              <div className="revealer-inner">
+                {establishment.name.split(" - ")[0]}
+              </div>
             </div>
             <div className="revealer page-title-secondary opacity-30 pb-4">
-              <div className="revealer-inner page-title-secondary">{establishment.name.split(" - ")[1]}</div>
+              <div className="revealer-inner page-title-secondary">
+                {establishment.name.split(" - ")[1]}
+              </div>
             </div>
           </h1>
         </header>
 
         {/* Banner Image */}
         <div className="relative  w-full aspect-video md:aspect-21/9 rounded-[32px] md:rounded-[40px] lg:rounded-[48px]  overflow-hidden">
-        <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-[32px] md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
-            <p className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
+          <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-[32px] md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
+            <p
+              className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
             
             
             
             before:content-[''] before:absolute before:w-[60px] before:h-[60px] before:bg-transparent before:-bottom-18 before:-right-3 md:before:-right-10 lg:before:-right-3 before:rounded-tr-[32px] md:before:rounded-tr-[40px] lg:before:rounded-tr-[48px] before:shadow-[16px_-16px_0_0_#EDE8DE]
             
-            after:content-[''] after:absolute after:w-[60px] after:h-[60px] after:bg-transparent after:-top-3 after:-left-18   after:rounded-tr-[32px] md:after:rounded-tr-[40px] lg:after:rounded-tr-[48px] after:shadow-[16px_-16px_0_0_#EDE8DE]">
-               Mister Fish
+            after:content-[''] after:absolute after:w-[60px] after:h-[60px] after:bg-transparent after:-top-3 after:-left-18   after:rounded-tr-[32px] md:after:rounded-tr-[40px] lg:after:rounded-tr-[48px] after:shadow-[16px_-16px_0_0_#EDE8DE]"
+            >
+              Mister Fish
             </p>
           </div>
-         
-         <Image
-           src="/images/misterfishresto.jpg"
-           alt="Mister Fish food truck storefront"
-           fill
-           className="object-cover"
-           quality={90}
-           priority
-           sizes="(max-width: 768px) 90vw, (max-width: 1200px) 85vw, 1400px"
-         />
-       </div>
+
+          <Image
+            src="/images/misterfishresto.jpg"
+            alt="Mister Fish food truck storefront"
+            fill
+            className="object-cover"
+            quality={90}
+            priority
+            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 85vw, 1400px"
+          />
+        </div>
 
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre nouvel établissement Mister Fish - Nouveau, situé sur le prestigieux Boulevard Corniche de Agadir. 
-            Ce lieu moderne allie l'authenticité de nos recettes traditionnelles à une ambiance contemporaine et chaleureuse. 
-            Découvrez nos spécialités de poissons frais, nos tajines marocains et nos plats combinés dans un cadre élégant où 
-            chaque détail a été pensé pour votre confort et votre plaisir gastronomique.
+            Bienvenue dans notre nouvel établissement Mister Fish à Dcheira El
+            Jihadia, ouvert en 2025. Situé au lot N 174, lotissement El Mers à
+            Dcheira El Jihadia, notre restaurant vous propose une ambiance
+            moderne et conviviale autour du poisson frais et des spécialités de
+            la mer. Ce nouveau Mister Fish reprend tout ce qui fait le succès de
+            notre première adresse à Haut Founty tout en offrant un espace plus
+            vaste, idéal pour les familles, les groupes et les événements.
+            Découvrez nos plateaux de poissons, nos grillades, nos tajines
+            marocains et nos plats combinés généreux, préparés à partir de
+            produits frais soigneusement sélectionnés chaque jour.
           </p>
         </div>
 
@@ -244,7 +266,10 @@ export default function Etablissement2Page() {
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1.5fr] mx-4 gap-8 gap-y-6">
           {galleryItems.map((item, index) => (
-            <figure key={index} className="relative m-0 overflow-hidden rounded-2xl">
+            <figure
+              key={index}
+              className="relative m-0 overflow-hidden rounded-2xl"
+            >
               <figcaption className="revealer text-center mb-2 font-sans font-semibold">
                 <div className="revealer-inner">{item.title}</div>
               </figcaption>
@@ -254,7 +279,7 @@ export default function Etablissement2Page() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: "cover" }}
                   className="revealer-img w-full h-full"
                 />
               </div>
@@ -263,25 +288,34 @@ export default function Etablissement2Page() {
 
           {/* Descriptive blocks - flow under images on mobile, placed in grid on md+ */}
           <p className="text-primary-text text-base leading-relaxed font-body flex items-center md:col-start-3 md:row-start-1">
-            Découvrez nos spécialités préparées avec des ingrédients frais et sélectionnés avec soin, 
-            pour une expérience gustative authentique et savoureuse.
+            Découvrez nos spécialités de poissons et fruits de mer préparées
+            avec des ingrédients frais, sélectionnés avec soin. Entre recettes
+            traditionnelles marocaines et inspirations méditerranéennes, chaque
+            assiette est pensée pour une expérience gustative authentique et
+            savoureuse.
           </p>
 
           <p className="text-primary-text text-base leading-relaxed font-body md:col-start-1 md:row-start-2">
-            Notre équipe passionnée met tout en œuvre pour vous offrir une expérience culinaire exceptionnelle. 
-            Que vous veniez en famille, entre amis ou pour un dîner romantique, notre établissement vous accueille 
-            dans une atmosphère conviviale où la qualité et la fraîcheur de nos produits sont notre priorité. 
-            Réservez votre table dès maintenant et laissez-vous séduire par l'authenticité de nos saveurs marocaines.
+            Notre établissement de Dcheira El Jihadia a été conçu pour vous
+            offrir confort et plaisir. Salle spacieuse, décor soigné et service
+            attentionné créent un cadre idéal pour un déjeuner en famille, un
+            dîner entre amis ou une célébration spéciale. Que vous soyez amateur
+            de fritures croustillantes, de plats combinés ou de spécialités du
+            chef, vous retrouverez ici la signature Mister Fish et la fraîcheur
+            de la mer dans chaque bouchée.
           </p>
         </div>
 
         {/* Additional Branch Info */}
         <div className="mx-4 mt-16 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Notre équipe passionnée met tout en œuvre pour vous offrir une expérience culinaire exceptionnelle. 
-            Que vous veniez en famille, entre amis ou pour un dîner romantique, notre établissement vous accueille 
-            dans une atmosphère conviviale où la qualité et la fraîcheur de nos produits sont notre priorité. 
-            Réservez votre table dès maintenant et laissez-vous séduire par l'authenticité de nos saveurs marocaines.
+            Notre équipe passionnée met tout en œuvre pour vous offrir une
+            expérience culinaire exceptionnelle. Que vous veniez en famille,
+            entre amis ou pour marquer un événement, Mister Fish Dcheira El
+            Jihadia vous accueille dans une atmosphère chaleureuse où la qualité
+            et la fraîcheur des produits restent notre priorité. Réservez votre
+            table dès maintenant et laissez vous séduire par l’authenticité de
+            nos saveurs marocaines.
           </p>
         </div>
 
@@ -313,7 +347,10 @@ export default function Etablissement2Page() {
                   content: establishment.hours,
                 },
               ].map((item, index) => (
-                <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]">
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]"
+                >
                   <div className="w-16 h-16 bg-linear-to-br from-[#4A90E2] to-[#87CEEB] rounded-full flex items-center justify-center text-white mb-4">
                     {item.icon}
                   </div>
@@ -321,7 +358,10 @@ export default function Etablissement2Page() {
                     {item.title}
                   </h3>
                   {item.link ? (
-                    <a href={item.link} className="text-primary-text leading-relaxed font-body hover:text-[#4A90E2] transition-colors">
+                    <a
+                      href={item.link}
+                      className="text-primary-text leading-relaxed font-body hover:text-[#4A90E2] transition-colors"
+                    >
                       {item.content}
                     </a>
                   ) : (
@@ -366,9 +406,8 @@ export default function Etablissement2Page() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );
 }
-

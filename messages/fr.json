@@ -66,8 +66,8 @@
   },
   "nieuweStandaard": {
     "title": "La nouvelle référence!",
-    "paragraph1": "Après six ans à avoir fourni des foodtrucks aux plus grands événements publics du pays, nous avons décidé d'utiliser cette solide expérience pour créer LE concept de catering ultime, Le Club des Foodtrucks. Avec Le Club des Foodtrucks, nous regroupons huit concepts de foodtruck de haute qualité sous un même toit.",
-    "paragraph2": "Nos clients bénéficient ainsi toujours d'un contact unique, que vous souhaitiez louer un seul foodtruck ou une cour alimentaire complète de 12 foodtrucks. Ainsi, nous maintenons une communication directe et l'organisation de votre événement devient beaucoup plus simple. Parce que vous vous adressez directement à la source, la location de foodtrucks chez nous est souvent plus avantageuse."
+    "paragraph1": "Né en novembre 2025, Mister Fish réunit le meilleur du poisson et des fruits de mer dans une ambiance chaleureuse à Agadir et Dcheira El Jihadia. Chaque jour, nos équipes sélectionnent des produits frais pour préparer des plateaux, grillades et spécialités de la mer aux saveurs marocaines.",
+    "paragraph2": "Avec nos deux adresses, Mister Fish Haut Founty et Mister Fish Dcheira El Jihadia, vous profitez du même niveau de qualité, que ce soit pour manger sur place ou emporter votre commande. Que vous veniez en famille, entre amis ou pour une pause rapide, Mister Fish devient votre nouvelle référence pour déguster le poisson frais à Agadir."
   },
   "foodtruckCarousel": {
     "title": "Nos",
@@ -133,12 +133,12 @@
     "new": "Nouveau",
     "establishments": {
       "centreVille": {
-        "title": "Mister Fish - Centre Ville",
-        "description": "Notre établissement principal au cœur de Agadir. Découvrez l'ambiance authentique et goûtez nos spécialités de fruits de mer frais."
+        "title": "MISTER FISH HAUT FOUNTY",
+        "description": "Notre premier établissement, situé à Haut Founty à Agadir. Un cadre convivial où vous pouvez déguster des plateaux de poissons, des grillades de la mer et nos recettes maison préparées à la minute."
       },
       "nouveau": {
-        "title": "Mister Fish - Nouveau",
-        "description": "Notre tout nouvel établissement ! Fraîchement ouvert à Agadir avec une ambiance moderne et la même qualité exceptionnelle."
+        "title": "MISTER FISH DCHEIRA EL JIHADIA",
+        "description": "Notre nouvelle adresse à Dcheira El Jihadia. Retrouvez la même fraîcheur, le même savoir faire poissonnerie et une ambiance moderne idéale pour un repas sur place ou à emporter."
       }
     }
   },

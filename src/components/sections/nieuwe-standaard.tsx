@@ -28,6 +28,9 @@ const NieuweStandaard = () => {
               <h2 className="font-display font-black uppercase text-[3.25rem] sm:text-5xl md:text-[4.5rem] leading-[0.95] tracking-[-1px] mb-8">
                 {t('title')}
               </h2>
+              <p className='text-lg lg:text-xl  max-w-md'>
+               Deux restaurants, une seule promesse : du poisson ultra frais, cuisiné avec savoir faire marocain.
+              </p>
             </div>
 
             {/* Text Column */}
