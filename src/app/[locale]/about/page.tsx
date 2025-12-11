@@ -21,14 +21,14 @@ export default function AboutPage() {
 
   const branchImages = [
     {
-      src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
-      alt: "Mister Fish - Centre Ville",
-      title: "Centre Ville",
+      src: "/images/misterfishresto.jpg",
+      alt: "Mister Fish - DCHEIRA EL JIHADIA",
+      title: "DCHEIRA EL JIHADIA",
     },
     {
-      src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
-      alt: "Mister Fish - Boulevard Corniche",
-      title: "Boulevard Corniche",
+      src: "/images/clean_street_MISTER_FISH.webp",
+      alt: "Mister Fish - HAUT FOUNTY",
+      title: "HAUT FOUNTY",
     },
   ];
 
@@ -287,7 +287,7 @@ export default function AboutPage() {
                       <strong>deux adresses</strong> complémentaires. Notre
                       premier restaurant se trouve à{" "}
                       <strong>Haut Founty,</strong> à Agadir, dans un cadre
-                      chaleureux et familial. Le second se situe à{" "}
+                      chaleureux et familial. <br /> Le second se situe à{" "}
                       <strong>Dcheira El Jihadia,</strong> au lot N 174,
                       lotissement El Mers, avec un espace moderne idéal pour les
                       groupes et les événements. Chaque établissement propose la

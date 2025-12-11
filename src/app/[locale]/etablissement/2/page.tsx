@@ -16,15 +16,15 @@ const establishment = {
   id: "2",
   name: "Mister Fish - DCHEIRA EL JIHADIA",
   description: "Notre nouvel établissement avec une ambiance moderne",
-  address: "Lot Haut Founty, Al Oulha, 3 25080 010 Agadir, Maroc",
-  phone: "+212 5 28 83 86 304",
+  address: "Lot N 174, lotissement El Mers Dcheira El Jihadia Agadir, Maroc",
+  phone: "+212 6 61 15 47 56",
   email: "centreville@misterfish.ma",
   hours: " Lun Dim : 12h00 – 01h30",
   isNew: true,
   image:
     "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27529.288976234035!2d-9.585273733494736!3d30.403170213372203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c9003bf79c53%3A0xb541e2c1d70e86a2!2sMister%20Fish%202!5e0!3m2!1sfr!2sus!4v1765453899089!5m2!1sfr!2sus",
 };
 
 const galleryItems = [
@@ -216,8 +216,8 @@ export default function Etablissement2Page() {
         </header>
 
         {/* Banner Image */}
-        <div className="relative  w-full aspect-video md:aspect-21/9 rounded-[32px] md:rounded-[40px] lg:rounded-[48px]  overflow-hidden">
-          <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-[32px] md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
+        <div className="relative  w-full aspect-video md:aspect-21/9 rounded-4xl md:rounded-[40px] lg:rounded-[48px]  overflow-hidden">
+          <div className="flex justify-end absolute z-10 top-0 right-0 bg-primary-background rounded-bl-4xl md:rounded-bl-[40px] lg:rounded-bl-[48px] p-3">
             <p
               className="relative p-2 md:p-3 lg:p-4 font-display font-black uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)] text-transparent bg-clip-text bg-linear-to-r from-[#4A90E2] to-[#87CEEB]
             

@@ -42,7 +42,7 @@ const Footer = () => {
                                 {t('description')}
                             </p>
                             <div className="flex items-center gap-4">
-                                <a
+                                <Link
                                     href="https://www.instagram.com/misterfishmaroc/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
@@ -50,16 +50,16 @@ const Footer = () => {
                                     className="w-10 h-10 rounded-full bg-[#4A90E2]/10 hover:bg-[#4A90E2] flex items-center justify-center transition-colors group"
                                 >
                                     <Instagram className="w-5 h-5 text-[#4A90E2] group-hover:text-white transition-colors" strokeWidth={2} />
-                                </a>
-                                <a
-                                    href="https://www.facebook.com/" 
+                                </Link>
+                                <Link
+                                    href="https://www.facebook.com/profile.php?id=100063887412186&sk=photos" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     aria-label="Facebook"
                                     className="w-10 h-10 rounded-full bg-[#4A90E2]/10 hover:bg-[#4A90E2] flex items-center justify-center transition-colors group"
                                 >
                                     <Facebook className="w-5 h-5 text-[#4A90E2] group-hover:text-white transition-colors" strokeWidth={2} />
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
@@ -102,24 +102,45 @@ const Footer = () => {
                                 <div className="flex items-start gap-3">
                                     <MapPin className="w-5 h-5 text-[#4A90E2] mt-0.5 shrink-0" strokeWidth={2} />
                                     <div className="text-nav-link">
-                                        <p>{t('address')}</p>
+                                        <p>{t('address1')}</p>
+                                        
                                         <p>{t('city')}</p>
                                     </div>
                                 </div>
-                                <a 
-                                    href="tel:+212600000000" 
+                                <Link    
+                                    href="tel:+212528386304" 
                                     className="flex items-center gap-3 text-nav-link hover:text-[#4A90E2] transition-colors"
                                 >
                                     <Phone className="w-5 h-5 text-[#4A90E2] shrink-0" strokeWidth={2} />
-                                    <span>{t('phone')}</span>
-                                </a>
-                                <a 
+                                    <span>{t('phone1')}</span>
+                                    
+
+                                </Link>
+                                <div className="flex items-start gap-3">
+                                    <MapPin className="w-5 h-5 text-[#4A90E2] mt-0.5 shrink-0" strokeWidth={2} />
+                                    <div className="text-nav-link">
+                                        <p>{t('address2')}</p>
+                                        
+                                        <p>{t('city')}</p>
+                                    </div>
+                                </div>
+                                <Link    
+                                    href="tel:+212661154756" 
+                                    className="flex items-center gap-3 text-nav-link hover:text-[#4A90E2] transition-colors"
+                                >
+                                    <Phone className="w-5 h-5 text-[#4A90E2] shrink-0" strokeWidth={2} />
+                                    <span>{t('phone2')}</span>
+                                    
+
+                                </Link>
+                             
+                                <Link
                                     href="mailto:contact@misterfish.ma" 
                                     className="flex items-center gap-3 text-nav-link hover:text-[#4A90E2] transition-colors"
                                 >
                                     <Mail className="w-5 h-5 text-[#4A90E2] shrink-0" strokeWidth={2} />
                                     <span>{t('email')}</span>
-                                </a>
+                                </Link>
                                 <div className="flex items-start gap-3">
                                     <Clock className="w-5 h-5 text-[#4A90E2] mt-0.5 shrink-0" strokeWidth={2} />
                                     <div className="text-nav-link">

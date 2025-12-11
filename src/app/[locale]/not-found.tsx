@@ -93,14 +93,14 @@ export default function NotFound() {
                 href="/etablissement/1" 
                 className="text-nav-link hover:text-[#4A90E2] transition-colors font-body"
               >
-                Centre Ville
+                "MISTER FISH HAUT FOUNTY
               </Link>
               <span className="text-primary-text/30">•</span>
               <Link 
                 href="/etablissement/2" 
                 className="text-nav-link hover:text-[#4A90E2] transition-colors font-body"
               >
-                Boulevard Corniche
+                Mister Fish DCHEIRA EL JIHADIA
               </Link>
             </div>
           </div>

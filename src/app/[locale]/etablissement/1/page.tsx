@@ -17,41 +17,41 @@ const establishment = {
   id: "1",
   name: "Mister Fish - HAUT FOUNTY",
   description: "Notre établissement principal au cœur de la ville",
-  address: "Lot Haut Founty, Al Oulha, 3 25080 010 Agadir, Maroc",
-  phone: "+212 5 28 83 86 304",
-  email: "centreville@misterfish.ma",
+  address: "Lot Haut Founty, Al Oulha, Agadir, Maroc",
+  phone: "+212 5 28 38 63 04",
+  email: "contact@misterfish.ma",
   hours: " Lun Dim : 12h00 – 01h30",
   isNew: false,
   image:
     "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27529.30893565205!2d-9.585273724778316!3d30.403099417586915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7b9679a203d%3A0xa3aa1a520d9baddf!2sMister%20Fish!5e0!3m2!1sfr!2sus!4v1765453826637!5m2!1sfr!2sus",
 };
 
 const galleryItems = [
   {
     title: "Poissons Frais",
-    image: "/images/misterfish-01.webp",
+    image: "/images/poisson-fraix.webp",
   },
   {
-    title: "Tajines Marocains",
-    image: "/images/misterfish-02.webp",
+    title: "Plats familliaux",
+    image: "/images/PXL_20251129_142646714.webp",
   },
   {
-    title: "Fritures Croustillantes",
-    image: "/images/misterfish-03.webp",
+    title: "Plats delicieux",
+    image: "/images/PXL_20251204_184403395.webp",
   },
   {
     title: "Plats Combinés",
     image: "/images/misterfish-04.webp",
   },
   {
-    title: "Desserts Maison",
+    title: "Restaurant Misterfish",
     image: "/images/misterfish-05.webp",
   },
   {
     title: "Spécialités du Chef",
-    image: "/images/misterfish-06.webp",
+    image: "/images/chef.webp",
   },
 ];
 
@@ -383,12 +383,7 @@ export default function Etablissement1Page() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-8 py-6 h-auto shadow-xl"
-              >
-                <Link href="/contact">{t("nav.contact")}</Link>
-              </Button>
+             
               <Button
                 asChild
                 variant="outline"

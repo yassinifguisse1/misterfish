@@ -10,22 +10,22 @@ import Link from "next/link";
 const establishments = {
   "1": {
     id: "1",
-    name: "Mister Fish - Centre Ville",
+    name: "Mister Fish - HAUT FOUNTY",
     description: "Notre établissement principal au cœur de la ville",
-    address: "123 Avenue de la Mer, Agadir",
-    phone: "+212 6 00 00 00 01",
-    email: "centreville@misterfish.ma",
+    address: "Lot Haut Founty, Al Oulha, Agadir, Maroc",
+    phone: "+212 5 28 38 63 04",
+    email: "contact@misterfish.ma",
     hours: "Lun-Dim: 12h00 - 23h00",
     isNew: false,
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   },
   "2": {
     id: "2",
-    name: "Mister Fish - Nouveau",
+    name: "Mister Fish - DCHEIRA EL JIHADIA",
     description: "Notre nouvel établissement avec une ambiance moderne",
-    address: "456 Boulevard Corniche, Agadir",
-    phone: "+212 6 00 00 00 02",
-    email: "nouveau@misterfish.ma",
+    address: "Lot N 174, lotissement El Mers Dcheira El Jihadia Agadir, Maroc",
+    phone: "+212 6 61 15 47 56",
+    email: "contact@misterfish.ma",
     hours: "Lun-Dim: 12h00 - 23h00",
     isNew: true,
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
@@ -159,12 +159,7 @@ export default function EtablissementPage({
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-8 py-6 h-auto shadow-xl"
-              >
-                <Link href="/contact">Réserver une table</Link>
-              </Button>
+              
               <Button
                 asChild
                 variant="outline"

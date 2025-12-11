@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Instagram } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 export default function ContactCta() {
   const t = useTranslations('contactCta');
@@ -94,12 +95,12 @@ export default function ContactCta() {
           <div className="flex items-center justify-between gap-8 xl:gap-12">
             
             {/* Left: Phone Button */}
-            <a
-              href="tel:+212600000000"
+            <Link
+              href="tel:+212 5 28 83 86304"
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/10 shrink-0"
             >
-              +212 60000000
-            </a>
+             +212 5 28 83 86 304
+            </Link>
 
             {/* Right: Sonnez à la porte Text */}
             <h3 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(4rem,8vw,120px)] whitespace-nowrap shrink-0">

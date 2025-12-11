@@ -3,6 +3,7 @@ import Navigation from "@/components/sections/navigation";
 import Footer from "@/components/sections/footer";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -164,18 +165,7 @@ export default function ContactPage() {
               {/* Map & Social */}
               <div className="space-y-8">
                 {/* Map */}
-                <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-[400px]">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5761460984873!2d-7.589843!3d33.5731104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM0JzIzLjIiTiA3wrAzNScyMy40Ilc!5e0!3m2!1sen!2sma!4v1234567890"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Mister Fish Location"
-                  ></iframe>
-                </div>
+             
 
                 {/* Social Media & Additional Info */}
                 <div className="bg-linear-to-br from-[#2E3F72] to-[#3498DB] rounded-3xl shadow-xl p-8 text-white">
@@ -183,24 +173,24 @@ export default function ContactPage() {
                     Suivez-Nous
                   </h3>
                   <div className="flex gap-4 mb-8">
-                    <a
-                      href="https://instagram.com"
+                    <Link
+                      href="https://www.instagram.com/misterfishmaroc/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-14 h-14 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label="Instagram"
                     >
                       <Instagram className="w-7 h-7" strokeWidth={2} />
-                    </a>
-                    <a
-                      href="https://facebook.com"
+                    </Link>
+                    <Link
+                      href="https://www.facebook.com/profile.php?id=100063887412186"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-14 h-14 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                       aria-label="Facebook"
                     >
                       <Facebook className="w-7 h-7" strokeWidth={2} />
-                    </a>
+                    </Link>
                   </div>
                   
                   <div className="space-y-4 font-body text-white/90">

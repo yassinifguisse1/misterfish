@@ -46,8 +46,8 @@
     "subtitle": "Nous sommes là pour répondre à toutes vos questions"
   },
   "establishments": {
-    "centreVille": "Centre Ville",
-    "boulevardCorniche": "Boulevard Corniche",
+    "centreVille": "MISTER FISH HAUT FOUNTY",
+    "boulevardCorniche": "Mister Fish DCHEIRA EL JIHADIA",
     "new": "Nouveau",
     "main": "Notre établissement principal",
     "newDesc": "Notre nouvel établissement"
@@ -66,7 +66,7 @@
   },
   "nieuweStandaard": {
     "title": "La nouvelle référence!",
-    "paragraph1": "Né en novembre 2025, Mister Fish réunit le meilleur du poisson et des fruits de mer dans une ambiance chaleureuse à Agadir et Dcheira El Jihadia. Chaque jour, nos équipes sélectionnent des produits frais pour préparer des plateaux, grillades et spécialités de la mer aux saveurs marocaines.",
+    "paragraph1": "Né en novembre 2021, Mister Fish réunit le meilleur du poisson et des fruits de mer dans une ambiance chaleureuse à Agadir et Dcheira El Jihadia. Chaque jour, nos équipes sélectionnent des produits frais pour préparer des plateaux, grillades et spécialités de la mer aux saveurs marocaines.",
     "paragraph2": "Avec nos deux adresses, Mister Fish Haut Founty et Mister Fish Dcheira El Jihadia, vous profitez du même niveau de qualité, que ce soit pour manger sur place ou emporter votre commande. Que vous veniez en famille, entre amis ou pour une pause rapide, Mister Fish devient votre nouvelle référence pour déguster le poisson frais à Agadir."
   },
   "foodtruckCarousel": {
@@ -87,44 +87,44 @@
     "seeFullMenu": "Voir Notre Menu Complet",
     "menuItems": {
       "soupeDuJour": {
-        "name": "Soupe du Jour",
-        "description": "Soupe du jour du chef avec herbes fraîches et pain chaud"
+        "name": "Salade Composée",
+        "description": "Salade Verte, Concombre, Riz, Thon, Maïs, Fromage... "
       },
       "saladeNicoise": {
-        "name": "Salade Niçoise",
-        "description": "Thon frais, haricots verts, olives, tomates et anchois"
+        "name": "Salade Du Chef",
+        "description": "Salade Verte, Fruits De Mer, Betterave, Thon, Maïs, Fromage ..."
       },
       "bruschettaTrio": {
-        "name": "Bruschetta Trio",
-        "description": "Tomate basilic, champignon truffe et chèvre"
+        "name": "Salade Mister Fish",
+        "description": "Salade Verte, Riz, Thon, Maïs, Fromage, Russe, Ananas ..."
       },
       "crevettesAil": {
-        "name": "Crevettes à l'Ail",
-        "description": "Crevettes à l'ail sautées au vin blanc et beurre"
+        "name": "Salade Pêcheur",
+        "description": "Fruits De Mer, Salade Verte, Tomate Cerise, Crevette"
       },
       "carpaccioBoeuf": {
         "name": "Carpaccio de Bœuf",
         "description": "Bœuf finement tranché avec roquette, parmesan et huile de truffe"
       },
       "grilledSeaBass": {
-        "name": "Bar Grillé",
-        "description": "Bar méditerranéen frais avec sauce au beurre citron"
+        "name": "Escalope De Poulet",
+        "description": "Escalope de poulet"
       },
       "tagineRoyal": {
-        "name": "Tagine Royal",
-        "description": "Tagine d'agneau marocain traditionnel aux abricots et amandes"
+        "name": "Panini Thon",
+        "description": "Panini Thon"
       },
       "steakFrites": {
-        "name": "Steak Frites",
-        "description": "Filet de bœuf avec sauce au poivre et frites"
+        "name": "Sandwich Mister Fish",
+        "description": "Sandwich Mister Fish"
       },
       "paellaMarinara": {
-        "name": "Paella Marinara",
-        "description": "Paella aux fruits de mer avec moules, crevettes et calamars"
+        "name": "Cheese Burger",
+        "description": "Cheese Burger"
       },
       "risottoChampignons": {
-        "name": "Risotto aux Champignons",
-        "description": "Risotto crémeux aux champignons avec truffe et parmesan"
+        "name": "Triple Cheese Burger",
+        "description": "Triple Cheese Burger"
       }
     }
   },
@@ -152,9 +152,11 @@
     "navigation": "Navigation",
     "establishments": "Nos Établissements",
     "contact": "Contact",
-    "address": "123 Avenue de la Mer",
+    "address1": "Lot Haut Founty, Al Oulha,",
+    "address2": "Lot N 174, lotissement El Mers Dcheira El Jihadia",
     "city": "Agadir, Maroc",
-    "phone": "+212 6 00 00 00 00",
+    "phone1": "+212 5 28 38 63 04",
+    "phone2": "+212 6 61 15 47 56",
     "email": "contact@misterfish.ma",
     "hours": "Lun-Dim: 12h00 - 23h00",
     "copyright": "© 2025 Mister Fish. Site développé par",
