@@ -135,11 +135,24 @@
     "establishments": {
       "centreVille": {
         "title": "MISTER FISH HAUT FOUNTY",
-        "description": "Notre premier établissement, situé à Haut Founty à Agadir. Un cadre convivial où vous pouvez déguster des plateaux de poissons, des grillades de la mer et nos recettes maison préparées à la minute."
+        "description": "Notre premier établissement, situé à Haut Founty à Agadir. Un cadre convivial où vous pouvez déguster des plateaux de poissons, des grillades de la mer et nos recettes maison préparées à la minute.",
+        "paragraph1": "Bienvenue dans notre établissement principal Mister Fish – Haut Founty, premier restaurant de la marque ouvert en 2021 à Agadir. Situé dans le quartier résidentiel de Haut Founty, notre restaurant vous accueille dans un cadre chaleureux où la passion du poisson frais rencontre les saveurs authentiques de la cuisine marocaine. Depuis notre ouverture, nous avons su créer une atmosphère conviviale et familiale où la qualité, la fraîcheur et le service sont au cœur de notre cuisine. Découvrez nos spécialités de poissons et fruits de mer, nos tajines marocains revisités et nos plats combinés généreux, pensés pour partager un vrai moment de plaisir autour de la table.",
+        "title2":"Nos Spécialités",
+        "paragraph2": "Découvrez nos spécialités préparées à partir de poissons frais, soigneusement sélectionnés chaque jour. De nos plateaux de la mer à nos grillades, chaque plat est préparé sur commande pour vous offrir une expérience gustative authentique et savoureuse.",
+        "paragraph3":"Notre établissement de Haut Founty vous accueille dans une ambiance moderne et chaleureuse. Que vous veniez pour un déjeuner rapide, un dîner en famille ou une soirée entre amis, notre équipe est à vos petits soins pour vous faire découvrir les saveurs de la cuisine marocaine et méditerranéenne, avec des portions généreuses et un service attentionné.",
+        "paragraph4":"Notre équipe passionnée met tout en œuvre pour vous offrir une expérience culinaire exceptionnelle. Que vous choisissiez un plateau de poissons, des fritures croustillantes ou les spécialités du chef, la fraîcheur de nos produits reste notre priorité. Venez vivre un moment convivial dans notre salle ou en terrasse et laissez vous séduire par l’authenticité de Mister Fish Haut Founty."
+       
+     
+     
       },
       "nouveau": {
         "title": "MISTER FISH DCHEIRA EL JIHADIA",
-        "description": "Notre nouvelle adresse à Dcheira El Jihadia. Retrouvez la même fraîcheur, le même savoir faire poissonnerie et une ambiance moderne idéale pour un repas sur place ou à emporter."
+        "description": "Notre nouvelle adresse à Dcheira El Jihadia. Retrouvez la même fraîcheur, le même savoir faire poissonnerie et une ambiance moderne idéale pour un repas sur place ou à emporter.",
+        "paragraph1": "Bienvenue dans notre nouvel établissement Mister Fish à Dcheira El Jihadia, ouvert en 2025. Situé au lot N 174, lotissement El Mers à Dcheira El Jihadia, notre restaurant vous propose une ambiance moderne et conviviale autour du poisson frais et des spécialités de la mer. Ce nouveau Mister Fish reprend tout ce qui fait le succès de notre première adresse à Haut Founty tout en offrant un espace plus vaste, idéal pour les familles, les groupes et les événements. Découvrez nos plateaux de poissons, nos grillades, nos tajines marocains et nos plats combinés généreux, préparés à partir de produits frais soigneusement sélectionnés chaque jour.",
+        "title2":"Nos Spécialités",
+        "paragraph2": "Découvrez nos spécialités de poissons et fruits de mer préparées avec des ingrédients frais, sélectionnés avec soin. Entre recettes traditionnelles marocaines et inspirations méditerranéennes, chaque assiette est pensée pour une expérience gustative authentique et savoureuse.",
+        "paragraph3":"Notre établissement de Dcheira El Jihadia a été conçu pour vous offrir confort et plaisir. Salle spacieuse, décor soigné et service attentionné créent un cadre idéal pour un déjeuner en famille, un dîner entre amis ou une célébration spéciale. Que vous soyez amateur de fritures croustillantes, de plats combinés ou de spécialités du chef, vous retrouverez ici la signature Mister Fish et la fraîcheur de la mer dans chaque bouchée.",
+        "paragraph4":"Notre équipe passionnée met tout en œuvre pour vous offrir une expérience culinaire exceptionnelle. Que vous veniez en famille, entre amis ou pour marquer un événement, Mister Fish Dcheira El Jihadia vous accueille dans une atmosphère chaleureuse où la qualité et la fraîcheur des produits restent notre priorité. Réservez votre table dès maintenant et laissez vous séduire par l’authenticité de nos saveurs marocaines."
       }
     }
   },
@@ -160,9 +173,7 @@
     "phone2": "+212 6 61 15 47 56",
     "email": "contact@misterfish.ma",
     "hours": "Lun-Dim: 12h00 - 23h00",
-    "copyright": "© 2025 Mister Fish. Site développé par",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation"
+    "copyright": "© 2025 Mister Fish. Site développé par"
   }
 }
 

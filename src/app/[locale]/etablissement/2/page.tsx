@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useTranslations } from "next-intl";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,8 +52,7 @@ const galleryItems = [
   },
   {
     title: "Spécialités du Chef",
-    image:
-      "/images/spécialité-chef.webp",
+    image: "/images/spécialité-chef.webp",
   },
 ];
 
@@ -60,6 +60,7 @@ export default function Etablissement2Page() {
   const pageRef = useRef<HTMLDivElement>(null);
   const maskStrokeRef = useRef<SVGPathElement>(null);
   const strokeRef = useRef<SVGPathElement>(null);
+  const t = useTranslations();
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -245,22 +246,17 @@ export default function Etablissement2Page() {
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre nouvel établissement Mister Fish à Dcheira El
-            Jihadia, ouvert en 2025. Situé au lot N 174, lotissement El Mers à
-            Dcheira El Jihadia, notre restaurant vous propose une ambiance
-            moderne et conviviale autour du poisson frais et des spécialités de
-            la mer. Ce nouveau Mister Fish reprend tout ce qui fait le succès de
-            notre première adresse à Haut Founty tout en offrant un espace plus
-            vaste, idéal pour les familles, les groupes et les événements.
-            Découvrez nos plateaux de poissons, nos grillades, nos tajines
-            marocains et nos plats combinés généreux, préparés à partir de
-            produits frais soigneusement sélectionnés chaque jour.
+            {t("recentePartijen.establishments.centreVille.paragraph1")}
           </p>
+          {/* {t("recentePartijen.establishments.centreVille.description")} */}
         </div>
 
         {/* Gallery Title */}
         <h2 className="text-[2rem] mx-4 mt-12 mb-8 revealer">
-          <div className="revealer-inner">Nos Spécialités</div>
+          <div className="revealer-inner">
+            {" "}
+            {t("recentePartijen.establishments.centreVille.title2")}
+          </div>
         </h2>
 
         {/* Gallery Grid */}
@@ -288,34 +284,18 @@ export default function Etablissement2Page() {
 
           {/* Descriptive blocks - flow under images on mobile, placed in grid on md+ */}
           <p className="text-primary-text text-base leading-relaxed font-body flex items-center md:col-start-3 md:row-start-1">
-            Découvrez nos spécialités de poissons et fruits de mer préparées
-            avec des ingrédients frais, sélectionnés avec soin. Entre recettes
-            traditionnelles marocaines et inspirations méditerranéennes, chaque
-            assiette est pensée pour une expérience gustative authentique et
-            savoureuse.
+            {t("recentePartijen.establishments.centreVille.paragraph2")}
           </p>
 
           <p className="text-primary-text text-base leading-relaxed font-body md:col-start-1 md:row-start-2">
-            Notre établissement de Dcheira El Jihadia a été conçu pour vous
-            offrir confort et plaisir. Salle spacieuse, décor soigné et service
-            attentionné créent un cadre idéal pour un déjeuner en famille, un
-            dîner entre amis ou une célébration spéciale. Que vous soyez amateur
-            de fritures croustillantes, de plats combinés ou de spécialités du
-            chef, vous retrouverez ici la signature Mister Fish et la fraîcheur
-            de la mer dans chaque bouchée.
+            {t("recentePartijen.establishments.centreVille.paragraph3")}
           </p>
         </div>
 
         {/* Additional Branch Info */}
         <div className="mx-4 mt-16 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Notre équipe passionnée met tout en œuvre pour vous offrir une
-            expérience culinaire exceptionnelle. Que vous veniez en famille,
-            entre amis ou pour marquer un événement, Mister Fish Dcheira El
-            Jihadia vous accueille dans une atmosphère chaleureuse où la qualité
-            et la fraîcheur des produits restent notre priorité. Réservez votre
-            table dès maintenant et laissez vous séduire par l’authenticité de
-            nos saveurs marocaines.
+            {t("recentePartijen.establishments.centreVille.paragraph4")}
           </p>
         </div>
 
@@ -389,7 +369,6 @@ export default function Etablissement2Page() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             
               <Button
                 asChild
                 variant="outline"

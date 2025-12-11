@@ -241,23 +241,15 @@ export default function Etablissement1Page() {
         {/* Branch Description */}
         <div className="mx-4 mt-12 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Bienvenue dans notre établissement principal Mister Fish – Haut
-            Founty, premier restaurant de la marque ouvert en 2021 à Agadir.
-            Situé dans le quartier résidentiel de Haut Founty, notre restaurant
-            vous accueille dans un cadre chaleureux où la passion du poisson
-            frais rencontre les saveurs authentiques de la cuisine marocaine.
-            Depuis notre ouverture, nous avons su créer une atmosphère
-            conviviale et familiale où la qualité, la fraîcheur et le service
-            sont au cœur de notre cuisine. Découvrez nos spécialités de poissons
-            et fruits de mer, nos tajines marocains revisités et nos plats
-            combinés généreux, pensés pour partager un vrai moment de plaisir
-            autour de la table.
+            {t("recentePartijen.establishments.centreVille.paragraph1")}
           </p>
         </div>
 
         {/* Gallery Title */}
         <h2 className="text-[2rem] mx-4 mt-12 mb-8 revealer">
-          <div className="revealer-inner">Nos Spécialités</div>
+          <div className="revealer-inner">
+            {t("recentePartijen.establishments.centreVille.title2")}
+          </div>
         </h2>
 
         {/* Gallery Grid */}
@@ -285,31 +277,18 @@ export default function Etablissement1Page() {
 
           {/* Descriptive blocks - they will flow under images on mobile and sit in the grid on md+ */}
           <p className="text-primary-text text-base leading-relaxed font-body flex items-center md:col-start-3 md:row-start-1">
-            Découvrez nos spécialités préparées à partir de poissons frais,
-            soigneusement sélectionnés chaque jour. De nos plateaux de la mer à
-            nos grillades, chaque plat est préparé sur commande pour vous offrir
-            une expérience gustative authentique et savoureuse.
+            {t("recentePartijen.establishments.centreVille.paragraph2")}
           </p>
 
           <p className="text-primary-text text-base leading-relaxed font-body md:col-start-1 md:row-start-2">
-            Notre établissement de Haut Founty vous accueille dans une ambiance
-            moderne et chaleureuse. Que vous veniez pour un déjeuner rapide, un
-            dîner en famille ou une soirée entre amis, notre équipe est à vos
-            petits soins pour vous faire découvrir les saveurs de la cuisine
-            marocaine et méditerranéenne, avec des portions généreuses et un
-            service attentionné.
+            {t("recentePartijen.establishments.centreVille.paragraph3")}
           </p>
         </div>
 
         {/* Additional Branch Info */}
         <div className="mx-4 mt-16 mb-8 max-w-4xl">
           <p className="text-primary-text text-lg leading-relaxed font-body">
-            Notre équipe passionnée met tout en œuvre pour vous offrir une
-            expérience culinaire exceptionnelle. Que vous choisissiez un plateau
-            de poissons, des fritures croustillantes ou les spécialités du chef,
-            la fraîcheur de nos produits reste notre priorité. Venez vivre un
-            moment convivial dans notre salle ou en terrasse et laissez vous
-            séduire par l’authenticité de Mister Fish Haut Founty.
+            {t("recentePartijen.establishments.centreVille.paragraph4")}
           </p>
         </div>
 
@@ -383,7 +362,6 @@ export default function Etablissement1Page() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-             
               <Button
                 asChild
                 variant="outline"

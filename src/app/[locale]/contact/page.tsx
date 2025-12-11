@@ -5,6 +5,36 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+
+const establishment = {
+  id: "1",
+  name: "Mister Fish - HAUT FOUNTY",
+  description: "Notre établissement principal au cœur de la ville",
+  address: "Lot Haut Founty, Al Oulha, Agadir, Maroc",
+  phone: "+212 5 28 38 63 04",
+  email: "contact@misterfish.ma",
+  hours: " Lun Dim : 12h00 – 01h30",
+  isNew: false,
+  image:
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27529.30893565205!2d-9.585273724778316!3d30.403099417586915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b7b9679a203d%3A0xa3aa1a520d9baddf!2sMister%20Fish!5e0!3m2!1sfr!2sus!4v1765453826637!5m2!1sfr!2sus",
+};
+
+const establishment2 = {
+  id: "2",
+  name: "Mister Fish - DCHEIRA EL JIHADIA",
+  description: "Notre nouvel établissement avec une ambiance moderne",
+  address: "Lot N 174, lotissement El Mers Dcheira El Jihadia Agadir, Maroc",
+  phone: "+212 6 61 15 47 56",
+  email: "centreville@misterfish.ma",
+  hours: " Lun Dim : 12h00 – 01h30",
+  isNew: true,
+  image:
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+  mapEmbed:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27529.288976234035!2d-9.585273733494736!3d30.403170213372203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c9003bf79c53%3A0xb541e2c1d70e86a2!2sMister%20Fish%202!5e0!3m2!1sfr!2sus!4v1765453899089!5m2!1sfr!2sus",
+};
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
@@ -78,6 +108,18 @@ export default function ContactPage() {
                 </div>
               ))}
             </div>
+            <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-[400px] mb-12">
+              <iframe
+                src={establishment.mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`${establishment.name} Location`}
+              ></iframe>
+            </div>
             <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
                 Mister Fish - DCHEIRA EL JIHADIA
               </h2>
@@ -125,6 +167,18 @@ export default function ContactPage() {
                   )}
                 </div>
               ))}
+            </div>
+              <div className="bg-white rounded-3xl shadow-xl overflow-hidden h-[400px] mb-12">
+              <iframe
+                src={establishment2.mapEmbed}
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={`${establishment2.name} Location`}
+              ></iframe>
             </div>
 
             {/* Contact Form & Map Section */}
@@ -271,21 +325,21 @@ export default function ContactPage() {
             </h2>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80"
+                src="/images/deux-restaurant.webp"
                 alt="Restaurant Mister Fish Interior"
                 width={1200}
                 height={600}
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-[#2E3F72]/60 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-12 text-white text-center">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-12 text-white text-center">
                 <h3 className="font-display font-black uppercase text-4xl lg:text-5xl mb-4">
                   Bienvenue Chez Mister Fish
                 </h3>
                 <p className="text-xl font-body text-white/90 max-w-2xl mx-auto">
                   Un cadre chaleureux et convivial pour savourer les meilleurs fruits de mer
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

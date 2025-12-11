@@ -82,11 +82,11 @@ export default function Navigation() {
         <div className="container mx-auto max-w-[1440px] px-8">
           <div className="flex justify-between items-center py-2 text-primary-text/80 text-xs font-sans">
             <div className="flex items-center gap-4">
-              <a href="#" aria-label="Instagram" className="hover:text-primary-text transition-colors"><Instagram size={16} /></a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-primary-text transition-colors"><Linkedin size={16} /></a>
+              <Link href="https://www.instagram.com/misterfishmaroc/" aria-label="Instagram" className="hover:text-primary-text transition-colors"><Instagram size={16} /></Link>
+              <Link href="https://www.facebook.com/profile.php?id=100063887412186" aria-label="LinkedIn" className="hover:text-primary-text transition-colors"><Linkedin size={16} /></Link>
             </div>
             <div className="flex items-center gap-6 font-medium tracking-wide">
-              <span className="flex items-center gap-2">Ouvert tous les jours : 12h00 - 23h00</span>
+              <span className="flex items-center gap-2">Ouvert tous les jours : 12h00 - 01h30</span>
               <span className="hidden sm:inline">|</span>
               <Link href="/contact" className="hover:text-primary-text transition-colors">Localisation</Link>
             </div>

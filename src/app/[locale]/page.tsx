@@ -28,8 +28,7 @@ export default function Home() {
         
         <InstagramGallery />
         
-        
-          <RecentePartijen />
+        <RecentePartijen />
         
        
         

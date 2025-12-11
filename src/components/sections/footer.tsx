@@ -152,17 +152,9 @@ const Footer = () => {
                     </div>
 
                     {/* Bottom Bar */}
-                    <div className="mt-16 lg:mt-24 pt-8 border-t border-primary-text/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm uppercase font-sans tracking-wider text-primary-text/60">
+                    <div className="mt-16 lg:mt-24 pt-8 border-t border-primary-text/20 flex flex-col md:flex-row justify-center items-center gap-4 text-sm uppercase font-sans tracking-wider text-primary-text/60">
                         <p>{t('copyright')} <Link href="https://www.itagroupe.com" target="_blank" rel="noopener noreferrer" className="text-[#4A90E2]">ITA GROUPE</Link></p>
-                        <div className="flex items-center gap-6 text-xs">
-                            <Link href="/privacy-policy" className="hover:text-[#4A90E2] transition-colors">
-                                {t('privacy')}
-                            </Link>
-                            <span>•</span>
-                            <Link href="/terms" className="hover:text-[#4A90E2] transition-colors">
-                                {t('terms')}
-                            </Link>
-                        </div>
+                        
                     </div>
                 </div>
             </footer>
