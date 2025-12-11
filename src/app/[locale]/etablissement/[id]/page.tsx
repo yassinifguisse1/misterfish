@@ -69,7 +69,7 @@ export default function EtablissementPage({
                   Nouveau
                 </span>
               )}
-              <h1 className="font-display font-black uppercase text-[clamp(3rem,8vw,7rem)] leading-[0.9] mb-6 bg-gradient-to-r from-[#87CEEB] to-[#4A90E2] bg-clip-text text-transparent">
+              <h1 className="font-display font-black uppercase text-[clamp(3rem,8vw,7rem)] leading-[0.9] mb-6 bg-linear-to-r from-[#87CEEB] to-[#4A90E2] bg-clip-text text-transparent">
                 {establishment.name}
               </h1>
               <p className="text-xl lg:text-2xl leading-relaxed font-body text-white/90">

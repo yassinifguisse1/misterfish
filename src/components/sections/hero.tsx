@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const HeroSection = () => {
-  const languages = ['Bon appétit', 'Eet smakelijk'];
+  const languages = ['Bon appétit', 'Enjoy your meal'];
   const [currentLanguageIndex, setCurrentLanguageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 

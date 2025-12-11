@@ -27,6 +27,7 @@ const MobileNav = ({ isOpen, onClose, t }: { isOpen: boolean; onClose: () => voi
             priority
           />
         </Link>
+        
         <button onClick={onClose} aria-label="Close menu">
           <X className="h-8 w-8 text-primary-text" />
         </button>
@@ -164,10 +165,12 @@ export default function Navigation() {
                 <Link href="/contact">{t('nav.contact')}</Link>
               </Button>
             </div>
-            <div className="lg:hidden">
+            <div className="lg:hidden flex items-center gap-4">
+              <LanguageSwitcher />
               <button onClick={() => setMenuOpen(true)} aria-label="Open menu">
                 <Menu className="h-8 w-8 text-primary-text" />
               </button>
+
             </div>
           </div>
         </div>
