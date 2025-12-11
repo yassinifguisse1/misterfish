@@ -43,7 +43,7 @@ const galleryItems = [
   },
   {
     title: "Plats Combinés",
-    image: "/images/misterfish-04.webp",
+    image: "/images/PXL_20251130_140449108.webp",
   },
   {
     title: "Restaurant Misterfish",

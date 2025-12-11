@@ -30,19 +30,19 @@ const establishment = {
 const galleryItems = [
   {
     title: "Poissons Frais",
-    image: "/images/misterfish-2.webp",
+    image: "/images/PXL_20251130_110441143.webp",
   },
   {
-    title: "Tajines Marocains",
-    image: "/images/misterfish-3.webp",
+    title: "Nos salades",
+    image: "/images/nos-salades.webp",
   },
   {
-    title: "Fritures Croustillantes",
+    title: "Plats delicieuxs",
     image: "/images/misterfish-4.webp",
   },
   {
     title: "Plats Combinés",
-    image: "/images/misterfish-5.webp",
+    image: "/images/PXL_20251204_133258702.webp",
   },
   {
     title: "Desserts Maison",
@@ -52,7 +52,7 @@ const galleryItems = [
   {
     title: "Spécialités du Chef",
     image:
-      "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
+      "/images/spécialité-chef.webp",
   },
 ];
 
@@ -389,12 +389,7 @@ export default function Etablissement2Page() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-8 py-6 h-auto shadow-xl"
-              >
-                <Link href="/contact">Réserver une table</Link>
-              </Button>
+             
               <Button
                 asChild
                 variant="outline"

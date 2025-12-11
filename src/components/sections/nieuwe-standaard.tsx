@@ -29,7 +29,7 @@ const NieuweStandaard = () => {
                 {t('title')}
               </h2>
               <p className='text-lg lg:text-xl  max-w-md'>
-               Deux restaurants, une seule promesse : du poisson ultra frais, cuisiné avec savoir faire marocain.
+               {t('subtitle')}
               </p>
             </div>
 

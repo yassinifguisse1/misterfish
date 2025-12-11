@@ -46,8 +46,8 @@
     "subtitle": "We are here to answer all your questions"
   },
   "establishments": {
-    "centreVille": "City Center",
-    "boulevardCorniche": "Boulevard Corniche",
+    "centreVille": "MISTER FISH HAUT FOUNTY",
+    "boulevardCorniche": "Mister Fish DCHEIRA EL JIHADIA",
     "new": "New",
     "main": "Our main establishment",
     "newDesc": "Our new establishment"
@@ -66,8 +66,9 @@
   },
   "nieuweStandaard": {
     "title": "The new standard!",
-    "paragraph1": "After six years of providing food trucks to the country's largest public events, we decided to use this solid experience to create THE ultimate catering concept, The Food Truck Club. With The Food Truck Club, we bring together eight high-quality food truck concepts under one roof.",
-    "paragraph2": "Our clients always benefit from a single point of contact, whether you want to rent a single food truck or a complete food court of 12 food trucks. This way, we maintain direct communication and organizing your event becomes much simpler. Because you're dealing directly with the source, renting food trucks from us is often more advantageous."
+    "subtitle": "Two restaurants, one promise: ultra-fresh fish, cooked with Moroccan expertise.",
+    "paragraph1": "Born in November 2021, Mister Fish brings together the best of fish and seafood in a warm atmosphere in Agadir and Dcheira El Jihadia. Every day, our teams select fresh products to prepare platters, grilled dishes, and seafood specialties with Moroccan flavors.",
+    "paragraph2": "With our two locations, Mister Fish Haut Founty and Mister Fish Dcheira El Jihadia, you enjoy the same level of quality whether you choose to dine in or take your order to go. Whether you come with family, friends, or for a quick break, Mister Fish becomes your new go-to spot to enjoy fresh fish in Agadir."
   },
   "foodtruckCarousel": {
     "title": "Our",
@@ -133,12 +134,12 @@
     "new": "New",
     "establishments": {
       "centreVille": {
-        "title": "Mister Fish - City Center",
-        "description": "Our main establishment in the heart of Agadir. Discover the authentic atmosphere and taste our fresh seafood specialties."
+        "title": "MISTER FISH HAUT FOUNTY",
+        "description": "Our first establishment, located in Haut Founty in Agadir. A friendly setting where you can enjoy fish platters, seafood grills, and our homemade recipes prepared à la minute."
       },
       "nouveau": {
-        "title": "Mister Fish - New",
-        "description": "Our brand new establishment! Freshly opened in Casablanca with a modern atmosphere and the same exceptional quality."
+        "title": "MISTER FISH DCHEIRA EL JIHADIA",
+        "description": "Our new location in Dcheira El Jihadia. Enjoy the same freshness, the same seafood expertise, and a modern atmosphere that’s perfect for dining in or taking away."
       }
     }
   },

@@ -32,27 +32,27 @@ const VoordelenComparison = () => {
     {
       name: t('menuItems.soupeDuJour.name'),
       description: t('menuItems.soupeDuJour.description'),
-      price: "65 MAD",
+      price: "80 MAD",
     },
     {
       name: t('menuItems.saladeNicoise.name'),
       description: t('menuItems.saladeNicoise.description'),
-      price: "85 MAD",
+      price: "70 MAD",
     },
     {
       name: t('menuItems.bruschettaTrio.name'),
       description: t('menuItems.bruschettaTrio.description'),
-      price: "75 MAD",
+      price: "80 MAD",
     },
     {
       name: t('menuItems.crevettesAil.name'),
       description: t('menuItems.crevettesAil.description'),
-      price: "95 MAD",
+      price: "90 MAD",
     },
     {
       name: t('menuItems.carpaccioBoeuf.name'),
       description: t('menuItems.carpaccioBoeuf.description'),
-      price: "110 MAD",
+      price: "70 MAD",
     },
   ];
 
@@ -60,27 +60,27 @@ const VoordelenComparison = () => {
     {
       name: t('menuItems.grilledSeaBass.name'),
       description: t('menuItems.grilledSeaBass.description'),
-      price: "185 MAD",
+      price: "70 MAD",
     },
     {
       name: t('menuItems.tagineRoyal.name'),
       description: t('menuItems.tagineRoyal.description'),
-      price: "165 MAD",
+      price: "40 MAD",
     },
     {
       name: t('menuItems.steakFrites.name'),
       description: t('menuItems.steakFrites.description'),
-      price: "220 MAD",
+      price: "80 MAD",
     },
     {
       name: t('menuItems.paellaMarinara.name'),
       description: t('menuItems.paellaMarinara.description'),
-      price: "195 MAD",
+      price: "40 MAD",
     },
     {
       name: t('menuItems.risottoChampignons.name'),
       description: t('menuItems.risottoChampignons.description'),
-      price: "145 MAD",
+      price: "60 MAD",
     },
   ];
 

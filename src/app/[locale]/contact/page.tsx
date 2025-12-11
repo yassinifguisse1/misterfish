@@ -31,18 +31,21 @@ export default function ContactPage() {
         {/* Contact Info Cards */}
         <section className="py-20 lg:py-32 bg-background">
           <div className="container mx-auto max-w-[1200px] px-8">
+            <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
+                Mister Fish - HAUT FOUNTY
+              </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {[
                 {
                   icon: <MapPin className="w-8 h-8" strokeWidth={2} />,
                   title: "Adresse",
-                  content: "123 Avenue de la Mer\nAgadir, Maroc"
+                  content: "Lot Haut Founty, Al Oulha, Agadir, Maroc"
                 },
                 {
                   icon: <Phone className="w-8 h-8" strokeWidth={2} />,
                   title: "Téléphone",
-                  content: "+212 6 00 00 00 00",
-                  link: "tel:+212600000000"
+                  content: "+212 5 28 38 63 04",
+                  link: "tel:+212528386304"
                 },
                 {
                   icon: <Mail className="w-8 h-8" strokeWidth={2} />,
@@ -53,7 +56,55 @@ export default function ContactPage() {
                 {
                   icon: <Clock className="w-8 h-8" strokeWidth={2} />,
                   title: "Horaires",
-                  content: "Lun-Dim\n12h00 - 23h00"
+                  content: "Lun-Dim\n12h00 - 01h30"
+                }
+              ].map((item, index) => (
+                <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]">
+                  <div className="w-16 h-16 bg-linear-to-br from-[#4A90E2] to-[#87CEEB] rounded-full flex items-center justify-center text-white mb-4">
+                    {item.icon}
+                  </div>
+                  <h3 className="font-display font-bold uppercase text-lg mb-3 text-[#2E3F72]">
+                    {item.title}
+                  </h3>
+                  {item.link ? (
+                    <a href={item.link} className="text-primary-text leading-relaxed font-body hover:text-[#4A90E2] transition-colors whitespace-pre-line">
+                      {item.content}
+                    </a>
+                  ) : (
+                    <p className="text-primary-text leading-relaxed font-body whitespace-pre-line">
+                      {item.content}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+            <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
+                Mister Fish - DCHEIRA EL JIHADIA
+              </h2>
+             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 ">
+              
+              {[
+                {
+                  icon: <MapPin className="w-8 h-8" strokeWidth={2} />,
+                  title: "Adresse",
+                  content: "Lot N 174, lotissement El Mers Dcheira El Jihadia Agadir, Maroc"
+                },
+                {
+                  icon: <Phone className="w-8 h-8" strokeWidth={2} />,
+                  title: "Téléphone",
+                  content: "+212 6 61 15 47 56",
+                  link: "tel:+212661154756"
+                },
+                {
+                  icon: <Mail className="w-8 h-8" strokeWidth={2} />,
+                  title: "Email",
+                  content: "contact@misterfish.ma",
+                  link: "mailto:contact@misterfish.ma"
+                },
+                {
+                  icon: <Clock className="w-8 h-8" strokeWidth={2} />,
+                  title: "Horaires",
+                  content: "Lun-Dim\n12h00 - 01h30"
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-[#4A90E2]">
