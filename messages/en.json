@@ -34,13 +34,34 @@
     "reserveTitle": "Reserve?"
   },
   "about": {
-    "title": "Our Story",
-    "our": "Our",
-    "history": "History",
-    "founder": "Hamza, Our Founder",
-    "team": "Our Team",
-    "values": "Our Values"
-  },
+  "title1": "Our",
+  "title2": "Story",
+  "heading1": "Hamza,",
+  "heading2": "Our Founder",
+  "paragraph1": "It all began with Hamza’s vision, a passionate lover of Moroccan cuisine and freshly caught fish. Coming from a family of fishmongers and shellfish specialists, he grew up among seafood stalls and turned this know-how into a true life project. In 2021, he opened the first Mister Fish in Haut Founty, Agadir, with a simple idea: to offer fresh fish and seafood prepared just like at home, in a warm and friendly atmosphere. Every detail counts, from the selection of the products to the presentation of the dishes.",
+  "paragraph2": "With his experience and high standards, Hamza still personally oversees the selection of the freshest fish on the market and ensures that his quality standards are met. His commitment to freshness, authenticity and hospitality has made Mister Fish a must-visit spot for sea lovers in Agadir and Dcheira El Jihadia.",
+  "heading3": "Discover",
+  "heading4": "Mister Fish",
+  "paragraph3": "Mister Fish is much more than a fish restaurant. It is a complete culinary experience that highlights the flavors of the sea and Moroccan cuisine. Since the opening of the first establishment in 2021 in Haut Founty, followed by the second in 2025 in Dcheira El Jihadia, we have created a universe where freshness, generosity and taste are at the heart of every plate.",
+  "paragraph4": "Our restaurant stands out for its warm and modern atmosphere. Here you can enjoy fish platters, crispy fried seafood, seafood tagines and generous combo plates, all prepared to order with fresh, carefully selected ingredients. Whether you come with family, friends or for a special occasion, Mister Fish offers you a delightful moment centered around the sea.",
+  "title3": "Two Locations in Agadir",
+  "paragraph5": "To be as close as possible to our customers, Mister Fish is now present at two complementary addresses. Our first restaurant is located in Haut Founty, Agadir, in a warm and family-friendly setting.",
+  "paragraph6": "The second is located in Dcheira El Jihadia, at lot N 174, lotissement El Mers, with a modern space ideal for groups and events. Each establishment offers the same quality of fresh fish, the same culinary know-how and attentive service, while keeping its own personality.",
+  "features": {
+    "freshness": {
+      "title": "Fresh Products",
+      "description": "Daily selection of fish and seafood from local fishermen and trusted suppliers to guarantee impeccable freshness."
+    },
+    "authenticity": {
+      "title": "Authentic Cuisine",
+      "description": "Moroccan and Mediterranean recipes reinvented with creativity: seafood tagines, grills, crispy fried dishes and generous combo plates."
+    },
+    "ambiance": {
+      "title": "Exceptional Service",
+      "description": "A smiling, professional team that listens to you, whether you choose to eat in, take your order to go, or enjoy delivery depending on the establishment."
+    }
+  }
+},
   "contact": {
     "title": "Contact Us",
     "subtitle": "We are here to answer all your questions"

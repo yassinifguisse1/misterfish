@@ -15,9 +15,11 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function AboutPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const t = useTranslations();
 
   const branchImages = [
     {
@@ -62,7 +64,7 @@ export default function AboutPage() {
             <div className="flex items-center justify-around gap-2 md:gap-0">
               <div className="flex justify-start flex-1">
                 <h1 className="font-display font-black text-primary-text uppercase leading-[0.75] tracking-[-0.04em] text-[clamp(3rem,10vw,140px)] md:text-[clamp(4rem,11vw,160px)] lg:text-[clamp(5rem,12vw,180px)]">
-                  Notre
+                  {t("about.title1")}
                 </h1>
               </div>
             </div>
@@ -76,7 +78,7 @@ export default function AboutPage() {
                 before:content-[''] before:absolute before:w-[60px] before:h-[60px] before:bg-transparent before:-bottom-18 before:-right-3 md:before:-right-10 lg:before:-right-3 before:rounded-tr-[32px] md:before:rounded-tr-[40px] lg:before:rounded-tr-[48px] before:shadow-[16px_-16px_0_0_#EDE8DE]
                 after:content-[''] after:absolute after:w-[60px] after:h-[60px] after:bg-transparent after:-top-3 after:-left-18 after:rounded-tr-[32px] md:after:rounded-tr-[40px] lg:after:rounded-tr-[48px] after:shadow-[16px_-16px_0_0_#EDE8DE]"
                 >
-                  Histoire
+                  {t("about.title2")}
                 </h1>
               </div>
 
@@ -101,39 +103,13 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               <div className="space-y-6">
                 <h2 className="font-display font-black uppercase text-[clamp(2.5rem,5vw,4rem)] leading-[0.95] bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-                  Hamza,
+                  {t("about.heading1")}
                   <br />
-                  Notre Fondateur
+                  {t("about.heading2")}
                 </h2>
                 <div className="space-y-4 text-lg leading-relaxed font-body text-primary-text">
-                  <p>
-                    Tout a commencé avec la vision de Hamza, passionné de
-                    cuisine marocaine et de poissons fraîchement pêchés. Issu
-                    d&apos;une famille de poissonniers et d&apos;écaillers, il a
-                    grandi au milieu des étals de la mer et a transformé ce
-                    savoir faire en un vrai projet de vie. En 2021, il ouvre le
-                    premier Mister Fish à Haut Founty, à Agadir, avec une idée
-                    simple : proposer du poisson frais et des fruits de mer
-                    travaillés comme à la maison, dans une ambiance chaleureuse
-                    et conviviale. Chaque détail compte, depuis la sélection des
-                    produits jusqu&apos;à la présentation des plats.
-                  </p>
-                  <p>
-                    Avec son expérience et son exigence, Hamza supervise encore
-                    aujourd&apos;hui le choix des poissons les plus frais du
-                    marché et veille au respect de ses standards de qualité. Son
-                    engagement pour la fraîcheur, l&apos;authenticité et
-                    l&apos;hospitalité a fait de Mister Fish une adresse
-                    incontournable pour les amoureux de la mer à Agadir et
-                    Dcheira El Jihadia.
-                  </p>
-                  {/* <p>
-                    Sous la direction de Hamza, Mister Fish est devenu une
-                    référence à Agadir, reconnu pour son engagement envers la
-                    fraîcheur, l&apos;authenticité et l&apos;hospitalité. Son
-                    dévouement à la cuisine et au service client fait de chaque
-                    visite une expérience mémorable.
-                  </p> */}
+                  <p>{t("about.paragraph1")}</p>
+                  <p>{t("about.paragraph2")}</p>
                 </div>
               </div>
               <div className="relative">
@@ -253,47 +229,21 @@ export default function AboutPage() {
 
               <div className="space-y-6 order-1 lg:order-2">
                 <h2 className="font-display font-black uppercase text-[clamp(2.5rem,5vw,4rem)] leading-[0.95] bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-                  Découvrez
+                  {t("about.heading3")}
                   <br />
-                  Mister Fish
+                  {t("about.heading4")}
                 </h2>
                 <div className="space-y-4 text-lg leading-relaxed font-body text-primary-text">
-                  <p>
-                    Mister Fish est bien plus qu&apos;un restaurant de poissons.
-                    C&apos;est une expérience culinaire complète qui met à
-                    l&apos;honneur les saveurs de la mer et la cuisine
-                    marocaine. Depuis l&apos;ouverture du premier établissement
-                    en 2021 à Haut Founty, puis du second en 2025 à Dcheira El
-                    Jihadia, nous avons créé un univers où la fraîcheur, la
-                    générosité et le goût sont au centre de chaque assiette.
-                  </p>
-                  <p>
-                    Notre restaurant se distingue par son ambiance chaleureuse
-                    et moderne. On y déguste des plateaux de poissons, des
-                    fritures croustillantes, des tajines de la mer et des plats
-                    combinés généreux, tous préparés sur commande avec des
-                    ingrédients frais soigneusement sélectionnés. Que vous
-                    veniez en famille, entre amis ou pour une occasion spéciale,
-                    Mister Fish vous offre un moment de plaisir autour de la
-                    mer.
-                  </p>
+                  <p>{t("about.paragraph3")}</p>
+                  <p>{t("about.paragraph4")}</p>
                   <div className="bg-white rounded-2xl p-6 shadow-lg border-l-4 border-[#4A90E2] mt-6">
                     <h3 className="font-display font-bold uppercase text-xl text-[#2E3F72] mb-3">
-                      Deux Établissements à Agadir
+                      {t("about.title3")}
                     </h3>
                     <p className="text-primary-text leading-relaxed font-body">
-                      Pour être au plus près de nos clients, Mister Fish est
-                      aujourd’hui présent à deux adresses{" "}
-                      <strong>deux adresses</strong> complémentaires. Notre
-                      premier restaurant se trouve à{" "}
-                      <strong>Haut Founty,</strong> à Agadir, dans un cadre
-                      chaleureux et familial. <br /> Le second se situe à{" "}
-                      <strong>Dcheira El Jihadia,</strong> au lot N 174,
-                      lotissement El Mers, avec un espace moderne idéal pour les
-                      groupes et les événements. Chaque établissement propose la
-                      même qualité de poisson frais, le même savoir faire
-                      culinaire et un service attentif, tout en ayant sa propre
-                      personnalité.
+                      {t("about.paragraph5")}
+                      <br />
+                      {t("about.paragraph6")}
                     </p>
                   </div>
                 </div>
@@ -305,21 +255,18 @@ export default function AboutPage() {
               {[
                 {
                   icon: <Fish className="w-8 h-8" strokeWidth={2} />,
-                  title: "Produits Frais",
-                  description:
-                    "Sélection quotidienne de poissons et fruits de mer auprès de pêcheurs locaux et de fournisseurs de confiance, pour garantir une fraîcheur irréprochable.",
+                  title: t("about.features.freshness.title"),
+                  description: t("about.features.freshness.description"),
                 },
                 {
                   icon: <Heart className="w-8 h-8" strokeWidth={2} />,
-                  title: "Cuisine Authentique",
-                  description:
-                    " Recettes marocaines et méditerranéennes revisitées avec créativité : tajines de la mer, grillades, fritures croustillantes et plats combinés généreux.",
+                  title: t("about.features.authenticity.title"),
+                  description: t("about.features.authenticity.description"),
                 },
                 {
                   icon: <Users className="w-8 h-8" strokeWidth={2} />,
-                  title: "Service Exceptionnel",
-                  description:
-                    "Une équipe souriante et professionnelle, à votre écoute, que vous choisissiez de manger sur place, d’emporter votre commande ou de profiter de la livraison selon l’établissement.",
+                  title: t("about.features.ambiance.title"),
+                  description: t("about.features.ambiance.description"),
                 },
               ].map((feature, index) => (
                 <div

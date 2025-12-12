@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "@/lib/navigation";
 import Image from "next/image";
-import { Instagram, Linkedin, Menu, X, ChevronDown } from "lucide-react";
+import { Instagram, Facebook, Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
@@ -83,7 +83,7 @@ export default function Navigation() {
           <div className="flex justify-between items-center py-2 text-primary-text/80 text-xs font-sans">
             <div className="flex items-center gap-4">
               <Link href="https://www.instagram.com/misterfishmaroc/" aria-label="Instagram" className="hover:text-primary-text transition-colors"><Instagram size={16} /></Link>
-              <Link href="https://www.facebook.com/profile.php?id=100063887412186" aria-label="LinkedIn" className="hover:text-primary-text transition-colors"><Linkedin size={16} /></Link>
+              <Link href="https://www.facebook.com/profile.php?id=100063887412186" aria-label="LinkedIn" className="hover:text-primary-text transition-colors"><Facebook size={16} /></Link>
             </div>
             <div className="flex items-center gap-6 font-medium tracking-wide">
               <span className="flex items-center gap-2">Ouvert tous les jours : 12h00 - 01h30</span>
