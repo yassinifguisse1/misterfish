@@ -4,6 +4,7 @@ import Footer from "@/components/sections/footer";
 import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 
 const establishment = {
@@ -36,6 +37,8 @@ const establishment2 = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27529.288976234035!2d-9.585273733494736!3d30.403170213372203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c9003bf79c53%3A0xb541e2c1d70e86a2!2sMister%20Fish%202!5e0!3m2!1sfr!2sus!4v1765453899089!5m2!1sfr!2sus",
 };
 export default function ContactPage() {
+    const t = useTranslations();
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -49,10 +52,10 @@ export default function ContactPage() {
           <div className="container mx-auto max-w-[1440px] px-8 py-24 lg:py-32 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="font-display font-black uppercase text-[clamp(3rem,8vw,7rem)] leading-[0.9] mb-6 bg-linear-to-r from-[#87CEEB] to-[#4A90E2] bg-clip-text text-transparent">
-                Contactez-Nous
+                {t("contact.title")}
               </h1>
               <p className="text-xl lg:text-2xl leading-relaxed font-body text-white/90">
-                Nous sommes là pour répondre à toutes vos questions
+                 {t("contact.subtitle")}
               </p>
             </div>
           </div>
@@ -62,7 +65,7 @@ export default function ContactPage() {
         <section className="py-20 lg:py-32 bg-background">
           <div className="container mx-auto max-w-[1200px] px-8">
             <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-                Mister Fish - HAUT FOUNTY
+                {t("contact.branch1")}
               </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
               {[
@@ -121,7 +124,7 @@ export default function ContactPage() {
               ></iframe>
             </div>
             <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-                Mister Fish - DCHEIRA EL JIHADIA
+                 {t("contact.branch2")}
               </h2>
              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 ">
               
@@ -186,12 +189,12 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div className="bg-white rounded-3xl shadow-xl p-8 lg:p-10">
                 <h2 className="font-display font-black uppercase text-3xl lg:text-4xl mb-8 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-                  Envoyez-nous<br/>un Message
+                  {t("contact.text2")}<br/> {t("contact.text3")}
                 </h2>
                 <form className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block font-sans font-medium text-primary-text mb-2">
-                      Nom Complet
+                      {t("contact.name")}
                     </label>
                     <input
                       type="text"
@@ -205,7 +208,7 @@ export default function ContactPage() {
                   
                   <div>
                     <label htmlFor="email" className="block font-sans font-medium text-primary-text mb-2">
-                      Email
+                      {t("contact.email")}
                     </label>
                     <input
                       type="email"
@@ -219,7 +222,7 @@ export default function ContactPage() {
                   
                   <div>
                     <label htmlFor="phone" className="block font-sans font-medium text-primary-text mb-2">
-                      Téléphone
+                      {t("contact.phone")}
                     </label>
                     <input
                       type="tel"
@@ -232,7 +235,7 @@ export default function ContactPage() {
                   
                   <div>
                     <label htmlFor="subject" className="block font-sans font-medium text-primary-text mb-2">
-                      Sujet
+                      {t("contact.Sujet")}
                     </label>
                     <input
                       type="text"
@@ -246,7 +249,7 @@ export default function ContactPage() {
                   
                   <div>
                     <label htmlFor="message" className="block font-sans font-medium text-primary-text mb-2">
-                      Message
+                      {t("contact.message")}
                     </label>
                     <textarea
                       id="message"
@@ -262,7 +265,7 @@ export default function ContactPage() {
                     type="submit"
                     className="w-full bg-linear-to-r from-[#4A90E2] to-[#3498DB] text-white font-display font-bold uppercase px-8 py-4 rounded-full text-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
-                    Envoyer le Message
+                    {t("contact.send")}
                   </button>
                 </form>
               </div>
@@ -275,7 +278,7 @@ export default function ContactPage() {
                 {/* Social Media & Additional Info */}
                 <div className="bg-linear-to-br from-[#2E3F72] to-[#3498DB] rounded-3xl shadow-xl p-8 text-white">
                   <h3 className="font-display font-black uppercase text-2xl mb-6">
-                    Suivez-Nous
+                    {t("contact.text4")}
                   </h3>
                   <div className="flex gap-4 mb-8">
                     <Link
@@ -300,14 +303,14 @@ export default function ContactPage() {
                   
                   <div className="space-y-4 font-body text-white/90">
                     <p className="leading-relaxed">
-                      Rejoignez notre communauté sur les réseaux sociaux pour découvrir nos plats du jour, nos événements spéciaux et bien plus encore !
+                      {t("contact.paragraph1")}
                     </p>
                     <div className="pt-4 border-t border-white/20">
                       <p className="font-sans font-bold text-lg text-[#87CEEB] mb-2">
-                        Réservations
+                        {t("contact.paragraph2")}
                       </p>
                       <p className="leading-relaxed">
-                        Réservez votre table dès maintenant par téléphone ou via notre formulaire de contact.
+                       {t("contact.paragraph3")}
                       </p>
                     </div>
                   </div>
@@ -321,7 +324,7 @@ export default function ContactPage() {
         <section className="py-20 lg:py-32 bg-linear-to-br from-[#4A90E2]/10 to-[#87CEEB]/10">
           <div className="container mx-auto max-w-[1200px] px-8">
             <h2 className="font-display font-black uppercase text-center text-[clamp(2.5rem,5vw,4rem)] leading-[0.95] mb-16 bg-linear-to-r from-[#2E3F72] to-[#4A90E2] bg-clip-text text-transparent">
-              Venez Nous Voir
+              {t("contact.text5")}
             </h2>
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image

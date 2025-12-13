@@ -62,10 +62,25 @@
     }
   }
 },
-  "contact": {
-    "title": "Contact Us",
-    "subtitle": "We are here to answer all your questions"
-  },
+ "contact": {
+  "title": "Contact Us",
+  "subtitle": "We’re here to answer all your questions",
+  "branch1": "Mister Fish - HAUT FOUNTY",
+  "branch2": "Mister Fish - DCHEIRA EL JIHADIA",
+  "text2": "Send us",
+  "text3": "a message",
+  "name": "Full Name",
+  "email": "Email",
+  "phone": "Phone Number",
+  "Sujet": "Subject",
+  "message": "Your Message",
+  "send": "Send Message",
+  "text4": "Follow Us",
+  "paragraph1": "Join our community on social media to discover our daily dishes, special events, and much more!",
+  "paragraph2": "Reservations",
+  "paragraph3": "Book your table now by phone or via our contact form.",
+  "text5": "Come Visit Us"
+},
   "establishments": {
     "centreVille": "MISTER FISH HAUT FOUNTY",
     "boulevardCorniche": "Mister Fish DCHEIRA EL JIHADIA",

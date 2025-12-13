@@ -66,7 +66,22 @@
   },
   "contact": {
     "title": "Contactez-Nous",
-    "subtitle": "Nous sommes là pour répondre à toutes vos questions"
+    "subtitle": "Nous sommes là pour répondre à toutes vos questions",
+    "branch1":"Mister Fish - HAUT FOUNTY",
+    "branch2":"Mister Fish - DCHEIRA EL JIHADIA",
+    "text2":"Envoyez-nous",
+    "text3":"un message",
+    "name": " Nom Complet",
+    "email": "Email",
+    "phone": "Numéro de Téléphone",
+    "Sujet": "Sujet",
+    "message": "Votre Message",
+    "send": "Envoyer le Message",
+    "text4":"Suivez-Nous",
+    "paragraph1":"Rejoignez notre communauté sur les réseaux sociaux pour découvrir nos plats du jour, nos événements spéciaux et bien plus encore !",
+    "paragraph2":"Réservations",
+    "paragraph3":"Réservez votre table dès maintenant par téléphone ou via notre formulaire de contact.",
+    "text5":"Venez Nous Voir"
   },
   "establishments": {
     "centreVille": "MISTER FISH HAUT FOUNTY",
