@@ -13,7 +13,7 @@ const establishments = {
     name: "Mister Fish - HAUT FOUNTY",
     description: "Notre établissement principal au cœur de la ville",
     address: "Lot Haut Founty, Al Oulha, Agadir, Maroc",
-    phone: "+212 5 28 38 63 04",
+    phone: "+212 661-825783",
     email: "contact@misterfish.ma",
     hours: "Lun-Dim: 12h00 - 23h00",
     isNew: false,
