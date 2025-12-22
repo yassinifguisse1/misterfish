@@ -39,14 +39,14 @@
   "heading1": "Hamza,",
   "heading2": "Our Founder",
   "paragraph1": "It all began with Hamza’s vision, a passionate lover of Moroccan cuisine and freshly caught fish. Coming from a family of fishmongers and shellfish specialists, he grew up among seafood stalls and turned this know-how into a true life project. In 2021, he opened the first Mister Fish in Haut Founty, Agadir, with a simple idea: to offer fresh fish and seafood prepared just like at home, in a warm and friendly atmosphere. Every detail counts, from the selection of the products to the presentation of the dishes.",
-  "paragraph2": "With his experience and high standards, Hamza still personally oversees the selection of the freshest fish on the market and ensures that his quality standards are met. His commitment to freshness, authenticity and hospitality has made Mister Fish a must-visit spot for sea lovers in Agadir and Dcheira El Jihadia.",
+  "paragraph2": "With his experience and high standards, Hamza still personally oversees the selection of the freshest fish on the market and ensures that his quality standards are met. His commitment to freshness, authenticity and hospitality has made Mister Fish a must-visit spot for sea lovers in Agadir and FADESA.",
   "heading3": "Discover",
   "heading4": "Mister Fish",
-  "paragraph3": "Mister Fish is much more than a fish restaurant. It is a complete culinary experience that highlights the flavors of the sea and Moroccan cuisine. Since the opening of the first establishment in 2021 in Haut Founty, followed by the second in 2025 in Dcheira El Jihadia, we have created a universe where freshness, generosity and taste are at the heart of every plate.",
+  "paragraph3": "Mister Fish is much more than a fish restaurant. It is a complete culinary experience that highlights the flavors of the sea and Moroccan cuisine. Since the opening of the first establishment in 2021 in Haut Founty, followed by the second in 2025 in FADESA, we have created a universe where freshness, generosity and taste are at the heart of every plate.",
   "paragraph4": "Our restaurant stands out for its warm and modern atmosphere. Here you can enjoy fish platters, crispy fried seafood, seafood tagines and generous combo plates, all prepared to order with fresh, carefully selected ingredients. Whether you come with family, friends or for a special occasion, Mister Fish offers you a delightful moment centered around the sea.",
   "title3": "Two Locations in Agadir",
   "paragraph5": "To be as close as possible to our customers, Mister Fish is now present at two complementary addresses. Our first restaurant is located in Haut Founty, Agadir, in a warm and family-friendly setting.",
-  "paragraph6": "The second is located in Dcheira El Jihadia, at lot N 174, lotissement El Mers, with a modern space ideal for groups and events. Each establishment offers the same quality of fresh fish, the same culinary know-how and attentive service, while keeping its own personality.",
+  "paragraph6": "The second is located in FADESA, at lot N 174, lotissement El Mers, with a modern space ideal for groups and events. Each establishment offers the same quality of fresh fish, the same culinary know-how and attentive service, while keeping its own personality.",
   "features": {
     "freshness": {
       "title": "Fresh Products",
@@ -66,7 +66,7 @@
   "title": "Contact Us",
   "subtitle": "We’re here to answer all your questions",
   "branch1": "Mister Fish - HAUT FOUNTY",
-  "branch2": "Mister Fish - DCHEIRA EL JIHADIA",
+  "branch2": "Mister Fish - FADESA",
   "text2": "Send us",
   "text3": "a message",
   "name": "Full Name",
@@ -83,7 +83,7 @@
 },
   "establishments": {
     "centreVille": "MISTER FISH HAUT FOUNTY",
-    "boulevardCorniche": "Mister Fish DCHEIRA EL JIHADIA",
+    "boulevardCorniche": "Mister Fish FADESA",
     "new": "New",
     "main": "Our main establishment",
     "newDesc": "Our new establishment"
@@ -103,8 +103,8 @@
   "nieuweStandaard": {
     "title": "The new standard!",
     "subtitle": "Two restaurants, one promise: ultra-fresh fish, cooked with Moroccan expertise.",
-    "paragraph1": "Born in November 2021, Mister Fish brings together the best of fish and seafood in a warm atmosphere in Agadir and Dcheira El Jihadia. Every day, our teams select fresh products to prepare platters, grilled dishes, and seafood specialties with Moroccan flavors.",
-    "paragraph2": "With our two locations, Mister Fish Haut Founty and Mister Fish Dcheira El Jihadia, you enjoy the same level of quality whether you choose to dine in or take your order to go. Whether you come with family, friends, or for a quick break, Mister Fish becomes your new go-to spot to enjoy fresh fish in Agadir."
+    "paragraph1": "Born in November 2021, Mister Fish brings together the best of fish and seafood in a warm atmosphere in Agadir and FADESA. Every day, our teams select fresh products to prepare platters, grilled dishes, and seafood specialties with Moroccan flavors.",
+    "paragraph2": "With our two locations, Mister Fish Haut Founty and Mister Fish FADESA, you enjoy the same level of quality whether you choose to dine in or take your order to go. Whether you come with family, friends, or for a quick break, Mister Fish becomes your new go-to spot to enjoy fresh fish in Agadir."
   },
   "foodtruckCarousel": {
     "title": "Our",
@@ -179,13 +179,13 @@
       "paragraph4": "Our passionate team does everything possible to offer you an exceptional culinary experience. Whether you choose a fish platter, crispy fried seafood, or the chef’s specialties, the freshness of our products remains our priority. Come enjoy a friendly moment in our dining room or on the terrace and let yourself be charmed by the authenticity of Mister Fish Haut Founty."
     },
     "nouveau": {
-      "title": "MISTER FISH DCHEIRA EL JIHADIA",
-      "description": "Our new location in Dcheira El Jihadia. Enjoy the same freshness, the same fishmonger's expertise, and a modern atmosphere that’s perfect for dining in or taking away.",
-      "paragraph1": "Welcome to our new Mister Fish establishment in Dcheira El Jihadia, opened in 2025. Located at lot N 174, lotissement El Mers in Dcheira El Jihadia, our restaurant offers a modern and friendly atmosphere centered around fresh fish and seafood specialties. This new Mister Fish brings together everything that made our first address in Haut Founty a success, while offering a larger space, ideal for families, groups, and events. Discover our fish platters, grills, Moroccan tagines, and generous combo plates, all prepared with fresh products carefully selected every day.",
+      "title": "MISTER FISH FADESA",
+      "description": "Our new location in FADESA. Enjoy the same freshness, the same fishmonger's expertise, and a modern atmosphere that’s perfect for dining in or taking away.",
+      "paragraph1": "Welcome to our new Mister Fish establishment in FADESA, opened in 2025. Located at lot N 174, lotissement El Mers in FADESA, our restaurant offers a modern and friendly atmosphere centered around fresh fish and seafood specialties. This new Mister Fish brings together everything that made our first address in Haut Founty a success, while offering a larger space, ideal for families, groups, and events. Discover our fish platters, grills, Moroccan tagines, and generous combo plates, all prepared with fresh products carefully selected every day.",
       "title2": "Our Specialties",
       "paragraph2": "Discover our fish and seafood specialties prepared with fresh ingredients, carefully selected. Between traditional Moroccan recipes and Mediterranean inspirations, each plate is designed to deliver an authentic and delicious tasting experience.",
-      "paragraph3": "Our Dcheira El Jihadia establishment was designed to offer you comfort and enjoyment. A spacious dining room, refined decor, and attentive service create the ideal setting for a family lunch, a dinner with friends, or a special celebration. Whether you’re a fan of crispy fried seafood, combo plates, or the chef’s specialties, you’ll find here the Mister Fish signature and the freshness of the sea in every bite.",
-      "paragraph4": "Our passionate team does everything possible to offer you an exceptional culinary experience. Whether you come with family, friends, or to celebrate an event, Mister Fish Dcheira El Jihadia welcomes you in a warm atmosphere where quality and product freshness remain our priority. Book your table now and let yourself be seduced by the authenticity of our Moroccan flavors."
+      "paragraph3": "Our FADESA establishment was designed to offer you comfort and enjoyment. A spacious dining room, refined decor, and attentive service create the ideal setting for a family lunch, a dinner with friends, or a special celebration. Whether you’re a fan of crispy fried seafood, combo plates, or the chef’s specialties, you’ll find here the Mister Fish signature and the freshness of the sea in every bite.",
+      "paragraph4": "Our passionate team does everything possible to offer you an exceptional culinary experience. Whether you come with family, friends, or to celebrate an event, Mister Fish FADESA welcomes you in a warm atmosphere where quality and product freshness remain our priority. Book your table now and let yourself be seduced by the authenticity of our Moroccan flavors."
     }
   }
 },
@@ -201,7 +201,7 @@
     "establishments": "Our Establishments",
     "contact": "Contact",
     "address1": "Lot Haut Founty, Al Oulha,",
-    "address2": "Lot N 174, lotissement El Mers Dcheira El Jihadia",
+    "address2": "Lot N 174, lotissement El Mers FADESA",
     "city": "Agadir, Morocco",
     "phone1": "+212 661-825783",
     "phone2": "+212 6 61 15 47 56",
