@@ -16,6 +16,7 @@ import {
 import { LayoutList, Grid3x3, Download } from "lucide-react";
 
 import Footer from "@/components/sections/footer";
+import { Link } from "@/lib/navigation";
 
 export default function MenuPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -541,7 +542,7 @@ export default function MenuPage() {
                 asChild
                 className="bg-[#4A90E2] hover:bg-[#3A7BC8] text-white font-display font-bold uppercase rounded-full text-base px-12 py-6 h-auto shadow-xl"
               >
-                <a href="/reservation">Réserver une table</a>
+                <Link href="/contact">Réserver une table</Link>
               </Button>
             </motion.div>
           </motion.div>

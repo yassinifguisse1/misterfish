@@ -1,0 +1,159 @@
+id,category,name,ingredients,price
+ent-01,entrees,Salade Composée,"Salade Verte, Concombre, Riz, Thon, Maïs, Fromage, Fruit De Mer, œuf, Betterave, Carotte, Ananas, Mangue, Escalope, Fruits Secs, Ebly, Pâtes, Gambas, Avocat, Tomate Cerise",90 DH
+ent-02,entrees,Salade Du Chef,"Salade Verte, Fruits De Mer, Betterave, Thon, Maïs, Fromage, œuf, Tomate Cerise, Ebly, Escalope, Avocat, Ananas",80 DH
+ent-03,entrees,Salade Mister Fish,"Salade Verte, Riz, Thon, Maïs, Fromage, Russe, Ananas, Fruits De Mer, œuf, Escalope, Tomate Cerise",70 DH
+ent-04,entrees,Salade Pêcheur,"Fruits De Mer, Salade Verte, Tomate Cerise, Crevette",80 DH
+ent-05,entrees,Salade Cocktail Aux Crevettes,"Ananas Frais, Mangue, Crevettes",90 DH
+ent-06,entrees,Salade Avocat Aux Crevettes,"Salade Verte, Carotte Râpée, Crevette, Avocat",70 DH
+ent-07,entrees,Salade Tomate Mozzarella,"Tomates Cerises, Mozzarella, Basilic",60 DH
+ent-08,entrees,Salade Saumon Fumée,"Saumon fumé, salade verte",95 DH
+ent-09,entrees,Salade De Poulpe,"Purée, Poulpe, Salade Verte",80 DH
+ent-10,entrees,Salade Du Thon,"Salade Verte, Oignon, Tomate, Thon",50 DH
+ent-11,entrees,Salade Niçoise,"Salade Verte, Pâtes, Betterave, Concombre, Carotte, Thon, Maïs, Œuf",40 DH
+ent-12,entrees,Salade Marocaine,"Salade Verte, Tomates, Oignon, Œuf, Concombre, Thon",40
+ent-13,entrees,Salade César,"Salade Verte, Poulet, Tranches De Pain, Œuf, Fromage, Tomates Cerises, Anchois Marinés",50 DH
+ent-14,entrees,Salade Russe,"Salade Verte, Carotte, Pomme De Terre, Œuf, Oignon, Thon, Maïs",40 DH
+ent-15,entrees,Salade Asiatique,"Salade Verte, Carotte, Pomme De Terre, œuf, Oignon, Thon, Maïs, Sauce Mayonnaise",85 DH
+ent-16,entrees,Salade De Choux Aux Fruits,"Salade Verte, Choux Rouge, Pomme, Ananas, Fruits Sec, Miel, Crevette, Yaourt, Jus D’orange/Citron",70 DH
+soup-01,soupes,Soupe De Poisson,,40 DH
+soup-02,soupes,Soupe Almejas,,55 DH
+soup-03,soupes,Soupe Royale Mister Fish,,70 DH
+cru-01,crustaces,Les Huîtres (6 Pièces),,90 DH
+cru-02,crustaces,Les Huîtres Gratinées (6 Pièces),,120 DH
+cru-03,crustaces,Les Huîtres Saumon Crevette (6 Pièces),,180 DH
+cru-04,crustaces,Les Palourdes Almejas,,100 DH
+cru-05,crustaces,Les Couteaux De Mer,,80 DH
+cru-06,crustaces,Les Moules Marinées,,90 DH
+cru-07,crustaces,Langouste Grillée 500g,,350 DH
+cru-08,crustaces,Langouste Gratinée 500g,,400 DH
+cru-09,crustaces,Homard Grillé 1kg,,700 DH
+cru-10,crustaces,Homard Gratiné 1kg,,800 DH
+cru-11,crustaces,Plats Crustacés,,400 DH
+fri-01,fritures,Friture Spécial,"Crevettes, sole, sepie, merlan, brioua, croquette",120 DH
+fri-02,fritures,Friture Royale,"Crevettes, sole, sepie, calamars, merlan, brioua",150 DH
+fri-03,fritures,Croquette De Crabe (6 Pièces),Croquette de crabe,70 DH
+fri-04,fritures,Pastilla Fruits De Mer (1 Personne),Pastilla fruits de mer - 25min,80 DH
+fri-05,fritures,Briouat De Poisson (1 Pièce),Briouat de poisson,20 DH
+bro-01,brochettes,Brochette De Poisson,"Servis avec légumes sautés, riz ou pommes de terre",120 DH
+bro-02,brochettes,Brochette De Lotte,Brochette de lotte,150 DH
+bro-03,brochettes,Brochette D'Espadon,Brochette d'espadon,130 DH
+bro-04,brochettes,Filet De Merlan,Filet de merlan,120 DH
+bro-05,brochettes,Filet D'Espadon,Filet d'espadon,130 DH
+bro-06,brochettes,Filet De Saint Pierre Grillé,Filet de Saint Pierre grillé,120 DH
+chef-01,specialite-chef,Rigamanté Royale (Sauce à l'Ail ou Sauce Tomate),Spécialité royale,120 DH
+chef-02,specialite-chef,Plat Du Chef (Choix Du Chef),Plat du chef selon arrivage,200 DH
+chef-03,specialite-chef,Calamar Farci,"Calamar farci, sauce blanche ou sauce tomate",150 DH
+chef-04,specialite-chef,Poulpe À La Galetta,Poulpe grillé,100 DH
+chef-05,specialite-chef,Moule Sauce A L'ail Ou Sauce Tomate,Moules,80 DH
+chef-06,specialite-chef,Pil Pil (Sauce à l'Ail ou Sauce Tomate),Pil pil,90 DH
+chef-07,specialite-chef,Pil Pil Royale,Pil pil royale,130 DH
+chef-08,specialite-chef,La Lotte À La Basqua (Sauce Blanche),Lotte à la basqua,180 DH
+chef-09,specialite-chef,Sole À La Meunière,Sole à la meunière,250 DH
+chef-10,specialite-chef,Paella Valenciana,Paella Valenciana,90 DH
+chef-11,specialite-chef,Paella Royale,Paella royale,140 DH
+chef-12,specialite-chef,Dorade Aux Herbes Au Four (45min),Dorade aux herbes au four - 45min,300 DH
+chef-13,specialite-chef,Saumon Grillé,Saumon grillé,140 DH
+chef-14,specialite-chef,Saumon Au Four (30min),Saumon au four - 30min,150
+chef-15,specialite-chef,Mérou Sauté 500g,Mérou sauté 500g,200 DH
+chef-16,specialite-chef,Gambas Royale 300g,Gambas royale 300g,200 DH
+chef-17,specialite-chef,Mekila Royale (1 Personne),Mekila royale 1 personne,150 DH
+chef-18,specialite-chef,Papillat De Médaillon De Lotte Et Gambas,Papillat de médaillon de lotte et gambas,200 DH
+chef-19,specialite-chef,Filet De Saint Pierre Aux Amandes,Filet de Saint Pierre aux amandes,130 DH
+chef-20,specialite-chef,Filet De Saint Pierre Aux Fruits De Mer,Filet de Saint Pierre aux fruits de mer,140 DH
+chef-21,specialite-chef,Filet De Saint Pierre Aux Champignons,Filet de Saint Pierre aux champignons,120 DH
+arr-01,arrivage,Dorade (prix/kg),Dorade - prix/kg,320 DH
+arr-02,arrivage,Pageot Royale (prix/kg),Pageot royale - prix/kg,350 DH
+arr-03,arrivage,Pageot Brika (prix/kg),Pageot brika - prix/kg,280 DH
+arr-04,arrivage,Sole Mer (prix/kg),Sole mer - prix/kg,200 DH
+arr-05,arrivage,Sole Robio (prix/kg),Sole robio - prix/kg,350 DH
+arr-06,arrivage,Rascasse (prix/kg),Rascasse - prix/kg,300 DH
+arr-07,arrivage,Turbo (prix/kg),Turbo - prix/kg,400 DH
+arr-08,arrivage,Langoustine (prix/kg),Langoustine - prix/kg,700 DH
+arr-09,arrivage,Homard (prix/kg),Homard - prix/kg,700 DH
+arr-10,arrivage,Gambas (prix/kg),Gambas - prix/kg,600 DH
+fam-01,plats-familliaux,Salade Royale (4 Personnes),Salade royale 4 personnes,350 DH
+fam-02,plats-familliaux,Salade Royale (6 Personnes),Salade royale 6 personnes,550 DH
+fam-03,plats-familliaux,Salade Royale (8 Personnes),Salade royale 8 personnes,750 DH
+fam-04,plats-familliaux,Salade Royale (10 Personnes),Salade royale 10 personnes,950 DH
+fam-05,plats-familliaux,Salade Royale Mister Fish (12 Personnes),Salade royale mister fish 12 personnes,1200 DH
+fam-06,plats-familliaux,Plateaux Royale (4 Personnes),Plateaux royales pour 4 personnes,500 DH
+fam-07,plats-familliaux,Plateaux Royale (6 Personnes),Plateaux royales pour 6 personnes,700 DH
+fam-08,plats-familliaux,Plateaux Royale (8 Personnes),Plateaux royales pour 8 personnes,900 DH
+fam-09,plats-familliaux,Plateaux Royale (10 Personnes),Plateaux royales pour 10 personnes,1100 DH
+fam-10,plats-familliaux,Plateaux Royale Mister Fish,Plateaux royal mister fish,1400 DH
+fam-11,plats-familliaux,Pastilla (8 Personnes),Pastilla 8 personnes,800 DH
+fam-12,plats-familliaux,Pastilla (10 Personnes),Pastilla 10 personnes,1000 DH
+fam-13,plats-familliaux,Pastilla Mister Fish,Pastilla mister fish,1300 DH
+fam-14,plats-familliaux,Mekila (4 Personnes),Mekila 4 personnes,550 DH
+fam-15,plats-familliaux,Mekila (6 Personnes),Mekila 6 personnes,850 DH
+fam-16,plats-familliaux,Dorade Farcie 1kg (sur commande),Dorade farcie 1kg - sur commande,450 DH
+fam-17,plats-familliaux,Pageot Royale Farci 1kg (sur commande),Pageot royale farci 1kg,400 DH
+fam-18,plats-familliaux,Tawa (2 Personnes),Tawa 2 personnes - sur commande,250 DH
+fam-19,plats-familliaux,Tawa (4 Personnes),Tawa 4 personnes - sur commande,600 DH
+fam-20,plats-familliaux,Tagra Tanjaoui (2 Personnes),Tagra tanjaoui 2 personnes,300 DH
+pz-01,pizza-pasta,Pizza Margarita,Pizza Margarita,55 DH
+pz-02,pizza-pasta,Pizza Végétarienne,Pizza végétarienne,55 DH
+pz-03,pizza-pasta,Pizza Au Poulet,Pizza au poulet,60 DH
+pz-04,pizza-pasta,Pizza Portofino,Pizza Portofino,70 DH
+pz-05,pizza-pasta,Pizza Au Thon,Pizza au thon,60 DH
+pz-06,pizza-pasta,Pizza 4 Saisons,Pizza 4 saisons,90 DH
+pz-07,pizza-pasta,Pizza Fruits De Mer,Pizza fruits de mer,90 DH
+pz-08,pizza-pasta,Pizza Royale,Pizza royale,120
+pz-09,pizza-pasta,Pizza Mister Fish,Pizza mister fish,140 DH
+ps-01,pizza-pasta,Spaghetti Poulpe,Spaghetti poulpe,80 DH
+ps-02,pizza-pasta,Spaghetti Mister Fish,Spaghetti mister fish,80 DH
+ps-03,pizza-pasta,Spaghetti Almejas (Palourdes),Spaghetti palourdes,70 DH
+ps-04,pizza-pasta,Spaghetti Poulet,Spaghetti poulet,60 DH
+ps-05,pizza-pasta,Spaghetti Viande Hachée,Spaghetti viande hachée,60 DH
+ps-06,pizza-pasta,Penne Mister Fish,Penne mister fish,80 DH
+ps-07,pizza-pasta,Tagliatelle Mister Fish,Tagliatelle mister fish,80 DH
+ps-08,pizza-pasta,Pasticcio Fruits De Mer,Pasticcio fruits de mer,80 DH
+ps-09,pizza-pasta,Gratin Fruits De Mer,Gratin fruits de mer,80 DH
+pl-01,plats,Émincé De Poulet Crème Champignons,"Servis avec légumes sautés, ou frites ou salade verte",80 DH
+pl-02,plats,Escalope De Poulet,Escalope de poulet,70 DH
+pl-03,plats,Panini Thon,Panini thon,40 DH
+pl-04,plats,Panini Poulet,Panini poulet,40 DH
+pl-05,plats,Panini Viande Hachée,Panini viande hachée,40 DH
+pl-06,plats,Sandwich Tanjawi,Sandwich tanjawi,25 DH
+pl-07,plats,San-Dwich Royale,Sandwich royale,60 DH
+pl-08,plats,Sandwich Mister Fish,Sandwich mister fish,80 DH
+pl-09,plats,Cheese Burger,Cheese burger,40 DH
+pl-10,plats,Double Cheese Burger,Double cheese burger,50 DH
+pl-11,plats,Triple Cheese Burger,Triple cheese burger,60 DH
+pl-12,plats,Chicken Cheese Burger,Chicken cheese burger,40 DH
+pl-13,plats,Tacos Viande Hachée,Tacos viande hachée,45 DH
+pl-14,plats,Tacos Escalope,Tacos escalope,50 DH
+pl-15,plats,Tacos Poulet,Tacos poulet,45 DH
+pl-16,plats,Tacos Cordon Bleu,Tacos cordon bleu,55 DH
+pl-17,plats,Tacos Mixte 2 Viandes,Tacos mixte 2 viandes,50 DH
+pl-18,plats,Tacos Fruits De Mer,Tacos fruits de mer,65 DH
+af-01,assiettes-fruits,Assiette De Fruits (1 Personne),Assiette de fruits 1 personne,70 DH
+af-02,assiettes-fruits,Assiette De Fruits (2 Personnes),Assiette de fruits 2 personnes,100 DH
+af-03,assiettes-fruits,Assiette De Fruits (4 Personnes),Assiette de fruits 4 personnes,200 DH
+af-04,assiettes-fruits,Assiette De Fruits (6 Personnes),Assiette de fruits 6 personnes,300 DH
+des-01,desserts,Cheese Cake,"Cheesecake (Lotus, Oreo, Framboise, Chocolat ou Amande)",30 DH
+des-02,desserts,Salade Fruits,Salade de fruits,30 DH
+des-03,desserts,Crème Mister Fish,Crème signature mister fish,30 DH
+des-04,desserts,Tiramisu,Tiramisu maison,30 DH
+des-05,desserts,Crème Brûlée,Crème brûlée,30 DH
+des-06,desserts,Crème Caramel,Crème caramel,25 DH
+des-07,desserts,Nougat Glacé,Nougat glacé,30 DH
+des-08,desserts,Boule De Glace,Boule de glace,45 DH
+jus-01,jus,Jus De Concombre,Jus de concombre,15 DH
+jus-02,jus,Jus De Fraise,Jus de fraise,25 DH
+jus-03,jus,Jus De Carotte,Jus de carotte,15 DH
+jus-04,jus,Jus De Citron,Jus de citron,15 DH
+jus-05,jus,Jus D'Orange,Jus d'orange,25 DH
+jus-06,jus,Jus De Betterave,Jus de betterave,15 DH
+jus-07,jus,Jus De Mangue,Jus de mangue,30 DH
+jus-08,jus,Jus D'Ananas,Jus d'ananas,30 DH
+jus-09,jus,Jus D'Avocat,Jus d'avocat,30 DH
+jus-10,jus,Jus De Banane,Jus de banane,20 DH
+jus-11,jus,Mojito (Sans Alcool),Mocktail mojito,35 DH
+boi-01,boissons,Sidi Ali 50cl,Eau minérale Sidi Ali 50cl,10
+boi-02,boissons,"Sidi Ali 1,5l",Eau minérale Sidi Ali 1.5l,15
+boi-03,boissons,Oulmes 50cl,Eau minérale Oulmes 50cl,10
+boi-04,boissons,Oulmes 1l,Eau minérale Oulmes 1l,15
+boi-05,boissons,Soda 33cl,"Soda 33cl (Coca, Sprite)",15
+boi-06,boissons,Café Nespresso,Café Nespresso,20
+boi-07,boissons,Thé Tanjawi,Thé Tanjawi,20

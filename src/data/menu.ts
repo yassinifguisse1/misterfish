@@ -1,5 +1,6 @@
 
 
+import { getDishImageUrl } from "@/lib/dish-images";
 
 export interface MenuItem {
   id: string;
@@ -240,7 +241,7 @@ export const menuItems: MenuItem[] = [
 const DEFAULT_DISH_IMAGE =
   "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/pasta-dish-spaghetti-1763054312309.png?width=8000&height=8000&resize=contain";
 
-// Ensure every menu item has an image so the client can show how the dish looks
+// Match dish photos from the images/ folder by menu item name
 menuItems.forEach((item) => {
-  if (!item.image) item.image = DEFAULT_DISH_IMAGE;
+  item.image = getDishImageUrl(item.name) ?? DEFAULT_DISH_IMAGE;
 });
