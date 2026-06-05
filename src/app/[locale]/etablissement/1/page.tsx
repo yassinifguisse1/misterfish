@@ -100,7 +100,6 @@ export default function Etablissement1Page() {
         }
       );
     }
-
     // Animate text revealers
     const textElements = document.querySelectorAll(".revealer-inner");
     textElements.forEach((el, i) => {
