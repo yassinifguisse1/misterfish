@@ -33,7 +33,14 @@ yarn-error.log*
 # vercel
 .vercel
 .env
+.env.local
+.env*.local
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# menu dish images (hosted on Cloudflare R2)
+/images/
+/public/images/menu/
+/public/images/dishes/

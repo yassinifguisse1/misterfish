@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "node scripts/sync-menu-images.mjs && next dev --turbopack",
     "build": "node scripts/sync-menu-images.mjs && next build",
+    "sync:images": "node scripts/sync-menu-images.mjs",
+    "upload:images": "node scripts/upload-menu-images-r2.mjs",
     "start": "next start",
     "lint": "next lint"
   },
@@ -100,6 +102,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1063.0",
     "@eslint/eslintrc": "^3.3.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

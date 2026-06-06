@@ -159,5 +159,3 @@ export const dishImages: Record<string, string> = {
   "Café Nespresso": "Café Nespresso.webp",
   "Thé Tanjawi": "Thé Tanjawi.webp"
 };
-
-export const DISH_IMAGE_BASE_PATH = "/images/menu";
