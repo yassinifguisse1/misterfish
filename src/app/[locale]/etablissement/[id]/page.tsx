@@ -31,7 +31,6 @@ const establishments = {
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/hero-image-mister-fish-1763138240726.webp?width=8000&height=8000&resize=contain",
   },
 };
-
 export default function EtablissementPage({
   params,
 }: {
