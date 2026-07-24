@@ -207,7 +207,7 @@
     "phone2": "+212 6 61 15 47 56",
     "email": "contact@misterfish.ma",
     "hours": "Mon-Sun: 12:00 PM - 01:30 AM",
-    "copyright": "© 2025 Mister Fish. Site developed by"
+    "copyright": "© {year} Mister Fish. Site developed by"
     
   }
 }
