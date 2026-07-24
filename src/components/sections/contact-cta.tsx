@@ -38,10 +38,10 @@ export default function ContactCta() {
               misterfish@gmail.com
             </a>
             <a 
-              href="tel:+212600000000" 
+              href="tel:+212528386304" 
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 text-center whitespace-nowrap px-8 py-5 text-base sm:text-lg border-[3px] border-dashed border-[#4A90E2] text-primary-text hover:bg-border-green/5"
             >
-              +212 6 00 00 00 00
+              +212 5 28 83 86 304
             </a>
           </div>
           
@@ -96,7 +96,7 @@ export default function ContactCta() {
             
             {/* Left: Phone Button */}
             <Link
-              href="tel:+212 5 28 83 86304"
+              href="tel:+212528386304"
               className="rounded-full font-display font-bold uppercase transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-2xl text-center text-lg xl:text-xl px-12 xl:px-14 py-6 border-[3px] border-dashed border-border-green text-primary-text hover:bg-border-green/10 shrink-0"
             >
              +212 5 28 83 86 304

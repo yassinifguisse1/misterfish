@@ -153,7 +153,7 @@ const Footer = () => {
 
                     {/* Bottom Bar */}
                     <div className="mt-16 lg:mt-24 pt-8 border-t border-primary-text/20 flex flex-col md:flex-row justify-center items-center gap-4 text-sm uppercase font-sans tracking-wider text-primary-text/60">
-                        <p>{t('copyright')} <Link href="https://www.itagroupe.com" target="_blank" rel="noopener noreferrer" className="text-[#4A90E2]">ITA GROUPE</Link></p>
+                        <p>{t('copyright', { year: new Date().getFullYear() })} <Link href="https://www.itagroupe.com" target="_blank" rel="noopener noreferrer" className="text-[#4A90E2]">ITA GROUPE</Link></p>
                         
                     </div>
                 </div>
