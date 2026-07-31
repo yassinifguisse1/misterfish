@@ -237,11 +237,23 @@ export const menuItems: MenuItem[] = [
   { id: "boi-07", name: "Thé Tanjawi", description: "Thé Tanjawi", price: "20", category: "boissons" },
 ];
 
-// default image used when an item doesn't have a specific image
-const DEFAULT_DISH_IMAGE =
-  "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/pasta-dish-spaghetti-1763054312309.png?width=8000&height=8000&resize=contain";
+const LOGO_IMAGE =
+  "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/logo-mister-fish-1763049645503.webp?width=8000&height=8000&resize=contain";
 
-// Match dish photos from the images/ folder by menu item name
+// Keep real photos only for tea, coffee, and water; all other dishes use the logo
+const KEEP_PHOTO_NAMES = new Set([
+  "Café Nespresso",
+  "Thé Tanjawi",
+  "Sidi Ali 50cl",
+  "Sidi Ali 1,5l",
+  "Oulmes 50cl",
+  "Oulmes 1l",
+]);
+
 menuItems.forEach((item) => {
-  item.image = getDishImageUrl(item.name) ?? DEFAULT_DISH_IMAGE;
+  if (KEEP_PHOTO_NAMES.has(item.name)) {
+    item.image = getDishImageUrl(item.name) ?? LOGO_IMAGE;
+    return;
+  }
+  item.image = LOGO_IMAGE;
 });
