@@ -1,7 +1,3 @@
-
-
-import { getDishImageUrl } from "@/lib/dish-images";
-
 export interface MenuItem {
   id: string;
   name: string;
@@ -240,20 +236,12 @@ export const menuItems: MenuItem[] = [
 const LOGO_IMAGE =
   "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/logo-mister-fish-1763049645503.webp?width=8000&height=8000&resize=contain";
 
-// Keep real photos only for tea, coffee, and water; all other dishes use the logo
-const KEEP_PHOTO_NAMES = new Set([
-  "Café Nespresso",
-  "Thé Tanjawi",
-  "Sidi Ali 50cl",
-  "Sidi Ali 1,5l",
-  "Oulmes 50cl",
-  "Oulmes 1l",
-]);
+const CUSTOM_DISH_IMAGES: Record<string, string> = {
+  "Pizza Portofino": "/images/pizza-portofino.webp",
+  "Paella Valenciana": "/images/paella-valenciana.webp",
+};
 
+// Most menu items use the logo; a few keep a real photo
 menuItems.forEach((item) => {
-  if (KEEP_PHOTO_NAMES.has(item.name)) {
-    item.image = getDishImageUrl(item.name) ?? LOGO_IMAGE;
-    return;
-  }
-  item.image = LOGO_IMAGE;
+  item.image = CUSTOM_DISH_IMAGES[item.name] ?? LOGO_IMAGE;
 });
